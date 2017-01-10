@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  AboutViewController.swift
 //  PartyPooper
 //
 //  Created by Jackie Xu on 1/10/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController{
+class AboutViewController: UIViewController{
 
     override func viewDidLoad() {
         view = View()
