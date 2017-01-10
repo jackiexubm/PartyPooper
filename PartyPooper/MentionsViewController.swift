@@ -14,7 +14,7 @@ class MentionsViewController: UICollectionViewController, UICollectionViewDelega
     
     override func viewDidLoad() {
         setupNavigationDropdownMenu()
-        collectionView?.backgroundColor = UIColor.white
+        collectionView?.backgroundColor = UIColor(white: 245/255, alpha: 1)
         collectionView?.register(MentionCell.self, forCellWithReuseIdentifier: "MentionCell")
     }
     
@@ -38,11 +38,11 @@ class MentionsViewController: UICollectionViewController, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width, height: 150)
+        return CGSize(width: collectionView.frame.width, height: 250)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
+        return 7
     }
     
     func setupNavigationDropdownMenu(){
