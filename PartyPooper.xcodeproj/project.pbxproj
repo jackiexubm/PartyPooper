@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E90302751E25313C00B7BBF1 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90302741E25313C00B7BBF1 /* AboutViewController.swift */; };
-		E90302771E25316500B7BBF1 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90302761E25316500B7BBF1 /* View.swift */; };
+		E90302771E25316500B7BBF1 /* CampaignHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90302761E25316500B7BBF1 /* CampaignHeaderCell.swift */; };
 		E91904151E252FB000DA05C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91904141E252FB000DA05C2 /* AppDelegate.swift */; };
 		E919041C1E252FB000DA05C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E919041B1E252FB000DA05C2 /* Assets.xcassets */; };
 		E919042A1E252FB100DA05C2 /* PartyPooperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91904291E252FB100DA05C2 /* PartyPooperTests.swift */; };
@@ -34,7 +34,7 @@
 
 /* Begin PBXFileReference section */
 		E90302741E25313C00B7BBF1 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
-		E90302761E25316500B7BBF1 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		E90302761E25316500B7BBF1 /* CampaignHeaderCell.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; fileEncoding = 4; path = CampaignHeaderCell.swift; sourceTree = "<group>"; };
 		E91904111E252FB000DA05C2 /* PartyPooper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PartyPooper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E91904141E252FB000DA05C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E919041B1E252FB000DA05C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 		E90302701E25308400B7BBF1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E90302761E25316500B7BBF1 /* View.swift */,
+				E90302761E25316500B7BBF1 /* CampaignHeaderCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -288,7 +288,7 @@
 			files = (
 				E90302751E25313C00B7BBF1 /* AboutViewController.swift in Sources */,
 				E91904151E252FB000DA05C2 /* AppDelegate.swift in Sources */,
-				E90302771E25316500B7BBF1 /* View.swift in Sources */,
+				E90302771E25316500B7BBF1 /* CampaignHeaderCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

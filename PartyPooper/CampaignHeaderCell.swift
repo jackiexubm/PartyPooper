@@ -8,7 +8,7 @@
 
 import UIKit
 
-class View: UIView{
+class CampaignHeaderCell: UICollectionViewCell{
     
     override init(frame: CGRect){
         super.init(frame: frame)
@@ -26,22 +26,30 @@ class View: UIView{
     let profileView: UIImageView = {
         let view: UIImageView = UIImageView()
         view.backgroundColor = UIColor.red
-        view.layer.cornerRadius = 50
+        view.layer.borderWidth = 4
+        view.layer.borderColor = UIColor.white.cgColor
+        view.layer.cornerRadius = 60
         view.layer.masksToBounds = true
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
     func setupViews(){
+        let heightOfBanner = 9 / 16 * UIScreen.main.bounds.width
+        
+        
         addSubview(bannerView)
         addSubview(profileView)
     
         addConstraintsWithString("H:|[v0]|")
-        addConstraintsWithString("H:|-150-[v1(100)]|")
+        addConstraintsWithString("H:[v1(120)]")
         
         
-        addConstraintsWithString("V:|-74-[v1(100)]")
-        addConstraintsWithString("V:|-64-[v0(120)]")
+        
+        addConstraintsWithString("V:|[v0(\(heightOfBanner))]")
+        addConstraintsWithString("V:|-\(heightOfBanner - 60)-[v1(120)]")
+        addConstraint(NSLayoutConstraint(item: profileView, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.centerX, multiplier: 1, constant: 0))
+
     }
     
 
