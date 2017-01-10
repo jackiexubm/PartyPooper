@@ -1,5 +1,5 @@
 //
-//  MentionsView.swift
+//  OpenMentionView.swift
 //  PartyPooper
 //
 //  Created by Jackie Xu on 1/10/17.
@@ -8,22 +8,16 @@
 
 import UIKit
 
-class MentionsView: UIView{
+class OpenedMentionView: UIView{
     
     override init(frame: CGRect){
         super.init(frame: frame)
-        backgroundColor = UIColor.white
-        setupViews()
-    }
-    
-
-    
-    func setupViews(){
-    
+        backgroundColor = UIColor.blue
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+
     
 }

@@ -18,6 +18,14 @@ class MentionsViewController: UICollectionViewController, UICollectionViewDelega
         collectionView?.register(MentionCell.self, forCellWithReuseIdentifier: "MentionCell")
     }
     
+    
+    
+    func openMention(sender: UIButton){
+        let openedMentionVC = OpenedMentionViewController()
+        
+        navigationController?.pushViewController(openedMentionVC, animated: true)
+    }
+    
     // collectionView methods
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -36,7 +44,6 @@ class MentionsViewController: UICollectionViewController, UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
-    
     
     func setupNavigationDropdownMenu(){
         let items = ["Top", "Latest", "Trending"]

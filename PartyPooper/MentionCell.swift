@@ -24,18 +24,29 @@ class MentionCell: UICollectionViewCell{
         return view
     }()
     
+    let openMentionButton: UIButton = {
+        let view: UIButton = UIButton()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.addTarget(self, action: #selector(MentionsViewController.openMention(sender:) ), for: .touchUpInside)
+        return view
+    }()
     
     func setupViews(){
         
         addSubview(cellSeperator)
+        addSubview(openMentionButton)
         addConstraintWithString("H:|[v0]|")
         addConstraintWithString("V:[v0(1)]|")
+        addConstraintWithString("H:|[v1]|")
+        addConstraintWithString("V:|[v1]-1-|")
+        
         
     }
     
     func addConstraintWithString(_ str: String){
         let views: [String:UIView] = [
         "v0":cellSeperator,
+        "v1":openMentionButton,
         
         ]
         
