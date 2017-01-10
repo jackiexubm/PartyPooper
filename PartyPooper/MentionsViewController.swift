@@ -10,12 +10,33 @@ import UIKit
 import BTNavigationDropdownMenu
 
 
-class MentionsViewController: UIViewController{
+class MentionsViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout{
     
     override func viewDidLoad() {
-        view = MentionsView()
         setupNavigationDropdownMenu()
+        collectionView?.backgroundColor = UIColor.white
+        collectionView?.register(MentionCell.self, forCellWithReuseIdentifier: "MentionCell")
     }
+    
+    // collectionView methods
+    
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 15
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MentionCell", for: indexPath)
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width, height: 150)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
     
     func setupNavigationDropdownMenu(){
         let items = ["Top", "Latest", "Trending"]
