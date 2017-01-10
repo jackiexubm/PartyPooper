@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		193F9E1C1E257B48000E4793 /* IssuesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193F9E1B1E257B48000E4793 /* IssuesCell.swift */; };
 		E90302751E25313C00B7BBF1 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90302741E25313C00B7BBF1 /* AboutViewController.swift */; };
 		E90302771E25316500B7BBF1 /* CampaignHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90302761E25316500B7BBF1 /* CampaignHeaderCell.swift */; };
 		E91904151E252FB000DA05C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91904141E252FB000DA05C2 /* AppDelegate.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		193F9E1B1E257B48000E4793 /* IssuesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuesCell.swift; sourceTree = "<group>"; };
 		E90302741E25313C00B7BBF1 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		E90302761E25316500B7BBF1 /* CampaignHeaderCell.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; fileEncoding = 4; path = CampaignHeaderCell.swift; sourceTree = "<group>"; };
 		E91904111E252FB000DA05C2 /* PartyPooper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PartyPooper.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				E90302761E25316500B7BBF1 /* CampaignHeaderCell.swift */,
+				193F9E1B1E257B48000E4793 /* IssuesCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				E90302751E25313C00B7BBF1 /* AboutViewController.swift in Sources */,
 				E91904151E252FB000DA05C2 /* AppDelegate.swift in Sources */,
 				E90302771E25316500B7BBF1 /* CampaignHeaderCell.swift in Sources */,
+				193F9E1C1E257B48000E4793 /* IssuesCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

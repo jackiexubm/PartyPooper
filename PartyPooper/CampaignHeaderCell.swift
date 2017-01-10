@@ -34,12 +34,32 @@ class CampaignHeaderCell: UICollectionViewCell{
         return view
     }()
     
+    let candidateName: UILabel = {
+        let label: UILabel = UILabel()
+        label.text = "Bernie Sanders"
+        label.textAlignment = NSTextAlignment.center
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    let candidateDescription: UILabel = {
+        let label: UILabel = UILabel()
+        label.text = "I'm not a Democrat, I'm an Independent, but I caucus with the Democrats."
+        label.textAlignment = NSTextAlignment.center
+        label.adjustsFontSizeToFitWidth = true
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    
     func setupViews(){
         let heightOfBanner = 9 / 16 * UIScreen.main.bounds.width
         
         
         addSubview(bannerView)
         addSubview(profileView)
+        addSubview(candidateName)
+        addSubview(candidateDescription)
     
         addConstraintsWithString("H:|[v0]|")
         addConstraintsWithString("H:[v1(120)]")
@@ -47,16 +67,17 @@ class CampaignHeaderCell: UICollectionViewCell{
         
         
         addConstraintsWithString("V:|[v0(\(heightOfBanner))]")
-        addConstraintsWithString("V:|-\(heightOfBanner - 60)-[v1(120)]")
+        addConstraintsWithString("V:|-\(heightOfBanner - 60)-[v1(120)]-[v2(20)]-[v3(15)]")
         addConstraint(NSLayoutConstraint(item: profileView, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.centerX, multiplier: 1, constant: 0))
-
+        addConstraintsWithString("H:|-20-[v2]-20-|")
+        addConstraintsWithString("H:|-20-[v3]-20-|")
     }
     
 
     
     
     func addConstraintsWithString(_ str:String){
-        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: str, options: NSLayoutFormatOptions(), metrics: nil, views: ["v0":bannerView, "v1":profileView
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: str, options: NSLayoutFormatOptions(), metrics: nil, views: ["v0":bannerView, "v1":profileView, "v2":candidateName, "v3": candidateDescription,
             
             
             

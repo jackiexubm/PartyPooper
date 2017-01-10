@@ -13,20 +13,32 @@ class AboutViewController: UICollectionViewController, UICollectionViewDelegateF
     override func viewDidLoad() {
         collectionView?.register(CampaignHeaderCell.self, forCellWithReuseIdentifier: "CampaignHeaderCell")
         collectionView?.backgroundColor = UIColor.white
+        collectionView?.register(IssuesCell.self, forCellWithReuseIdentifier: "IssuesCell")
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return 2
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CampaignHeaderCell", for: indexPath)
-        
+        var cell: UICollectionViewCell = UICollectionViewCell()
+        if indexPath.row == 0 {
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CampaignHeaderCell", for: indexPath)
+        } else if indexPath.row == 1 {
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: "IssuesCell", for: indexPath)
+        }
         return cell
     }
     
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width, height: 1000)
+        var cellSize = CGSize()
+        if indexPath.row == 0 {
+            return CGSize(width: collectionView.frame.width, height: 375)
+        } else if indexPath.row == 1 {
+            return CGSize(width: collectionView.frame.width, height: 200)
+        }
+        return cellSize
     }
     
 }
