@@ -16,12 +16,7 @@ class IssuesCell: UICollectionViewCell {
         setupViews()
     }
     
-    //    let IssueContainer: UICollectionView = {
-    //        let view: UICollectionView = UICollectionView()
-    //        view.backgroundColor = UIColor.blue
-    //        view.translatesAutoresizingMaskIntoConstraints = false
-    //        return view
-    //    }()
+    
     
     
     let containerView: UIView = {
@@ -39,10 +34,6 @@ class IssuesCell: UICollectionViewCell {
         addConstraintsWithString("H:|[v0]|")
         addConstraintsWithString("V:|[v0]|")
         
-        //        addSubview(IssueContainer)
-        //        addConstraintsWithString("H:|[v0]|")
-        //        addConstraintsWithString("V:|[v0(20)]|")
-        //   addSubview(AboutPageIssueViewController)
         
     }
     
