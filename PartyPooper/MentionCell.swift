@@ -80,7 +80,7 @@ class MentionCell: UICollectionViewCell{
         view.font = UIFont(name: "Georgia", size: 12)
         return view
     }()
-
+    
     let timeStampLabel: UILabel = {
         let view: UILabel = UILabel()
         view.numberOfLines = 1
@@ -91,7 +91,88 @@ class MentionCell: UICollectionViewCell{
         view.font = UIFont(name: "HelveticaNeue", size: 9)
         return view
     }()
-
+    
+    let scoresContainerView: UIView = {
+        let view: UIView = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    let scoresSeparatorView: UIView  = {
+        let view: UIView = UIView()
+        view.backgroundColor = UIColor.lightGray
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    let scoresSeparatorView2: UIView  = {
+        let view: UIView = UIView()
+        view.backgroundColor = UIColor.lightGray
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    let fairnessLabel: UILabel = {
+        let view: UILabel = UILabel()
+        view.text = "Fairness"
+        view.font = UIFont(name: "HelveticaNeue", size: 12)
+        view.textColor = UIColor.darkGray
+        view.textAlignment = NSTextAlignment.center
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    let accuracyLabel: UILabel = {
+        let view: UILabel = UILabel()
+        view.text = "Accuracy"
+        view.font = UIFont(name: "HelveticaNeue", size: 12)
+        view.textColor = UIColor.darkGray
+        view.textAlignment = NSTextAlignment.center
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    let relevancyLabel: UILabel = {
+        let view: UILabel = UILabel()
+        view.text = "Relevancy"
+        view.font = UIFont(name: "HelveticaNeue", size: 12)
+        view.textColor = UIColor.darkGray
+        view.textAlignment = NSTextAlignment.center
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    let fairnessScoreLabel: UILabel = {
+        let view: UILabel = UILabel()
+        view.text = "98"
+        view.font = UIFont(name: "HelveticaNeue", size: 17)
+        view.textColor = UIColor.black
+        view.textAlignment = NSTextAlignment.center
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    let accuracyScoreLabel: UILabel = {
+        let view: UILabel = UILabel()
+        view.text = "87"
+        view.font = UIFont(name: "HelveticaNeue", size: 17)
+        view.textColor = UIColor.black
+        view.textAlignment = NSTextAlignment.center
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    let relevancyScoreLabel: UILabel = {
+        let view: UILabel = UILabel()
+        view.text = "97"
+        view.font = UIFont(name: "HelveticaNeue", size: 17)
+        view.textColor = UIColor.black
+        view.textAlignment = NSTextAlignment.center
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    
     
     func setupViews(){
         let pictureHeight = 9 / 16 * UIScreen.main.bounds.width
@@ -104,23 +185,47 @@ class MentionCell: UICollectionViewCell{
         addSubview(mentionTitleLabel)
         addSubview(mentionPreviewLabel)
         addSubview(timeStampLabel)
+        scoresContainerView.addSubview(scoresSeparatorView)
+        scoresContainerView.addSubview(scoresSeparatorView2)
+        scoresContainerView.addSubview(fairnessLabel)
+        scoresContainerView.addSubview(accuracyLabel)
+        scoresContainerView.addSubview(relevancyLabel)
+        scoresContainerView.addSubview(fairnessScoreLabel)
+        scoresContainerView.addSubview(accuracyScoreLabel)
+        scoresContainerView.addSubview(relevancyScoreLabel)
+        
+        addSubview(scoresContainerView)
+        
         
         addConstraintWithString("H:|[v0]|")
-      //  addConstraintWithString("V:|[v0(1)]")
         addConstraintWithString("H:|[v1]|")
         addConstraintWithString("V:[v1(1)]|")
         addConstraintWithString("H:|[v2]|")
         addConstraintWithString("V:|[v2]-1-|")
         addConstraintWithString("H:|[v3]|")
-        addConstraintWithString("V:|[v0(1)][v3(\(pictureHeight))]-7-[v4(10)]-5-[v5]-2-[v6]-50-|")
+        addConstraintWithString("V:|[v0(1)][v3(\(pictureHeight))]-7-[v4(10)]-5-[v5]-2-[v6]-5-[v8(40)]-10-|")
         addConstraintWithString("H:|[v4]-7-|")
         addConstraintWithString("H:|-15-[v5]-15-|")
         addConstraintWithString("H:|-15-[v6]-15-|")
         addConstraintWithString("H:|-17-[v7]")
+        addConstraintWithString("H:|-15-[v8]-15-|")
         addConstraintWithString("V:[v3]-7-[v7]")
+        addConstraintWithString("H:|[v11][v9(1)][v12][v10(1)][v13]|")
+        addConstraintWithString("V:|-2-[v11(15)][v14]")
+        addConstraintWithString("V:|-2-[v12(15)][v15]")
+        addConstraintWithString("V:|-2-[v13(15)][v16]")
+        addConstraintWithString("V:|[v9]|")
+        addConstraintWithString("V:|[v10]|")
+        addConstraintWithString("H:[v11(==v12)]")
+        addConstraintWithString("H:[v11(==v13)]")
+        addConstraintWithString("H:|[v14][v9][v15][v10][v16]|")
+        addConstraintWithString("H:[v14(==v15)]")
+        addConstraintWithString("H:[v14(==v16)]")
+
         
-
-
+        
+        
+        
         
         
     }
@@ -134,7 +239,16 @@ class MentionCell: UICollectionViewCell{
             "v4":authorAndNewsOutletLabel,
             "v5":mentionTitleLabel,
             "v6":mentionPreviewLabel,
-            "v7":timeStampLabel
+            "v7":timeStampLabel,
+            "v8":scoresContainerView,
+            "v9":scoresSeparatorView,
+            "v10":scoresSeparatorView2,
+            "v11":fairnessLabel,
+            "v12":accuracyLabel,
+            "v13":relevancyLabel,
+            "v14":fairnessScoreLabel,
+            "v15":accuracyScoreLabel,
+            "v16":relevancyScoreLabel
         ]
         
         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: str, options: NSLayoutFormatOptions(), metrics: nil, views: views))
