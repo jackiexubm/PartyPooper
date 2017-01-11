@@ -22,9 +22,10 @@ class MentionsViewController: UICollectionViewController, UICollectionViewDelega
     }
     
     func openMention(sender: UIButton){
-        print(sender.tag)
         let openedMentionVC = OpenedMentionViewController()
-        
+        let request: URLRequest = URLRequest(url: URL(string: mentionModels[sender.tag].URL)!)
+        (openedMentionVC.view as! UIWebView).loadRequest(request)
+        print(mentionModels[sender.tag].URL)
         navigationController?.pushViewController(openedMentionVC, animated: true)
     }
     

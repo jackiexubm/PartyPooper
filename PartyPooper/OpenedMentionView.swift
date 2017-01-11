@@ -8,11 +8,11 @@
 
 import UIKit
 
-class OpenedMentionView: UIView{
+class OpenedMentionView: UIWebView{
     
     override init(frame: CGRect){
         super.init(frame: frame)
-        backgroundColor = UIColor.blue
+        backgroundColor = UIColor.white
     }
     
     required init?(coder aDecoder: NSCoder) {
