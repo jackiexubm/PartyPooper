@@ -12,16 +12,17 @@ import BTNavigationDropdownMenu
 
 class MentionsViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout{
     
+    private let mentionModels: [MentionModel] = MentionModel.fillModel()
+    
     override func viewDidLoad() {
         setupNavigationDropdownMenu()
-        collectionView?.backgroundColor = UIColor(white: 245/255, alpha: 1)
+        collectionView?.backgroundColor = UIColor(white: 237/255, alpha: 1)
         collectionView?.register(MentionCell.self, forCellWithReuseIdentifier: "MentionCell")
         
     }
     
-    
-    
     func openMention(sender: UIButton){
+        print(sender.tag)
         let openedMentionVC = OpenedMentionViewController()
         
         navigationController?.pushViewController(openedMentionVC, animated: true)
@@ -30,11 +31,21 @@ class MentionsViewController: UICollectionViewController, UICollectionViewDelega
     // collectionView methods
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 15
+        return mentionModels.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MentionCell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MentionCell", for: indexPath) as! MentionCell
+        cell.openMentionButton.tag = indexPath.row
+        let currentModel: MentionModel = mentionModels[indexPath.row]
+        cell.mentionPicture.image = currentModel.image
+        cell.mentionTitleLabel.text = currentModel.title
+        cell.authorAndNewsOutletLabel.text = "By " + currentModel.author.uppercased() + " • " + currentModel.newsOutletName.uppercased()
+        cell.timeStampLabel.text = currentModel.publishDate
+        cell.mentionPreviewLabel.text = currentModel.contentPreview
+        cell.fairnessScoreLabel.text = String(currentModel.fairnessScore)
+        cell.accuracyScoreLabel.text = String(currentModel.accuracyScore)
+        cell.relevancyScoreLabel.text = String(currentModel.relevancyScore)
         return cell
     }
     

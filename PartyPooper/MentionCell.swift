@@ -10,6 +10,8 @@ import UIKit
 
 class MentionCell: UICollectionViewCell{
     
+    var mentionModel: MentionModel?
+    
     
     override init(frame: CGRect){
         super.init(frame: frame)
@@ -17,16 +19,21 @@ class MentionCell: UICollectionViewCell{
         backgroundColor = UIColor.white
     }
     
+    convenience init(frame: CGRect, mention: MentionModel) {
+        self.init()
+        mentionModel = mention
+    }
+    
     let topCellSeperator: UIView = {
         let view: UIView = UIView()
-        view.backgroundColor = UIColor(white: 227/255, alpha: 1)
+        view.backgroundColor = UIColor(white: 220/255, alpha: 1)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
     let bottomCellSeperator: UIView = {
         let view: UIView = UIView()
-        view.backgroundColor = UIColor(white: 227/255, alpha: 1)
+        view.backgroundColor = UIColor(white: 220/255, alpha: 1)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -40,9 +47,7 @@ class MentionCell: UICollectionViewCell{
     
     let mentionPicture: UIImageView = {
         let view: UIImageView = UIImageView()
-        view.backgroundColor = UIColor.green
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.image = #imageLiteral(resourceName: "article_2_photo")
         view.contentMode = .scaleAspectFill
         view.layer.masksToBounds = true
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -51,7 +56,6 @@ class MentionCell: UICollectionViewCell{
     
     let authorAndNewsOutletLabel: UILabel = {
         let view: UILabel = UILabel()
-        view.text = "By RALPH NADER • THE WASHINGTON POST"
         view.translatesAutoresizingMaskIntoConstraints = false
         view.textAlignment = NSTextAlignment.right
         view.textColor = UIColor.gray
@@ -62,7 +66,6 @@ class MentionCell: UICollectionViewCell{
     let mentionTitleLabel: UILabel = {
         let view: UILabel = UILabel()
         view.numberOfLines = 0
-        view.text = "Ralph Nader: Why Bernie Sanders was right to run as a Democrat"
         view.translatesAutoresizingMaskIntoConstraints = false
         view.textAlignment = NSTextAlignment.left
         view.textColor = UIColor.black
@@ -73,7 +76,6 @@ class MentionCell: UICollectionViewCell{
     let mentionPreviewLabel: UILabel = {
         let view: UILabel = UILabel()
         view.numberOfLines = 0
-        view.text = "The two-party system suffocates independent challengers. I would know. During a recent town hall in Columbus, Ohio, Sen. Bernie Sanders said the unthinkable. At least, you would have thought he did, judging by the response of several Democratic operatives. Sanders was deemed “extremely disgraceful” by Donna Brazile, vice chair of the Democratic National Committee, and “a political calculating fraud” by Brad Woodhouse, a former DNC communications director."
         view.translatesAutoresizingMaskIntoConstraints = false
         view.textAlignment = NSTextAlignment.left
         view.textColor = UIColor.gray
@@ -84,7 +86,6 @@ class MentionCell: UICollectionViewCell{
     let timeStampLabel: UILabel = {
         let view: UILabel = UILabel()
         view.numberOfLines = 1
-        view.text = "March 25, 2016"
         view.translatesAutoresizingMaskIntoConstraints = false
         view.textAlignment = NSTextAlignment.left
         view.textColor = UIColor.red
@@ -144,7 +145,6 @@ class MentionCell: UICollectionViewCell{
     
     let fairnessScoreLabel: UILabel = {
         let view: UILabel = UILabel()
-        view.text = "98"
         view.font = UIFont(name: "HelveticaNeue", size: 17)
         view.textColor = UIColor.black
         view.textAlignment = NSTextAlignment.center
@@ -154,7 +154,6 @@ class MentionCell: UICollectionViewCell{
     
     let accuracyScoreLabel: UILabel = {
         let view: UILabel = UILabel()
-        view.text = "87"
         view.font = UIFont(name: "HelveticaNeue", size: 17)
         view.textColor = UIColor.black
         view.textAlignment = NSTextAlignment.center
@@ -164,7 +163,6 @@ class MentionCell: UICollectionViewCell{
     
     let relevancyScoreLabel: UILabel = {
         let view: UILabel = UILabel()
-        view.text = "97"
         view.font = UIFont(name: "HelveticaNeue", size: 17)
         view.textColor = UIColor.black
         view.textAlignment = NSTextAlignment.center
