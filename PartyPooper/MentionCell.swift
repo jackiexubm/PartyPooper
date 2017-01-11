@@ -42,7 +42,7 @@ class MentionCell: UICollectionViewCell{
         let view: UIImageView = UIImageView()
         view.backgroundColor = UIColor.green
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.image = #imageLiteral(resourceName: "article_1_photo")
+        view.image = #imageLiteral(resourceName: "article_2_photo")
         view.contentMode = .scaleAspectFill
         view.layer.masksToBounds = true
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -55,7 +55,18 @@ class MentionCell: UICollectionViewCell{
         view.translatesAutoresizingMaskIntoConstraints = false
         view.textAlignment = NSTextAlignment.right
         view.textColor = UIColor.gray
-        view.font = UIFont(name: "HelveticaNeue-Medium", size: 8)
+        view.font = UIFont(name: "HelveticaNeue-Medium", size: 9)
+        return view
+    }()
+    
+    let mentionTitleLabel: UILabel = {
+        let view: UILabel = UILabel()
+        view.numberOfLines = 0
+        view.text = "Ralph Nader: Why Bernie Sanders was right to run as a Democrat asjdsa askldj ad ioj"
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.textAlignment = NSTextAlignment.left
+        view.textColor = UIColor.black
+        view.font = UIFont(name: "Georgia-Bold", size: 20)
         return view
     }()
     
@@ -67,6 +78,7 @@ class MentionCell: UICollectionViewCell{
         addSubview(openMentionButton)
         addSubview(mentionPicture)
         addSubview(authorAndNewsOutletLabel)
+        addSubview(mentionTitleLabel)
         
         addConstraintWithString("H:|[v0]|")
         addConstraintWithString("V:|[v0(1)]")
@@ -75,9 +87,10 @@ class MentionCell: UICollectionViewCell{
         addConstraintWithString("H:|[v2]|")
         addConstraintWithString("V:|[v2]-1-|")
         addConstraintWithString("H:|[v3]|")
-        addConstraintWithString("V:|[v3(\(pictureHeight))]-7-[v4(8)]")
+        addConstraintWithString("V:|[v3(\(pictureHeight))]-7-[v4(9)]-5-[v5(55)]")
         addConstraintWithString("H:|[v4]-7-|")
-        
+        addConstraintWithString("H:|-15-[v5]-15-|")
+
         
         
     }
@@ -88,7 +101,8 @@ class MentionCell: UICollectionViewCell{
             "v1":bottomCellSeperator,
             "v2":openMentionButton,
             "v3":mentionPicture,
-            "v4":authorAndNewsOutletLabel
+            "v4":authorAndNewsOutletLabel,
+            "v5":mentionTitleLabel
         ]
         
         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: str, options: NSLayoutFormatOptions(), metrics: nil, views: views))

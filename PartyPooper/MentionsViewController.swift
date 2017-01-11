@@ -16,6 +16,7 @@ class MentionsViewController: UICollectionViewController, UICollectionViewDelega
         setupNavigationDropdownMenu()
         collectionView?.backgroundColor = UIColor(white: 245/255, alpha: 1)
         collectionView?.register(MentionCell.self, forCellWithReuseIdentifier: "MentionCell")
+        
     }
     
     
