@@ -34,6 +34,7 @@ class MentionsViewController: UICollectionViewController, UICollectionViewDelega
         let submitVC = SubmitMentionViewController()
         navigationController?.pushViewController(submitVC, animated: true)
     }
+
     
     func openMention(sender: UIButton){
         let openedMentionVC = OpenedMentionViewController()

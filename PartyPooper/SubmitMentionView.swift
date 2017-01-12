@@ -18,20 +18,45 @@ class SubmitMentionView: UIView{
     
     let inputLabel: UILabel = {
         let view = UILabel()
-        view.text = "URL: "
-        view.backgroundColor = UIColor.yellow
+        view.text = "URL:"
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
         
     }()
     
+    let inputField: UITextField = {
+        let view = UITextField()
+        view.text = ""
+        view.layer.borderWidth = 1
+        view.layer.borderColor = UIColor.lightGray.cgColor
+        view.layer.cornerRadius = 3
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    let submitButton: UIButton = {
+        let view = UIButton()
+        view.setTitle("Submit", for: .normal)
+        view.setTitleColor(UIColor.black, for: .normal)
+        view.layer.borderWidth = 1
+        view.layer.borderColor = UIColor.gray.cgColor
+        view.layer.cornerRadius = 3
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.addTarget(self, action: #selector(SubmitMentionViewController.submitURL), for: .touchUpInside)
+        return view
+    }()
+    
     
     func setupViews(){
         addSubview(inputLabel)
+        addSubview(inputField)
+        addSubview(submitButton)
         
-        addConstraintWithString("H:|-15-[v0]")
-        addConstraintWithString("V:|-200-[v0(20)]")
-        
+        addConstraintWithString("V:|-200-[v0(40)]")
+        addConstraintWithString("H:|-15-[v0(45)]-10-[v1]-15-|")
+        addConstraintWithString("V:|-200-[v1(40)]-20-[v2(40)]")
+        addConstraintWithString("H:|-70-[v2]-70-|")
+
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -40,7 +65,9 @@ class SubmitMentionView: UIView{
     
     func addConstraintWithString(_ str: String){
         let views: [String:UIView] = [
-            "v0":inputLabel
+            "v0":inputLabel,
+            "v1":inputField,
+            "v2":submitButton
         ]
         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: str, options: NSLayoutFormatOptions(), metrics: nil, views: views))
     }

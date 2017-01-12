@@ -16,4 +16,11 @@ class SubmitMentionViewController: UIViewController{
        navigationItem.title = "Submit"
     }
     
+    func submitURL(){
+        if let input = (view as! SubmitMentionView).inputField.text {
+            print(input)
+        }
+        navigationController?.popViewController(animated: true)
+    }
+    
 }
