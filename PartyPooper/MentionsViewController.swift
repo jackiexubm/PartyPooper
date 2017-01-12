@@ -15,10 +15,24 @@ class MentionsViewController: UICollectionViewController, UICollectionViewDelega
     private let mentionModels: [MentionModel] = MentionModel.fillModel()
     
     override func viewDidLoad() {
+        navigationItem.rightBarButtonItem = submitBarButton
         setupNavigationDropdownMenu()
         collectionView?.backgroundColor = UIColor(white: 237/255, alpha: 1)
         collectionView?.register(MentionCell.self, forCellWithReuseIdentifier: "MentionCell")
         
+    }
+    
+    lazy var submitBarButton: UIBarButtonItem = {
+        let view = UIBarButtonItem()
+        view.title = "Submit"
+        view.target = self
+        view.action = #selector(openSubmitScreen)
+        return view
+    }()
+    
+    func openSubmitScreen(){
+        let submitVC = SubmitMentionViewController()
+        navigationController?.pushViewController(submitVC, animated: true)
     }
     
     func openMention(sender: UIButton){

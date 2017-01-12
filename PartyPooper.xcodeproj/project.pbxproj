@@ -21,6 +21,8 @@
 		E919042A1E252FB100DA05C2 /* PartyPooperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91904291E252FB100DA05C2 /* PartyPooperTests.swift */; };
 		E91904351E252FB100DA05C2 /* PartyPooperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91904341E252FB100DA05C2 /* PartyPooperUITests.swift */; };
 		E934E9CE1E26D8FF009D3FBB /* MentionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E934E9CD1E26D8FF009D3FBB /* MentionModel.swift */; };
+		E9F95FED1E27F74700D33271 /* SubmitMentionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F95FEC1E27F74700D33271 /* SubmitMentionViewController.swift */; };
+		E9F95FEF1E27F75D00D33271 /* SubmitMentionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F95FEE1E27F75D00D33271 /* SubmitMentionView.swift */; };
 		F8BC6D862168F1AE0F4AD885 /* Pods_PartyPooper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6CB1A8DC4E1E62200487F1E /* Pods_PartyPooper.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +70,8 @@
 		E91904341E252FB100DA05C2 /* PartyPooperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyPooperUITests.swift; sourceTree = "<group>"; };
 		E91904361E252FB100DA05C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E934E9CD1E26D8FF009D3FBB /* MentionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MentionModel.swift; sourceTree = "<group>"; };
+		E9F95FEC1E27F74700D33271 /* SubmitMentionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitMentionViewController.swift; sourceTree = "<group>"; };
+		E9F95FEE1E27F75D00D33271 /* SubmitMentionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitMentionView.swift; sourceTree = "<group>"; };
 		EC2C32E2B4A7F0D3C4D6727A /* Pods-PartyPooperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartyPooperUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PartyPooperUITests/Pods-PartyPooperUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +132,7 @@
 				E90302741E25313C00B7BBF1 /* ViewController.swift */,
 				E903027A1E25334B00B7BBF1 /* MentionsViewController.swift */,
 				E90302801E256B8300B7BBF1 /* OpenedMentionViewController.swift */,
+				E9F95FEC1E27F74700D33271 /* SubmitMentionViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 				E90302761E25316500B7BBF1 /* View.swift */,
 				E90302781E25332E00B7BBF1 /* MentionsView.swift */,
 				E903027E1E256AD300B7BBF1 /* OpenedMentionView.swift */,
+				E9F95FEE1E27F75D00D33271 /* SubmitMentionView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -494,8 +500,10 @@
 				E90302811E256B8300B7BBF1 /* OpenedMentionViewController.swift in Sources */,
 				E90302751E25313C00B7BBF1 /* ViewController.swift in Sources */,
 				E934E9CE1E26D8FF009D3FBB /* MentionModel.swift in Sources */,
+				E9F95FEF1E27F75D00D33271 /* SubmitMentionView.swift in Sources */,
 				E90302791E25332E00B7BBF1 /* MentionsView.swift in Sources */,
 				E903027D1E254A8700B7BBF1 /* MentionCell.swift in Sources */,
+				E9F95FED1E27F74700D33271 /* SubmitMentionViewController.swift in Sources */,
 				E91904151E252FB000DA05C2 /* AppDelegate.swift in Sources */,
 				E903027B1E25334B00B7BBF1 /* MentionsViewController.swift in Sources */,
 				E90302771E25316500B7BBF1 /* View.swift in Sources */,
