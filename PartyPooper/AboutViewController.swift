@@ -12,8 +12,10 @@ class AboutViewController: UICollectionViewController, UICollectionViewDelegateF
     
     override func viewDidLoad() {
         collectionView?.register(CampaignHeaderCell.self, forCellWithReuseIdentifier: "CampaignHeaderCell")
+        collectionView?.register(IssuesCellsContainer.self, forCellWithReuseIdentifier: "IssuesCellsContainer")
+        
         collectionView?.backgroundColor = UIColor.white
-        collectionView?.register(IssuesCell.self, forCellWithReuseIdentifier: "IssuesCell")
+        collectionView?.register(IssueCell.self, forCellWithReuseIdentifier: "IssueCell")
         
         
         
@@ -29,12 +31,15 @@ class AboutViewController: UICollectionViewController, UICollectionViewDelegateF
         if indexPath.row == 0 {
             cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CampaignHeaderCell", for: indexPath)
         } else if indexPath.row == 1 {
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: "IssuesCell", for: indexPath)
-            addVC(cell: cell as! IssuesCell)
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: "IssuesCellsContainer", for: indexPath)
+            addVC(cell: cell as! IssuesCellsContainer)
         }
         return cell
     }
     
+    func openIssue(sender: UIButton){
+        print(sender.tag)
+    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         var cellSize = CGSize()
@@ -47,15 +52,13 @@ class AboutViewController: UICollectionViewController, UICollectionViewDelegateF
         return cellSize
     }
     
-    func addVC(cell: IssuesCell){
+    func addVC(cell: IssuesCellsContainer){
         let childVC = AboutPageIssueViewController(collectionViewLayout: IssuesCollectionViewFlowLayout())
         self.addChildViewController(childVC)
         childVC.didMove(toParentViewController: self)
-        
-        let cellAtPositionOne: IssuesCell = cell
-        
-        cellAtPositionOne.containerView.addSubview(childVC.collectionView!)
-        cellAtPositionOne.containerView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[v0]|", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0":childVC.collectionView!]))
-        cellAtPositionOne.containerView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[v0]|", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0":childVC.collectionView!]))
+
+        cell.containerView.addSubview(childVC.collectionView!)
+        cell.containerView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[v0]|", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0":childVC.collectionView!]))
+        cell.containerView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[v0]|", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0":childVC.collectionView!]))
     }
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class IssuesCell: UICollectionViewCell {
+class IssueCell: UICollectionViewCell {
     override init(frame: CGRect){
         super.init(frame: frame)
         layer.borderWidth = 5
@@ -27,20 +27,31 @@ class IssuesCell: UICollectionViewCell {
         
     }()
     
+    let buttonView: UIButton = {
+        let view = UIButton()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.addTarget(self, action: #selector(AboutViewController.openIssue(sender:)), for: .touchUpInside)
+        return view
+    
+    }()
+    
+    
     
     func setupViews(){
         
         addSubview(containerView)
+        containerView.addSubview(buttonView)
         addConstraintsWithString("H:|[v0]|")
         addConstraintsWithString("V:|[v0]|")
-        
+        addConstraintsWithString("H:|[v1]|")
+        addConstraintsWithString("V:|[v1]|")
         
     }
     
     
     
         func addConstraintsWithString(_ str:String){
-            addConstraints(NSLayoutConstraint.constraints(withVisualFormat: str, options: NSLayoutFormatOptions(), metrics: nil, views: ["v0": containerView]))
+            addConstraints(NSLayoutConstraint.constraints(withVisualFormat: str, options: NSLayoutFormatOptions(), metrics: nil, views: ["v0": containerView, "v1":buttonView]))
         }
     
     

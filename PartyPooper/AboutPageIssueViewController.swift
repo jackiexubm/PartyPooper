@@ -9,12 +9,15 @@
 import UIKit
 
 class AboutPageIssueViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+    
+    
+    
     override func viewDidLoad() {
+        collectionView?.backgroundColor = UIColor.white
         collectionView?.translatesAutoresizingMaskIntoConstraints = false
         super.viewDidLoad()
-        
-        collectionView?.register(IssuesCell.self, forCellWithReuseIdentifier: "IssuesCell")
-        
+    
+        collectionView?.register(IssueCell.self, forCellWithReuseIdentifier: "IssueCell")
     }
     
     
@@ -23,11 +26,9 @@ class AboutPageIssueViewController: UICollectionViewController, UICollectionView
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "IssuesCell", for: indexPath)
-        print(indexPath.row)    
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "IssueCell", for: indexPath) as! IssueCell
+        cell.buttonView.tag = indexPath.row
+//        cell.lbl.
         return cell
     }
-    
-    
-
 }
