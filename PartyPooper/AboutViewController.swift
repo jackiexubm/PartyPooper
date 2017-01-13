@@ -38,8 +38,14 @@ class AboutViewController: UICollectionViewController, UICollectionViewDelegateF
     }
     
     func openIssue(sender: UIButton){
+        
+        print("ran")
         print(sender.tag)
+        let openedIssueVC: OpenedIssueViewController = OpenedIssueViewController()
+        ((openedIssueVC.view) as! OpenedIssueView).issueNameLabel.text = (childViewControllers[0] as! AboutPageIssueViewController).sampleIssueModels[sender.tag].issueName
+        navigationController?.pushViewController(openedIssueVC, animated: true)
     }
+
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         var cellSize = CGSize()

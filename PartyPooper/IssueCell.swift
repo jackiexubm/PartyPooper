@@ -11,12 +11,10 @@ import UIKit
 class IssueCell: UICollectionViewCell {
     override init(frame: CGRect){
         super.init(frame: frame)
-        layer.borderWidth = 5
-        layer.borderColor = UIColor.white.cgColor
         setupViews()
     }
     
-    
+
     
     
     let containerView: UIView = {
@@ -35,23 +33,35 @@ class IssueCell: UICollectionViewCell {
     
     }()
     
+    let textLabel: UILabel = {
+        let text = UILabel()
+        text.translatesAutoresizingMaskIntoConstraints = false
+        text.textAlignment = NSTextAlignment.center
+        return text
+    }()
+    
     
     
     func setupViews(){
         
         addSubview(containerView)
-        containerView.addSubview(buttonView)
+        addSubview(textLabel)
+        addSubview(buttonView)
+    
         addConstraintsWithString("H:|[v0]|")
         addConstraintsWithString("V:|[v0]|")
         addConstraintsWithString("H:|[v1]|")
         addConstraintsWithString("V:|[v1]|")
         
+        addConstraintsWithString("H:|[v2]|")
+        addConstraintsWithString("V:|-30-[v2]-30-|")
+
     }
     
     
     
         func addConstraintsWithString(_ str:String){
-            addConstraints(NSLayoutConstraint.constraints(withVisualFormat: str, options: NSLayoutFormatOptions(), metrics: nil, views: ["v0": containerView, "v1":buttonView]))
+            addConstraints(NSLayoutConstraint.constraints(withVisualFormat: str, options: NSLayoutFormatOptions(), metrics: nil, views: ["v0": containerView, "v1":buttonView, "v2":textLabel]))
         }
     
     

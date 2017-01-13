@@ -10,7 +10,7 @@ import UIKit
 
 class AboutPageIssueViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
-    
+    let sampleIssueModels: [IssueModel] = IssueModel.sampleModel()
     
     override func viewDidLoad() {
         collectionView?.backgroundColor = UIColor.white
@@ -22,13 +22,15 @@ class AboutPageIssueViewController: UICollectionViewController, UICollectionView
     
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return sampleIssueModels.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "IssueCell", for: indexPath) as! IssueCell
         cell.buttonView.tag = indexPath.row
-//        cell.lbl.
+        cell.textLabel.text = (sampleIssueModels[indexPath.row].issueName)
         return cell
     }
+    
+
 }
