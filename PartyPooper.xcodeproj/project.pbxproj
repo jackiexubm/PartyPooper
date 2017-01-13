@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< HEAD
 		1913F0EF1E26A78800F705EA /* AboutPageIssueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1913F0EE1E26A78800F705EA /* AboutPageIssueViewController.swift */; };
 		1913F0F11E26A86D00F705EA /* IssuesCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1913F0F01E26A86D00F705EA /* IssuesCollectionViewFlowLayout.swift */; };
 		193F9E1C1E257B48000E4793 /* IssueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193F9E1B1E257B48000E4793 /* IssueCell.swift */; };
@@ -15,26 +14,23 @@
 		19AEF1301E27F83400AC19A4 /* IssueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AEF12F1E27F83400AC19A4 /* IssueModel.swift */; };
 		19AEF1321E28019400AC19A4 /* OpenedIssueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AEF1311E28019400AC19A4 /* OpenedIssueViewController.swift */; };
 		19AEF1341E2801ED00AC19A4 /* OpenedIssueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AEF1331E2801ED00AC19A4 /* OpenedIssueView.swift */; };
-		E90302751E25313C00B7BBF1 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90302741E25313C00B7BBF1 /* AboutViewController.swift */; };
-		E90302771E25316500B7BBF1 /* CampaignHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90302761E25316500B7BBF1 /* CampaignHeaderCell.swift */; };
-=======
 		42310AB529730421DD34345E /* Pods_PartyPooperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4263CDCA38EBB2BCF61C498B /* Pods_PartyPooperUITests.framework */; };
 		5D157E29F689EEBD10E7D21D /* Pods_PartyPooperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0234E9EF19882BA8440E08BF /* Pods_PartyPooperTests.framework */; };
-		E90302751E25313C00B7BBF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90302741E25313C00B7BBF1 /* ViewController.swift */; };
-		E90302771E25316500B7BBF1 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90302761E25316500B7BBF1 /* View.swift */; };
 		E90302791E25332E00B7BBF1 /* MentionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90302781E25332E00B7BBF1 /* MentionsView.swift */; };
 		E903027B1E25334B00B7BBF1 /* MentionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E903027A1E25334B00B7BBF1 /* MentionsViewController.swift */; };
 		E903027D1E254A8700B7BBF1 /* MentionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E903027C1E254A8700B7BBF1 /* MentionCell.swift */; };
 		E903027F1E256AD300B7BBF1 /* OpenedMentionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E903027E1E256AD300B7BBF1 /* OpenedMentionView.swift */; };
 		E90302811E256B8300B7BBF1 /* OpenedMentionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90302801E256B8300B7BBF1 /* OpenedMentionViewController.swift */; };
->>>>>>> 58bc3e4245491ba5aa6177e8edeb5f31db5ce204
-		E91904151E252FB000DA05C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91904141E252FB000DA05C2 /* AppDelegate.swift */; };
 		E919041C1E252FB000DA05C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E919041B1E252FB000DA05C2 /* Assets.xcassets */; };
 		E919042A1E252FB100DA05C2 /* PartyPooperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91904291E252FB100DA05C2 /* PartyPooperTests.swift */; };
 		E91904351E252FB100DA05C2 /* PartyPooperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91904341E252FB100DA05C2 /* PartyPooperUITests.swift */; };
 		E934E9CE1E26D8FF009D3FBB /* MentionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E934E9CD1E26D8FF009D3FBB /* MentionModel.swift */; };
 		E9F95FED1E27F74700D33271 /* SubmitMentionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F95FEC1E27F74700D33271 /* SubmitMentionViewController.swift */; };
 		E9F95FEF1E27F75D00D33271 /* SubmitMentionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F95FEE1E27F75D00D33271 /* SubmitMentionView.swift */; };
+		E9F95FF31E29517C00D33271 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F95FF21E29517C00D33271 /* AboutViewController.swift */; };
+		E9F95FF51E2951CB00D33271 /* CampaignHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F95FF41E2951CB00D33271 /* CampaignHeaderCell.swift */; };
+		E9F95FF71E29520300D33271 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F95FF61E29520200D33271 /* AppDelegate.swift */; };
+		E9F95FFF1E29565B00D33271 /* BTNavWithMyEdits.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F95FFE1E29565B00D33271 /* BTNavWithMyEdits.swift */; };
 		F8BC6D862168F1AE0F4AD885 /* Pods_PartyPooper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6CB1A8DC4E1E62200487F1E /* Pods_PartyPooper.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-<<<<<<< HEAD
+		0234E9EF19882BA8440E08BF /* Pods_PartyPooperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PartyPooperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BADFE9731A513235D37D82B /* Pods-PartyPooperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartyPooperTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PartyPooperTests/Pods-PartyPooperTests.release.xcconfig"; sourceTree = "<group>"; };
+		145FA228CD1C9431956633C4 /* Pods-PartyPooper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartyPooper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PartyPooper/Pods-PartyPooper.debug.xcconfig"; sourceTree = "<group>"; };
 		1913F0EE1E26A78800F705EA /* AboutPageIssueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutPageIssueViewController.swift; sourceTree = "<group>"; };
 		1913F0F01E26A86D00F705EA /* IssuesCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuesCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		193F9E1B1E257B48000E4793 /* IssueCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueCell.swift; sourceTree = "<group>"; };
@@ -64,27 +62,17 @@
 		19AEF12F1E27F83400AC19A4 /* IssueModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueModel.swift; sourceTree = "<group>"; };
 		19AEF1311E28019400AC19A4 /* OpenedIssueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenedIssueViewController.swift; sourceTree = "<group>"; };
 		19AEF1331E2801ED00AC19A4 /* OpenedIssueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenedIssueView.swift; sourceTree = "<group>"; };
-		E90302741E25313C00B7BBF1 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
-		E90302761E25316500B7BBF1 /* CampaignHeaderCell.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; fileEncoding = 4; path = CampaignHeaderCell.swift; sourceTree = "<group>"; };
-=======
-		0234E9EF19882BA8440E08BF /* Pods_PartyPooperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PartyPooperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0BADFE9731A513235D37D82B /* Pods-PartyPooperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartyPooperTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PartyPooperTests/Pods-PartyPooperTests.release.xcconfig"; sourceTree = "<group>"; };
-		145FA228CD1C9431956633C4 /* Pods-PartyPooper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartyPooper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PartyPooper/Pods-PartyPooper.debug.xcconfig"; sourceTree = "<group>"; };
 		36698AC2FEF19965A678A27B /* Pods-PartyPooper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartyPooper.release.xcconfig"; path = "Pods/Target Support Files/Pods-PartyPooper/Pods-PartyPooper.release.xcconfig"; sourceTree = "<group>"; };
 		4263CDCA38EBB2BCF61C498B /* Pods_PartyPooperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PartyPooperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8057ACC6FD8C1C6DE25227F6 /* Pods-PartyPooperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartyPooperUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PartyPooperUITests/Pods-PartyPooperUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A89E9C3089DEC8F302ADCC84 /* Pods-PartyPooperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartyPooperTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PartyPooperTests/Pods-PartyPooperTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C6CB1A8DC4E1E62200487F1E /* Pods_PartyPooper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PartyPooper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E90302741E25313C00B7BBF1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E90302761E25316500B7BBF1 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		E90302781E25332E00B7BBF1 /* MentionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MentionsView.swift; sourceTree = "<group>"; };
 		E903027A1E25334B00B7BBF1 /* MentionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MentionsViewController.swift; sourceTree = "<group>"; };
 		E903027C1E254A8700B7BBF1 /* MentionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MentionCell.swift; sourceTree = "<group>"; };
 		E903027E1E256AD300B7BBF1 /* OpenedMentionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenedMentionView.swift; sourceTree = "<group>"; };
 		E90302801E256B8300B7BBF1 /* OpenedMentionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenedMentionViewController.swift; sourceTree = "<group>"; };
->>>>>>> 58bc3e4245491ba5aa6177e8edeb5f31db5ce204
 		E91904111E252FB000DA05C2 /* PartyPooper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PartyPooper.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E91904141E252FB000DA05C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E919041B1E252FB000DA05C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E91904201E252FB000DA05C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E91904251E252FB100DA05C2 /* PartyPooperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PartyPooperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +84,10 @@
 		E934E9CD1E26D8FF009D3FBB /* MentionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MentionModel.swift; sourceTree = "<group>"; };
 		E9F95FEC1E27F74700D33271 /* SubmitMentionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitMentionViewController.swift; sourceTree = "<group>"; };
 		E9F95FEE1E27F75D00D33271 /* SubmitMentionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitMentionView.swift; sourceTree = "<group>"; };
+		E9F95FF21E29517C00D33271 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		E9F95FF41E2951CB00D33271 /* CampaignHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignHeaderCell.swift; sourceTree = "<group>"; };
+		E9F95FF61E29520200D33271 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E9F95FFE1E29565B00D33271 /* BTNavWithMyEdits.swift */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; name = BTNavWithMyEdits.swift; path = PartyPooper/BTNavWithMyEdits.swift; sourceTree = "<group>"; };
 		EC2C32E2B4A7F0D3C4D6727A /* Pods-PartyPooperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartyPooperUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PartyPooperUITests/Pods-PartyPooperUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,16 +145,12 @@
 		E903026D1E25306300B7BBF1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-				E90302741E25313C00B7BBF1 /* AboutViewController.swift */,
 				1913F0EE1E26A78800F705EA /* AboutPageIssueViewController.swift */,
 				19AEF1311E28019400AC19A4 /* OpenedIssueViewController.swift */,
-=======
-				E90302741E25313C00B7BBF1 /* ViewController.swift */,
 				E903027A1E25334B00B7BBF1 /* MentionsViewController.swift */,
 				E90302801E256B8300B7BBF1 /* OpenedMentionViewController.swift */,
 				E9F95FEC1E27F74700D33271 /* SubmitMentionViewController.swift */,
->>>>>>> 58bc3e4245491ba5aa6177e8edeb5f31db5ce204
+				E9F95FF21E29517C00D33271 /* AboutViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -170,13 +158,10 @@
 		E903026F1E25307A00B7BBF1 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-				E90302761E25316500B7BBF1 /* CampaignHeaderCell.swift */,
 				193F9E1B1E257B48000E4793 /* IssueCell.swift */,
 				19AEF12D1E27EB3200AC19A4 /* IssuesCellsContainer.swift */,
-=======
 				E903027C1E254A8700B7BBF1 /* MentionCell.swift */,
->>>>>>> 58bc3e4245491ba5aa6177e8edeb5f31db5ce204
+				E9F95FF41E2951CB00D33271 /* CampaignHeaderCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -184,14 +169,10 @@
 		E90302701E25308400B7BBF1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				19AEF1331E2801ED00AC19A4 /* OpenedIssueView.swift */,
-=======
-				E90302761E25316500B7BBF1 /* View.swift */,
 				E90302781E25332E00B7BBF1 /* MentionsView.swift */,
 				E903027E1E256AD300B7BBF1 /* OpenedMentionView.swift */,
 				E9F95FEE1E27F75D00D33271 /* SubmitMentionView.swift */,
->>>>>>> 58bc3e4245491ba5aa6177e8edeb5f31db5ce204
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -199,11 +180,8 @@
 		E90302711E25308E00B7BBF1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				19AEF12F1E27F83400AC19A4 /* IssueModel.swift */,
-=======
 				E934E9CD1E26D8FF009D3FBB /* MentionModel.swift */,
->>>>>>> 58bc3e4245491ba5aa6177e8edeb5f31db5ce204
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -211,6 +189,7 @@
 		E91904081E252FB000DA05C2 = {
 			isa = PBXGroup;
 			children = (
+				E9F95FFE1E29565B00D33271 /* BTNavWithMyEdits.swift */,
 				E91904131E252FB000DA05C2 /* PartyPooper */,
 				E91904281E252FB100DA05C2 /* PartyPooperTests */,
 				E91904331E252FB100DA05C2 /* PartyPooperUITests */,
@@ -234,9 +213,9 @@
 			isa = PBXGroup;
 			children = (
 				E91904201E252FB000DA05C2 /* Info.plist */,
-				E91904141E252FB000DA05C2 /* AppDelegate.swift */,
 				E919041B1E252FB000DA05C2 /* Assets.xcassets */,
 				1913F0F01E26A86D00F705EA /* IssuesCollectionViewFlowLayout.swift */,
+				E9F95FF61E29520200D33271 /* AppDelegate.swift */,
 				E90302711E25308E00B7BBF1 /* Models */,
 				E90302701E25308400B7BBF1 /* Views */,
 				E903026F1E25307A00B7BBF1 /* Cells */,
@@ -542,30 +521,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
 				1913F0EF1E26A78800F705EA /* AboutPageIssueViewController.swift in Sources */,
+				E9F95FFF1E29565B00D33271 /* BTNavWithMyEdits.swift in Sources */,
 				19AEF1301E27F83400AC19A4 /* IssueModel.swift in Sources */,
-				E90302751E25313C00B7BBF1 /* AboutViewController.swift in Sources */,
 				19AEF1341E2801ED00AC19A4 /* OpenedIssueView.swift in Sources */,
 				19AEF1321E28019400AC19A4 /* OpenedIssueViewController.swift in Sources */,
 				1913F0F11E26A86D00F705EA /* IssuesCollectionViewFlowLayout.swift in Sources */,
-				E91904151E252FB000DA05C2 /* AppDelegate.swift in Sources */,
-				E90302771E25316500B7BBF1 /* CampaignHeaderCell.swift in Sources */,
+				E9F95FF51E2951CB00D33271 /* CampaignHeaderCell.swift in Sources */,
 				19AEF12E1E27EB3200AC19A4 /* IssuesCellsContainer.swift in Sources */,
 				193F9E1C1E257B48000E4793 /* IssueCell.swift in Sources */,
-=======
 				E90302811E256B8300B7BBF1 /* OpenedMentionViewController.swift in Sources */,
-				E90302751E25313C00B7BBF1 /* ViewController.swift in Sources */,
 				E934E9CE1E26D8FF009D3FBB /* MentionModel.swift in Sources */,
 				E9F95FEF1E27F75D00D33271 /* SubmitMentionView.swift in Sources */,
 				E90302791E25332E00B7BBF1 /* MentionsView.swift in Sources */,
+				E9F95FF71E29520300D33271 /* AppDelegate.swift in Sources */,
 				E903027D1E254A8700B7BBF1 /* MentionCell.swift in Sources */,
 				E9F95FED1E27F74700D33271 /* SubmitMentionViewController.swift in Sources */,
-				E91904151E252FB000DA05C2 /* AppDelegate.swift in Sources */,
 				E903027B1E25334B00B7BBF1 /* MentionsViewController.swift in Sources */,
-				E90302771E25316500B7BBF1 /* View.swift in Sources */,
+				E9F95FF31E29517C00D33271 /* AboutViewController.swift in Sources */,
 				E903027F1E256AD300B7BBF1 /* OpenedMentionView.swift in Sources */,
->>>>>>> 58bc3e4245491ba5aa6177e8edeb5f31db5ce204
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

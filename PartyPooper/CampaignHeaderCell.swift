@@ -60,7 +60,7 @@ class CampaignHeaderCell: UICollectionViewCell{
         addSubview(profileView)
         addSubview(candidateName)
         addSubview(candidateDescription)
-    
+        
         addConstraintsWithString("H:|[v0]|")
         addConstraintsWithString("H:[v1(120)]")
         
@@ -73,16 +73,16 @@ class CampaignHeaderCell: UICollectionViewCell{
         addConstraintsWithString("H:|-20-[v3]-20-|")
     }
     
-
+    
     
     
     func addConstraintsWithString(_ str:String){
         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: str, options: NSLayoutFormatOptions(), metrics: nil, views: ["v0":bannerView, "v1":profileView, "v2":candidateName, "v3": candidateDescription,
-            
-            
-            
-            
-            ]))
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     ]))
     }
     
     required init?(coder aDecoder: NSCoder) {
