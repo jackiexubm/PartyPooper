@@ -31,6 +31,8 @@
 		E9F95FF51E2951CB00D33271 /* CampaignHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F95FF41E2951CB00D33271 /* CampaignHeaderCell.swift */; };
 		E9F95FF71E29520300D33271 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F95FF61E29520200D33271 /* AppDelegate.swift */; };
 		E9F95FFF1E29565B00D33271 /* BTNavWithMyEdits.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F95FFE1E29565B00D33271 /* BTNavWithMyEdits.swift */; };
+		E9F960011E29580900D33271 /* CampaignOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F960001E29580900D33271 /* CampaignOverviewViewController.swift */; };
+		E9F960051E2958D700D33271 /* CampaignOverviewHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F960041E2958D700D33271 /* CampaignOverviewHeaderCell.swift */; };
 		F8BC6D862168F1AE0F4AD885 /* Pods_PartyPooper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6CB1A8DC4E1E62200487F1E /* Pods_PartyPooper.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +90,8 @@
 		E9F95FF41E2951CB00D33271 /* CampaignHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignHeaderCell.swift; sourceTree = "<group>"; };
 		E9F95FF61E29520200D33271 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9F95FFE1E29565B00D33271 /* BTNavWithMyEdits.swift */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; name = BTNavWithMyEdits.swift; path = PartyPooper/BTNavWithMyEdits.swift; sourceTree = "<group>"; };
+		E9F960001E29580900D33271 /* CampaignOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignOverviewViewController.swift; sourceTree = "<group>"; };
+		E9F960041E2958D700D33271 /* CampaignOverviewHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignOverviewHeaderCell.swift; sourceTree = "<group>"; };
 		EC2C32E2B4A7F0D3C4D6727A /* Pods-PartyPooperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartyPooperUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PartyPooperUITests/Pods-PartyPooperUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,12 +149,9 @@
 		E903026D1E25306300B7BBF1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1913F0EE1E26A78800F705EA /* AboutPageIssueViewController.swift */,
-				19AEF1311E28019400AC19A4 /* OpenedIssueViewController.swift */,
-				E903027A1E25334B00B7BBF1 /* MentionsViewController.swift */,
-				E90302801E256B8300B7BBF1 /* OpenedMentionViewController.swift */,
-				E9F95FEC1E27F74700D33271 /* SubmitMentionViewController.swift */,
-				E9F95FF21E29517C00D33271 /* AboutViewController.swift */,
+				E9F960071E29592700D33271 /* MentionPageControllers */,
+				E9F960001E29580900D33271 /* CampaignOverviewViewController.swift */,
+				E9F960061E2958F600D33271 /* AboutPageControllers */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -158,10 +159,9 @@
 		E903026F1E25307A00B7BBF1 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				193F9E1B1E257B48000E4793 /* IssueCell.swift */,
-				19AEF12D1E27EB3200AC19A4 /* IssuesCellsContainer.swift */,
+				E9F960031E2958A600D33271 /* CampaignOverviewCells */,
+				E9F960021E29588900D33271 /* AboutViewCells */,
 				E903027C1E254A8700B7BBF1 /* MentionCell.swift */,
-				E9F95FF41E2951CB00D33271 /* CampaignHeaderCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -240,6 +240,44 @@
 				E91904361E252FB100DA05C2 /* Info.plist */,
 			);
 			path = PartyPooperUITests;
+			sourceTree = "<group>";
+		};
+		E9F960021E29588900D33271 /* AboutViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				193F9E1B1E257B48000E4793 /* IssueCell.swift */,
+				E9F95FF41E2951CB00D33271 /* CampaignHeaderCell.swift */,
+				19AEF12D1E27EB3200AC19A4 /* IssuesCellsContainer.swift */,
+			);
+			name = AboutViewCells;
+			sourceTree = "<group>";
+		};
+		E9F960031E2958A600D33271 /* CampaignOverviewCells */ = {
+			isa = PBXGroup;
+			children = (
+				E9F960041E2958D700D33271 /* CampaignOverviewHeaderCell.swift */,
+			);
+			name = CampaignOverviewCells;
+			sourceTree = "<group>";
+		};
+		E9F960061E2958F600D33271 /* AboutPageControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1913F0EE1E26A78800F705EA /* AboutPageIssueViewController.swift */,
+				E9F95FF21E29517C00D33271 /* AboutViewController.swift */,
+				19AEF1311E28019400AC19A4 /* OpenedIssueViewController.swift */,
+			);
+			name = AboutPageControllers;
+			sourceTree = "<group>";
+		};
+		E9F960071E29592700D33271 /* MentionPageControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E903027A1E25334B00B7BBF1 /* MentionsViewController.swift */,
+				E90302801E256B8300B7BBF1 /* OpenedMentionViewController.swift */,
+				E9F95FEC1E27F74700D33271 /* SubmitMentionViewController.swift */,
+			);
+			name = MentionPageControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -526,7 +564,9 @@
 				19AEF1301E27F83400AC19A4 /* IssueModel.swift in Sources */,
 				19AEF1341E2801ED00AC19A4 /* OpenedIssueView.swift in Sources */,
 				19AEF1321E28019400AC19A4 /* OpenedIssueViewController.swift in Sources */,
+				E9F960011E29580900D33271 /* CampaignOverviewViewController.swift in Sources */,
 				1913F0F11E26A86D00F705EA /* IssuesCollectionViewFlowLayout.swift in Sources */,
+				E9F960051E2958D700D33271 /* CampaignOverviewHeaderCell.swift in Sources */,
 				E9F95FF51E2951CB00D33271 /* CampaignHeaderCell.swift in Sources */,
 				19AEF12E1E27EB3200AC19A4 /* IssuesCellsContainer.swift in Sources */,
 				193F9E1C1E257B48000E4793 /* IssueCell.swift in Sources */,
