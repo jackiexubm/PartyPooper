@@ -8,9 +8,10 @@
 
 import UIKit
 
-class EventsViewController: UICollectionViewController {
+class EventsViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     override func viewDidLoad() {
         collectionView?.register(EventCell.self, forCellWithReuseIdentifier: "EventsCell")
+        collectionView?.backgroundColor = UIColor(white: 237/255, alpha: 1)
         
     }
 
@@ -23,9 +24,14 @@ class EventsViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "EventsCell", for: indexPath)
-        
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width, height: 300)
+        
+    }
+    
 
     
     

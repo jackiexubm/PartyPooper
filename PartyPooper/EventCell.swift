@@ -11,17 +11,49 @@ import UIKit
 class EventCell: UICollectionViewCell {
     override init(frame: CGRect){
         super.init(frame: frame)
-        backgroundColor = UIColor.green
+        backgroundColor = UIColor.white
         setupViews()
     }
     
     
+    
+    let topSeperator: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor(white: 220/255, alpha: 1)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    
+    }()
+    
+    let bottomSeperator: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor(white: 220/255, alpha: 1)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+
+    
+    
     func setupViews(){
-    
-    
-    
-    
+        addSubview(topSeperator)
+        addSubview(bottomSeperator)
+        
+        addConstraintWithString("H:|[v0]|")
+        addConstraintWithString("V:|[v0(1)]")
+
+        addConstraintWithString("H:|[v1]|")
+        addConstraintWithString("V:[v1(1)]|")
     }
+    
+    func addConstraintWithString(_ str: String){
+        let views: [String:UIView] = [
+            "v0":topSeperator,
+            "v1":bottomSeperator,
+        ]
+        
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: str, options: NSLayoutFormatOptions(), metrics: nil, views: views))
+    }
+    
     
     
     required init?(coder aDecoder: NSCoder) {
@@ -29,35 +61,3 @@ class EventCell: UICollectionViewCell {
     }
 
 }
-//import UIKit
-//
-//class EventsView: UIView {
-//
-//    override init(frame: CGRect){
-//        super.init(frame: frame)
-//        backgroundColor = UIColor.white
-//        setupViews()
-//    }
-//
-//    let eventTitleLabel: UILabel = {
-//        let title = UILabel()
-//        title.backgroundColor = UIColor.red
-//        title.translatesAutoresizingMaskIntoConstraints = false
-//        return title
-//    }()
-//
-//
-//    func setupViews(){
-//    addSubview(eventTitleLabel)
-//
-//
-//
-//    }
-//
-//
-//
-//
-//    required init?(coder aDecoder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
-//}
