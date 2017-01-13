@@ -149,8 +149,8 @@
 		E903026D1E25306300B7BBF1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E9F960071E29592700D33271 /* MentionPageControllers */,
 				E9F960001E29580900D33271 /* CampaignOverviewViewController.swift */,
+				E9F960071E29592700D33271 /* MentionPageControllers */,
 				E9F960061E2958F600D33271 /* AboutPageControllers */,
 			);
 			name = Controllers;

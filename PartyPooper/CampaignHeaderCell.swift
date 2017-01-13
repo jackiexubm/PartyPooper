@@ -9,6 +9,8 @@
 import UIKit
 
 class CampaignHeaderCell: UICollectionViewCell{
+    static let profileImageDiameter: CGFloat = 150
+    
     
     override init(frame: CGRect){
         super.init(frame: frame)
@@ -28,7 +30,7 @@ class CampaignHeaderCell: UICollectionViewCell{
         view.backgroundColor = UIColor.red
         view.layer.borderWidth = 4
         view.layer.borderColor = UIColor.white.cgColor
-        view.layer.cornerRadius = 60
+        view.layer.cornerRadius = profileImageDiameter / 2
         view.layer.masksToBounds = true
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -62,12 +64,12 @@ class CampaignHeaderCell: UICollectionViewCell{
         addSubview(candidateDescription)
         
         addConstraintsWithString("H:|[v0]|")
-        addConstraintsWithString("H:[v1(120)]")
+        addConstraintsWithString("H:[v1(\(CampaignOverviewHeaderCell.profileImageDiameter))]")
         
         
         
         addConstraintsWithString("V:|[v0(\(heightOfBanner))]")
-        addConstraintsWithString("V:|-\(heightOfBanner - 60)-[v1(120)]-[v2(20)]-[v3(15)]")
+        addConstraintsWithString("V:|-\(heightOfBanner - CampaignOverviewHeaderCell.profileImageDiameter / 2)-[v1(\(CampaignOverviewHeaderCell.profileImageDiameter))]-[v2(20)]-[v3(15)]")
         addConstraint(NSLayoutConstraint(item: profileView, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.centerX, multiplier: 1, constant: 0))
         addConstraintsWithString("H:|-20-[v2]-20-|")
         addConstraintsWithString("H:|-20-[v3]-20-|")

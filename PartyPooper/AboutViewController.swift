@@ -47,7 +47,7 @@ class AboutViewController: UICollectionViewController, UICollectionViewDelegateF
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        var cellSize = CGSize()
+        let cellSize = CGSize()
         if indexPath.row == 0 {
             return CGSize(width: collectionView.frame.width, height: 375)
         } else if indexPath.row == 1 {
