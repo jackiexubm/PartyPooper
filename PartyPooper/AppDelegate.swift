@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         // window?.rootViewController = UINavigationController(rootViewController: AboutViewController(collectionViewLayout: UICollectionViewFlowLayout()))
-        window?.rootViewController = UINavigationController(rootViewController: MentionsViewController(collectionViewLayout: UICollectionViewFlowLayout()))
+        window?.rootViewController = UINavigationController(rootViewController: EventsViewController(collectionViewLayout: UICollectionViewFlowLayout()))
         
         
         return true

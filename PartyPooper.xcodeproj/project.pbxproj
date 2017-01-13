@@ -10,6 +10,8 @@
 		1913F0EF1E26A78800F705EA /* AboutPageIssueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1913F0EE1E26A78800F705EA /* AboutPageIssueViewController.swift */; };
 		1913F0F11E26A86D00F705EA /* IssuesCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1913F0F01E26A86D00F705EA /* IssuesCollectionViewFlowLayout.swift */; };
 		193F9E1C1E257B48000E4793 /* IssueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193F9E1B1E257B48000E4793 /* IssueCell.swift */; };
+		1954362A1E298253003A8B79 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195436291E298253003A8B79 /* EventsViewController.swift */; };
+		195436301E298568003A8B79 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1954362F1E298568003A8B79 /* EventCell.swift */; };
 		19AEF12E1E27EB3200AC19A4 /* IssuesCellsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AEF12D1E27EB3200AC19A4 /* IssuesCellsContainer.swift */; };
 		19AEF1301E27F83400AC19A4 /* IssueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AEF12F1E27F83400AC19A4 /* IssueModel.swift */; };
 		19AEF1321E28019400AC19A4 /* OpenedIssueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AEF1311E28019400AC19A4 /* OpenedIssueViewController.swift */; };
@@ -60,6 +62,8 @@
 		1913F0EE1E26A78800F705EA /* AboutPageIssueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutPageIssueViewController.swift; sourceTree = "<group>"; };
 		1913F0F01E26A86D00F705EA /* IssuesCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuesCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		193F9E1B1E257B48000E4793 /* IssueCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueCell.swift; sourceTree = "<group>"; };
+		195436291E298253003A8B79 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		1954362F1E298568003A8B79 /* EventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		19AEF12D1E27EB3200AC19A4 /* IssuesCellsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuesCellsContainer.swift; sourceTree = "<group>"; };
 		19AEF12F1E27F83400AC19A4 /* IssueModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueModel.swift; sourceTree = "<group>"; };
 		19AEF1311E28019400AC19A4 /* OpenedIssueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenedIssueViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +140,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		1954362B1E2982D3003A8B79 /* EventsPageControllers */ = {
+			isa = PBXGroup;
+			children = (
+				195436291E298253003A8B79 /* EventsViewController.swift */,
+			);
+			name = EventsPageControllers;
+			sourceTree = "<group>";
+		};
+		1954362E1E298553003A8B79 /* EventsCells */ = {
+			isa = PBXGroup;
+			children = (
+				1954362F1E298568003A8B79 /* EventCell.swift */,
+			);
+			name = EventsCells;
+			sourceTree = "<group>";
+		};
 		DD5E3F9E58C34B41064BE288 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +169,7 @@
 		E903026D1E25306300B7BBF1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1954362B1E2982D3003A8B79 /* EventsPageControllers */,
 				E9F960071E29592700D33271 /* MentionPageControllers */,
 				E9F960001E29580900D33271 /* CampaignOverviewViewController.swift */,
 				E9F960061E2958F600D33271 /* AboutPageControllers */,
@@ -159,6 +180,7 @@
 		E903026F1E25307A00B7BBF1 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				1954362E1E298553003A8B79 /* EventsCells */,
 				E9F960031E2958A600D33271 /* CampaignOverviewCells */,
 				E9F960021E29588900D33271 /* AboutViewCells */,
 				E903027C1E254A8700B7BBF1 /* MentionCell.swift */,
@@ -562,6 +584,7 @@
 				1913F0EF1E26A78800F705EA /* AboutPageIssueViewController.swift in Sources */,
 				E9F95FFF1E29565B00D33271 /* BTNavWithMyEdits.swift in Sources */,
 				19AEF1301E27F83400AC19A4 /* IssueModel.swift in Sources */,
+				195436301E298568003A8B79 /* EventCell.swift in Sources */,
 				19AEF1341E2801ED00AC19A4 /* OpenedIssueView.swift in Sources */,
 				19AEF1321E28019400AC19A4 /* OpenedIssueViewController.swift in Sources */,
 				E9F960011E29580900D33271 /* CampaignOverviewViewController.swift in Sources */,
@@ -570,6 +593,7 @@
 				E9F95FF51E2951CB00D33271 /* CampaignHeaderCell.swift in Sources */,
 				19AEF12E1E27EB3200AC19A4 /* IssuesCellsContainer.swift in Sources */,
 				193F9E1C1E257B48000E4793 /* IssueCell.swift in Sources */,
+				1954362A1E298253003A8B79 /* EventsViewController.swift in Sources */,
 				E90302811E256B8300B7BBF1 /* OpenedMentionViewController.swift in Sources */,
 				E934E9CE1E26D8FF009D3FBB /* MentionModel.swift in Sources */,
 				E9F95FEF1E27F75D00D33271 /* SubmitMentionView.swift in Sources */,
