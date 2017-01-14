@@ -16,6 +16,8 @@
 		195436341E2A8406003A8B79 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195436331E2A8405003A8B79 /* EventModel.swift */; };
 		195436361E2AACE8003A8B79 /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195436351E2AACE8003A8B79 /* DonateViewController.swift */; };
 		1954363C1E2ABB5B003A8B79 /* DonateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1954363B1E2ABB5B003A8B79 /* DonateView.swift */; };
+		1954363E1E2AC840003A8B79 /* CampaignListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1954363D1E2AC840003A8B79 /* CampaignListController.swift */; };
+		195436411E2AC874003A8B79 /* CampaignListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195436401E2AC874003A8B79 /* CampaignListCell.swift */; };
 		19AEF12E1E27EB3200AC19A4 /* IssuesCellsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AEF12D1E27EB3200AC19A4 /* IssuesCellsContainer.swift */; };
 		19AEF1301E27F83400AC19A4 /* IssueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AEF12F1E27F83400AC19A4 /* IssueModel.swift */; };
 		19AEF1321E28019400AC19A4 /* OpenedIssueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AEF1311E28019400AC19A4 /* OpenedIssueViewController.swift */; };
@@ -72,6 +74,8 @@
 		195436331E2A8405003A8B79 /* EventModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
 		195436351E2AACE8003A8B79 /* DonateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonateViewController.swift; sourceTree = "<group>"; };
 		1954363B1E2ABB5B003A8B79 /* DonateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonateView.swift; sourceTree = "<group>"; };
+		1954363D1E2AC840003A8B79 /* CampaignListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignListController.swift; sourceTree = "<group>"; };
+		195436401E2AC874003A8B79 /* CampaignListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignListCell.swift; sourceTree = "<group>"; };
 		19AEF12D1E27EB3200AC19A4 /* IssuesCellsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuesCellsContainer.swift; sourceTree = "<group>"; };
 		19AEF12F1E27F83400AC19A4 /* IssueModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueModel.swift; sourceTree = "<group>"; };
 		19AEF1311E28019400AC19A4 /* OpenedIssueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenedIssueViewController.swift; sourceTree = "<group>"; };
@@ -173,6 +177,22 @@
 			name = DonatePageController;
 			sourceTree = "<group>";
 		};
+		1954363F1E2AC84F003A8B79 /* CampaignListController */ = {
+			isa = PBXGroup;
+			children = (
+				1954363D1E2AC840003A8B79 /* CampaignListController.swift */,
+			);
+			name = CampaignListController;
+			sourceTree = "<group>";
+		};
+		195436421E2AC87D003A8B79 /* CampaignListCell */ = {
+			isa = PBXGroup;
+			children = (
+				195436401E2AC874003A8B79 /* CampaignListCell.swift */,
+			);
+			name = CampaignListCell;
+			sourceTree = "<group>";
+		};
 		DD5E3F9E58C34B41064BE288 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +207,7 @@
 		E903026D1E25306300B7BBF1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1954363F1E2AC84F003A8B79 /* CampaignListController */,
 				1954362B1E2982D3003A8B79 /* EventsPageControllers */,
 				E9F960071E29592700D33271 /* MentionPageControllers */,
 				E9F960001E29580900D33271 /* CampaignOverviewViewController.swift */,
@@ -203,6 +224,7 @@
 				E9F960031E2958A600D33271 /* CampaignOverviewCells */,
 				E9F960021E29588900D33271 /* AboutViewCells */,
 				E903027C1E254A8700B7BBF1 /* MentionCell.swift */,
+				195436421E2AC87D003A8B79 /* CampaignListCell */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -624,12 +646,14 @@
 				1954362A1E298253003A8B79 /* EventsViewController.swift in Sources */,
 				E90302811E256B8300B7BBF1 /* OpenedMentionViewController.swift in Sources */,
 				E934E9CE1E26D8FF009D3FBB /* MentionModel.swift in Sources */,
+				195436411E2AC874003A8B79 /* CampaignListCell.swift in Sources */,
 				E9F95FEF1E27F75D00D33271 /* SubmitMentionView.swift in Sources */,
 				E90302791E25332E00B7BBF1 /* MentionsView.swift in Sources */,
 				E9F95FF71E29520300D33271 /* AppDelegate.swift in Sources */,
 				E903027D1E254A8700B7BBF1 /* MentionCell.swift in Sources */,
 				E9F95FED1E27F74700D33271 /* SubmitMentionViewController.swift in Sources */,
 				E903027B1E25334B00B7BBF1 /* MentionsViewController.swift in Sources */,
+				1954363E1E2AC840003A8B79 /* CampaignListController.swift in Sources */,
 				E9F95FF31E29517C00D33271 /* AboutViewController.swift in Sources */,
 				195436341E2A8406003A8B79 /* EventModel.swift in Sources */,
 				E903027F1E256AD300B7BBF1 /* OpenedMentionView.swift in Sources */,
