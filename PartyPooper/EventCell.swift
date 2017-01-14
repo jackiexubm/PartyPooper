@@ -35,36 +35,40 @@ class EventCell: UICollectionViewCell  {
     
     let dateOfEventLabel: UILabel = {
         let label = UILabel()
-        label.backgroundColor = UIColor.red
+//        label.backgroundColor = UIColor.red
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     let timeOfEventLabel: UILabel = {
         let label = UILabel()
-        label.backgroundColor = UIColor.brown
+//        label.backgroundColor = UIColor.brown
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     let eventNameLabel: UILabel = {
         let label = UILabel()
-        label.backgroundColor = UIColor.black
+//        label.backgroundColor = UIColor.blue
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.lineBreakMode = NSLineBreakMode.byWordWrapping
+        label.numberOfLines = 0
         return label
     }()
     
     let eventTypeLabel: UILabel = {
         let label = UILabel()
-        label.backgroundColor = UIColor.green
+//        label.backgroundColor = UIColor.green
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     let eventDescription: UILabel = {
         let text = UILabel()
-        text.backgroundColor = UIColor.blue
+//        text.backgroundColor = UIColor.blue
         text.translatesAutoresizingMaskIntoConstraints = false
+        text.lineBreakMode = NSLineBreakMode.byWordWrapping
+        text.numberOfLines = 0
         return text
     }()
     
@@ -90,12 +94,12 @@ class EventCell: UICollectionViewCell  {
         addConstraintWithString("V:[v1(1)]|")
         
         
-        addConstraintWithString("H:|-15-[v2(50)]-[v3(50)]")
-        addConstraintWithString("V:|-10-[v2(20)]-[v4(20)]-[v5(20)]-[v6]-|")
+        addConstraintWithString("H:|-15-[v2(100)]-[v3(100)]")
+        addConstraintWithString("V:|-10-[v2(20)]-[v4(50)]-[v5(20)]-[v6]-|")
         
         addConstraintWithString("V:|-10-[v3(20)]")
         
-        addConstraintWithString("H:|-15-[v4(300)]")
+        addConstraintWithString("H:|-15-[v4]-|")
         addConstraintWithString("H:|-15-[v5(200)]")
         
         addConstraintWithString("H:|-15-[v6]-10-|")
