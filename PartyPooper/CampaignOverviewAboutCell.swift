@@ -19,6 +19,7 @@ class CampaignOverviewAboutCell: UICollectionViewCell{
     let button: UIButton = {
         let view: UIButton = UIButton()
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.addTarget(self, action: #selector(CampaignOverviewViewController.openAbout), for: .touchUpInside)
         return view
     }()
     

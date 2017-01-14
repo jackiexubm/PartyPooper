@@ -64,12 +64,12 @@ class CampaignHeaderCell: UICollectionViewCell{
         addSubview(candidateDescription)
         
         addConstraintsWithString("H:|[v0]|")
-        addConstraintsWithString("H:[v1(\(CampaignOverviewHeaderCell.profileImageDiameter))]")
+        addConstraintsWithString("H:[v1(\(CampaignHeaderCell.profileImageDiameter))]")
         
         
         
         addConstraintsWithString("V:|[v0(\(heightOfBanner))]")
-        addConstraintsWithString("V:|-\(heightOfBanner - CampaignOverviewHeaderCell.profileImageDiameter / 2)-[v1(\(CampaignOverviewHeaderCell.profileImageDiameter))]-[v2(20)]-[v3(15)]")
+        addConstraintsWithString("V:|-\(heightOfBanner - CampaignHeaderCell.profileImageDiameter / 2)-[v1(\(CampaignHeaderCell.profileImageDiameter))]-[v2(20)]-[v3(15)]")
         addConstraint(NSLayoutConstraint(item: profileView, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.centerX, multiplier: 1, constant: 0))
         addConstraintsWithString("H:|-20-[v2]-20-|")
         addConstraintsWithString("H:|-20-[v3]-20-|")
@@ -80,11 +80,7 @@ class CampaignHeaderCell: UICollectionViewCell{
     
     func addConstraintsWithString(_ str:String){
         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: str, options: NSLayoutFormatOptions(), metrics: nil, views: ["v0":bannerView, "v1":profileView, "v2":candidateName, "v3": candidateDescription,
-                                                                                                                                     
-                                                                                                                                     
-                                                                                                                                     
-                                                                                                                                     
-                                                                                                                                     ]))
+        ]))
     }
     
     required init?(coder aDecoder: NSCoder) {

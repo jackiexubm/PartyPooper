@@ -177,7 +177,6 @@ class MentionCell: UICollectionViewCell{
         
         addSubview(topCellSeperator)
         addSubview(bottomCellSeperator)
-        addSubview(openMentionButton)
         addSubview(mentionPicture)
         addSubview(authorAndNewsOutletLabel)
         addSubview(mentionTitleLabel)
@@ -191,8 +190,9 @@ class MentionCell: UICollectionViewCell{
         scoresContainerView.addSubview(fairnessScoreLabel)
         scoresContainerView.addSubview(accuracyScoreLabel)
         scoresContainerView.addSubview(relevancyScoreLabel)
-        
         addSubview(scoresContainerView)
+        addSubview(openMentionButton)
+
         
         
         addConstraintWithString("H:|[v0]|")

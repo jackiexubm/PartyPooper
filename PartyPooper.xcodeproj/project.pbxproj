@@ -253,9 +253,9 @@
 		E9F960021E29588900D33271 /* AboutViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				193F9E1B1E257B48000E4793 /* IssueCell.swift */,
 				E9F95FF41E2951CB00D33271 /* CampaignHeaderCell.swift */,
 				19AEF12D1E27EB3200AC19A4 /* IssuesCellsContainer.swift */,
+				193F9E1B1E257B48000E4793 /* IssueCell.swift */,
 			);
 			name = AboutViewCells;
 			sourceTree = "<group>";

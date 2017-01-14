@@ -21,7 +21,8 @@ class CampaignOverviewViewController: UICollectionViewController, UICollectionVi
     }
     
     func openAbout(){
-    
+        let newVC = AboutViewController(collectionViewLayout: UICollectionViewFlowLayout())
+        navigationController?.pushViewController(newVC, animated: true)
     }
     
     func openMentions(){

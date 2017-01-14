@@ -106,7 +106,7 @@ class CampaignOverviewMentionsCell: UICollectionViewCell{
     
     func setupViews(){
         let contentViewHeight: CGFloat = 145
-        let mentionImageWidth: CGFloat = contentViewHeight // * 4 / 3
+        let mentionImageWidth: CGFloat = contentViewHeight //* 4 / 3
         addSubview(categoryLabel)
         addSubview(cellSeparator)
         addSubview(arrowIcon)
@@ -130,10 +130,10 @@ class CampaignOverviewMentionsCell: UICollectionViewCell{
         addConstraintsWithString("H:|-15-[v4(\(mentionImageWidth))]")
         addConstraintsWithString("H:|[v5]|")
         addConstraintsWithString("V:|[v5(1)]")
-        addConstraintsWithString("H:[v4]-10-[v6]-10-[v2]")
-        addConstraintsWithString("H:[v4]-10-[v7]-10-[v2]")
-        addConstraintsWithString("H:[v4]-10-[v8]-10-[v2]")
-        addConstraintsWithString("H:[v4]-10-[v9]-10-[v2]")
+        addConstraintsWithString("H:[v4]-10-[v6]-5-[v2]")
+        addConstraintsWithString("H:[v4]-10-[v7]-5-[v2]")
+        addConstraintsWithString("H:[v4]-10-[v8]-5-[v2]")
+        addConstraintsWithString("H:[v4]-10-[v9]-5-[v2]")
         addConstraintsWithString("V:|-35-[v6(12)]-2-[v7(14)][v8(<=86)][v9(14)]")
     }
     
