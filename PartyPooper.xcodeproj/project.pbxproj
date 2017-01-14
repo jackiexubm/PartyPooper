@@ -12,6 +12,7 @@
 		193F9E1C1E257B48000E4793 /* IssueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193F9E1B1E257B48000E4793 /* IssueCell.swift */; };
 		1954362A1E298253003A8B79 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195436291E298253003A8B79 /* EventsViewController.swift */; };
 		195436301E298568003A8B79 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1954362F1E298568003A8B79 /* EventCell.swift */; };
+		195436321E2A7E73003A8B79 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 195436311E2A7E73003A8B79 /* MapKit.framework */; };
 		19AEF12E1E27EB3200AC19A4 /* IssuesCellsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AEF12D1E27EB3200AC19A4 /* IssuesCellsContainer.swift */; };
 		19AEF1301E27F83400AC19A4 /* IssueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AEF12F1E27F83400AC19A4 /* IssueModel.swift */; };
 		19AEF1321E28019400AC19A4 /* OpenedIssueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AEF1311E28019400AC19A4 /* OpenedIssueViewController.swift */; };
@@ -64,6 +65,7 @@
 		193F9E1B1E257B48000E4793 /* IssueCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueCell.swift; sourceTree = "<group>"; };
 		195436291E298253003A8B79 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		1954362F1E298568003A8B79 /* EventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		195436311E2A7E73003A8B79 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		19AEF12D1E27EB3200AC19A4 /* IssuesCellsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuesCellsContainer.swift; sourceTree = "<group>"; };
 		19AEF12F1E27F83400AC19A4 /* IssueModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueModel.swift; sourceTree = "<group>"; };
 		19AEF1311E28019400AC19A4 /* OpenedIssueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenedIssueViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				195436321E2A7E73003A8B79 /* MapKit.framework in Frameworks */,
 				F8BC6D862168F1AE0F4AD885 /* Pods_PartyPooper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,6 +162,7 @@
 		DD5E3F9E58C34B41064BE288 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				195436311E2A7E73003A8B79 /* MapKit.framework */,
 				C6CB1A8DC4E1E62200487F1E /* Pods_PartyPooper.framework */,
 				0234E9EF19882BA8440E08BF /* Pods_PartyPooperTests.framework */,
 				4263CDCA38EBB2BCF61C498B /* Pods_PartyPooperUITests.framework */,
@@ -380,6 +384,11 @@
 					E91904101E252FB000DA05C2 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					E91904241E252FB100DA05C2 = {
 						CreatedOnToolsVersion = 8.2.1;

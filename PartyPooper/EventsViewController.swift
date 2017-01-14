@@ -8,7 +8,8 @@
 
 import UIKit
 
-class EventsViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+
+class EventsViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout{
     override func viewDidLoad() {
         collectionView?.register(EventCell.self, forCellWithReuseIdentifier: "EventsCell")
         collectionView?.backgroundColor = UIColor(white: 237/255, alpha: 1)
