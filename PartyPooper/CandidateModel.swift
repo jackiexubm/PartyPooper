@@ -22,14 +22,11 @@ struct CandidateModel {
         let model1: CandidateModel = CandidateModel(profileView: #imageLiteral(resourceName: "article_0_photo") , nameView: "Bernie Sanders", partyName: "Independent")
         
         
-        
-        
-        //        let model2: IssueModel = IssueModel(image: nil, issueName: "World", issueContent: "B")
-        //        let model3: IssueModel = IssueModel(image: nil, issueName: "World", issueContent: "B")
+        let model2: CandidateModel = CandidateModel(profileView: #imageLiteral(resourceName: "jillstein"), nameView: "Jill Stein", partyName:"Green Party")
+
         
         ret.append(model1)
-
-        //        ret.append(model3)
+        ret.append(model2)
         
         return ret
 }
