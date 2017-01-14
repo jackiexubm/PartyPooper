@@ -73,7 +73,7 @@ class CampaignOverviewHeaderCell: UICollectionViewCell{
         addConstraintsWithString("V:[v1(1)]|")
         
         addConstraintsWithString("H:|-20-[v3]-20-|")
-        addConstraintsWithString("V:[v3(20)]-10-|")
+        addConstraintsWithString("V:[v3(20)]-5-|")
     }
     
     

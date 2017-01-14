@@ -51,21 +51,21 @@ class CampaignOverviewViewController: UICollectionViewController, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if indexPath.row == 0 {
-            return CGSize(width: collectionView.frame.width, height: 180)
+            return CGSize(width: collectionView.frame.width, height: 160)
         } else if indexPath.row == 1 {
-            return CGSize(width: collectionView.frame.width, height: 180)
+            return CGSize(width: collectionView.frame.width, height: 90)
         } else if indexPath.row == 2 {
             return CGSize(width: collectionView.frame.width, height: 180)
         } else if indexPath.row == 3 {
-            return CGSize(width: collectionView.frame.width, height: 180)
+            return CGSize(width: collectionView.frame.width, height: 80)
         } else if indexPath.row == 4 {
-            return CGSize(width: collectionView.frame.width, height: 180)
+            return CGSize(width: collectionView.frame.width, height: 73)
         }
         return CGSize()
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 7
+        return 5
     }
     
 }

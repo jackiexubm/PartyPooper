@@ -47,7 +47,6 @@ class MentionCell: UICollectionViewCell{
     
     let mentionPicture: UIImageView = {
         let view: UIImageView = UIImageView()
-        view.translatesAutoresizingMaskIntoConstraints = false
         view.contentMode = .scaleAspectFill
         view.layer.masksToBounds = true
         view.translatesAutoresizingMaskIntoConstraints = false

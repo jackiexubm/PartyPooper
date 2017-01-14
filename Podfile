@@ -8,6 +8,7 @@ use_frameworks!
 # Pods for PartyPooper
 
 pod 'BTNavigationDropdownMenu', :git => 'https://github.com/PhamBaTho/BTNavigationDropdownMenu.git', :branch => 'swift-3.0'
+pod 'M13Checkbox'
 
 target 'PartyPooperTests' do
 inherit! :search_paths

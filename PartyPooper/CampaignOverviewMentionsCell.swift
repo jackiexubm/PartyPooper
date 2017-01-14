@@ -57,6 +57,10 @@ class CampaignOverviewMentionsCell: UICollectionViewCell{
     
     let mentionImage: UIImageView = {
         let view: UIImageView = UIImageView()
+        view.image = #imageLiteral(resourceName: "article_0_photo")
+        view.contentMode = .scaleAspectFill
+        view.layer.masksToBounds = true
+
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = UIColor.red
         return view
@@ -88,7 +92,7 @@ class CampaignOverviewMentionsCell: UICollectionViewCell{
         view.translatesAutoresizingMaskIntoConstraints = false
         view.textColor = UIColor.black
         view.font = UIFont(name: "Georgia-Bold", size: 20)
-        view.text = "A Long Ass Fucking Title. Please don't be Longer Than This."
+        view.text = "Ralph Nader: Why Bernie Sanders was right to run as a Democrat."
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
