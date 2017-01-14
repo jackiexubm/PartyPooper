@@ -18,6 +18,7 @@
 		1954363C1E2ABB5B003A8B79 /* DonateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1954363B1E2ABB5B003A8B79 /* DonateView.swift */; };
 		1954363E1E2AC840003A8B79 /* CampaignListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1954363D1E2AC840003A8B79 /* CampaignListController.swift */; };
 		195436411E2AC874003A8B79 /* CampaignListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195436401E2AC874003A8B79 /* CampaignListCell.swift */; };
+		195436441E2ADF06003A8B79 /* CandidateFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195436431E2ADF06003A8B79 /* CandidateFile.swift */; };
 		19AEF12E1E27EB3200AC19A4 /* IssuesCellsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AEF12D1E27EB3200AC19A4 /* IssuesCellsContainer.swift */; };
 		19AEF1301E27F83400AC19A4 /* IssueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AEF12F1E27F83400AC19A4 /* IssueModel.swift */; };
 		19AEF1321E28019400AC19A4 /* OpenedIssueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AEF1311E28019400AC19A4 /* OpenedIssueViewController.swift */; };
@@ -76,6 +77,7 @@
 		1954363B1E2ABB5B003A8B79 /* DonateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonateView.swift; sourceTree = "<group>"; };
 		1954363D1E2AC840003A8B79 /* CampaignListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignListController.swift; sourceTree = "<group>"; };
 		195436401E2AC874003A8B79 /* CampaignListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignListCell.swift; sourceTree = "<group>"; };
+		195436431E2ADF06003A8B79 /* CandidateFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidateFile.swift; sourceTree = "<group>"; };
 		19AEF12D1E27EB3200AC19A4 /* IssuesCellsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuesCellsContainer.swift; sourceTree = "<group>"; };
 		19AEF12F1E27F83400AC19A4 /* IssueModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueModel.swift; sourceTree = "<group>"; };
 		19AEF1311E28019400AC19A4 /* OpenedIssueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenedIssueViewController.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 				19AEF12F1E27F83400AC19A4 /* IssueModel.swift */,
 				195436331E2A8405003A8B79 /* EventModel.swift */,
 				E934E9CD1E26D8FF009D3FBB /* MentionModel.swift */,
+				195436431E2ADF06003A8B79 /* CandidateFile.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -634,6 +637,7 @@
 				19AEF1301E27F83400AC19A4 /* IssueModel.swift in Sources */,
 				195436301E298568003A8B79 /* EventCell.swift in Sources */,
 				195436361E2AACE8003A8B79 /* DonateViewController.swift in Sources */,
+				195436441E2ADF06003A8B79 /* CandidateFile.swift in Sources */,
 				19AEF1341E2801ED00AC19A4 /* OpenedIssueView.swift in Sources */,
 				19AEF1321E28019400AC19A4 /* OpenedIssueViewController.swift in Sources */,
 				E9F960011E29580900D33271 /* CampaignOverviewViewController.swift in Sources */,
