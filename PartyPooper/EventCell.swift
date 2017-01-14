@@ -61,11 +61,11 @@ class EventCell: UICollectionViewCell  {
         return label
     }()
     
-    let eventImageLabel: UIImageView = {
-        let image = UIImageView()
-        image.backgroundColor = UIColor.blue
-        image.translatesAutoresizingMaskIntoConstraints = false
-        return image
+    let eventDescription: UILabel = {
+        let text = UILabel()
+        text.backgroundColor = UIColor.blue
+        text.translatesAutoresizingMaskIntoConstraints = false
+        return text
     }()
     
     
@@ -79,7 +79,7 @@ class EventCell: UICollectionViewCell  {
         addSubview(timeOfEventLabel)
         addSubview(eventNameLabel)
         addSubview(eventTypeLabel)
-        addSubview(eventImageLabel)
+        addSubview(eventDescription)
         
         
         
@@ -91,14 +91,14 @@ class EventCell: UICollectionViewCell  {
         
         
         addConstraintWithString("H:|-15-[v2(50)]-[v3(50)]")
-        addConstraintWithString("V:|-10-[v2(10)]-[v4(20)]-[v5(20)]-[v6]-|")
+        addConstraintWithString("V:|-10-[v2(20)]-[v4(20)]-[v5(20)]-[v6]-|")
         
-        addConstraintWithString("V:|-10-[v3(10)]")
+        addConstraintWithString("V:|-10-[v3(20)]")
         
         addConstraintWithString("H:|-15-[v4(300)]")
         addConstraintWithString("H:|-15-[v5(200)]")
         
-        addConstraintWithString("H:|-10-[v6]-10-|")
+        addConstraintWithString("H:|-15-[v6]-10-|")
         
 
     }
@@ -111,7 +111,7 @@ class EventCell: UICollectionViewCell  {
             "v3":timeOfEventLabel,
             "v4":eventNameLabel,
             "v5":eventTypeLabel,
-            "v6":eventImageLabel,
+            "v6":eventDescription,
         ]
         
         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: str, options: NSLayoutFormatOptions(), metrics: nil, views: views))
