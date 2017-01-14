@@ -35,6 +35,8 @@
 		E9F960051E2958D700D33271 /* CampaignOverviewHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F960041E2958D700D33271 /* CampaignOverviewHeaderCell.swift */; };
 		E9F960091E297E1500D33271 /* CampaignOverviewAboutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F960081E297E1500D33271 /* CampaignOverviewAboutCell.swift */; };
 		E9F9600D1E2A523000D33271 /* CampaignOverviewMentionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F9600C1E2A523000D33271 /* CampaignOverviewMentionsCell.swift */; };
+		E9F9600F1E2A582600D33271 /* CampaignOverviewEventsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F9600E1E2A582600D33271 /* CampaignOverviewEventsCell.swift */; };
+		E9F960111E2A583200D33271 /* CampaignOverviewDonateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F960101E2A583200D33271 /* CampaignOverviewDonateCell.swift */; };
 		F8BC6D862168F1AE0F4AD885 /* Pods_PartyPooper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6CB1A8DC4E1E62200487F1E /* Pods_PartyPooper.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +98,8 @@
 		E9F960041E2958D700D33271 /* CampaignOverviewHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignOverviewHeaderCell.swift; sourceTree = "<group>"; };
 		E9F960081E297E1500D33271 /* CampaignOverviewAboutCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignOverviewAboutCell.swift; sourceTree = "<group>"; };
 		E9F9600C1E2A523000D33271 /* CampaignOverviewMentionsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignOverviewMentionsCell.swift; sourceTree = "<group>"; };
+		E9F9600E1E2A582600D33271 /* CampaignOverviewEventsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignOverviewEventsCell.swift; sourceTree = "<group>"; };
+		E9F960101E2A583200D33271 /* CampaignOverviewDonateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignOverviewDonateCell.swift; sourceTree = "<group>"; };
 		EC2C32E2B4A7F0D3C4D6727A /* Pods-PartyPooperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartyPooperUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PartyPooperUITests/Pods-PartyPooperUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -262,6 +266,8 @@
 				E9F960041E2958D700D33271 /* CampaignOverviewHeaderCell.swift */,
 				E9F960081E297E1500D33271 /* CampaignOverviewAboutCell.swift */,
 				E9F9600C1E2A523000D33271 /* CampaignOverviewMentionsCell.swift */,
+				E9F9600E1E2A582600D33271 /* CampaignOverviewEventsCell.swift */,
+				E9F960101E2A583200D33271 /* CampaignOverviewDonateCell.swift */,
 			);
 			name = CampaignOverviewCells;
 			sourceTree = "<group>";
@@ -567,6 +573,7 @@
 			files = (
 				1913F0EF1E26A78800F705EA /* AboutPageIssueViewController.swift in Sources */,
 				E9F95FFF1E29565B00D33271 /* BTNavWithMyEdits.swift in Sources */,
+				E9F960111E2A583200D33271 /* CampaignOverviewDonateCell.swift in Sources */,
 				19AEF1301E27F83400AC19A4 /* IssueModel.swift in Sources */,
 				19AEF1341E2801ED00AC19A4 /* OpenedIssueView.swift in Sources */,
 				19AEF1321E28019400AC19A4 /* OpenedIssueViewController.swift in Sources */,
@@ -587,6 +594,7 @@
 				E9F95FED1E27F74700D33271 /* SubmitMentionViewController.swift in Sources */,
 				E903027B1E25334B00B7BBF1 /* MentionsViewController.swift in Sources */,
 				E9F95FF31E29517C00D33271 /* AboutViewController.swift in Sources */,
+				E9F9600F1E2A582600D33271 /* CampaignOverviewEventsCell.swift in Sources */,
 				E903027F1E256AD300B7BBF1 /* OpenedMentionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

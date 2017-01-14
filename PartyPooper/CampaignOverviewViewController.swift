@@ -14,12 +14,14 @@ class CampaignOverviewViewController: UICollectionViewController, UICollectionVi
         navigationItem.title = "Bernie Sanders"
         collectionView?.register(CampaignOverviewHeaderCell.self, forCellWithReuseIdentifier: "CampaignOverviewHeaderCell")
         collectionView?.register(CampaignOverviewAboutCell.self, forCellWithReuseIdentifier: "CampaignOverviewAboutCell")
+        collectionView?.register(CampaignOverviewMentionsCell.self, forCellWithReuseIdentifier: "CampaignOverviewMentionsCell")
+        collectionView?.register(CampaignOverviewEventsCell.self, forCellWithReuseIdentifier: "CampaignOverviewEventsCell")
+        collectionView?.register(CampaignOverviewDonateCell.self, forCellWithReuseIdentifier: "CampaignOverviewDonateCell")
         collectionView?.backgroundColor = UIColor.white
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
-    }
+        return 5    }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         var cell: UICollectionViewCell = UICollectionViewCell()
@@ -27,6 +29,12 @@ class CampaignOverviewViewController: UICollectionViewController, UICollectionVi
             cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CampaignOverviewHeaderCell", for: indexPath)
         } else if indexPath.row == 1 {
             cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CampaignOverviewAboutCell", for: indexPath)
+        } else if indexPath.row == 2 {
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CampaignOverviewMentionsCell", for: indexPath)
+        } else if indexPath.row == 3 {
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CampaignOverviewEventsCell", for: indexPath)
+        } else if indexPath.row == 4 {
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CampaignOverviewDonateCell", for: indexPath)
         }
         return cell
     }
@@ -35,6 +43,12 @@ class CampaignOverviewViewController: UICollectionViewController, UICollectionVi
         if indexPath.row == 0 {
             return CGSize(width: collectionView.frame.width, height: 180)
         } else if indexPath.row == 1 {
+            return CGSize(width: collectionView.frame.width, height: 180)
+        } else if indexPath.row == 2 {
+            return CGSize(width: collectionView.frame.width, height: 180)
+        } else if indexPath.row == 3 {
+            return CGSize(width: collectionView.frame.width, height: 180)
+        } else if indexPath.row == 4 {
             return CGSize(width: collectionView.frame.width, height: 180)
         }
         return CGSize()

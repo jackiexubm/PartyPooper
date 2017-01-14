@@ -7,7 +7,7 @@
 //
 import UIKit
 
-class CampaignOverviewMentionsCell: UICollectionViewCell{
+class CampaignOverviewDonateCell: UICollectionViewCell{
     
     override init(frame: CGRect){
         super.init(frame: frame)
@@ -16,7 +16,7 @@ class CampaignOverviewMentionsCell: UICollectionViewCell{
     
     let categoryLabel: UILabel = {
         let view: UILabel = UILabel()
-        view.text = "Mentions"
+        view.text = "Donate"
         view.textColor = UIColor.gray
         view.font = UIFont(name: "STHeitiTC-Light", size: 14)
         view.translatesAutoresizingMaskIntoConstraints = false

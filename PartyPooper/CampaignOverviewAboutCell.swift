@@ -12,7 +12,6 @@ class CampaignOverviewAboutCell: UICollectionViewCell{
     
     override init(frame: CGRect){
         super.init(frame: frame)
-        //backgroundColor = UIColor.lightGray
         setupViews()
     }
     
