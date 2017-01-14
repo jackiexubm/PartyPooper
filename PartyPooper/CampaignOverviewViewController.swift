@@ -17,7 +17,16 @@ class CampaignOverviewViewController: UICollectionViewController, UICollectionVi
         collectionView?.register(CampaignOverviewMentionsCell.self, forCellWithReuseIdentifier: "CampaignOverviewMentionsCell")
         collectionView?.register(CampaignOverviewEventsCell.self, forCellWithReuseIdentifier: "CampaignOverviewEventsCell")
         collectionView?.register(CampaignOverviewDonateCell.self, forCellWithReuseIdentifier: "CampaignOverviewDonateCell")
-        collectionView?.backgroundColor = UIColor.white
+        collectionView?.backgroundColor = UIColor(white: 237/255, alpha: 1)
+    }
+    
+    func openAbout(){
+    
+    }
+    
+    func openMentions(){
+        let newVC = MentionsViewController(collectionViewLayout: UICollectionViewFlowLayout())
+        navigationController?.pushViewController(newVC, animated: true)
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -55,7 +64,7 @@ class CampaignOverviewViewController: UICollectionViewController, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
+        return 7
     }
     
 }

@@ -13,6 +13,7 @@ class CampaignOverviewHeaderCell: UICollectionViewCell{
     
     override init(frame: CGRect){
         super.init(frame: frame)
+        backgroundColor = UIColor.white
         setupViews()
     }
     
@@ -36,9 +37,9 @@ class CampaignOverviewHeaderCell: UICollectionViewCell{
         return view
     }()
 
-    let cellSeperator: UIView = {
+    let cellSeparator: UIView = {
         let view: UIView = UIView()
-        view.backgroundColor = UIColor.lightGray
+        view.backgroundColor = UIColor(white: 220/255, alpha: 1)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -57,7 +58,7 @@ class CampaignOverviewHeaderCell: UICollectionViewCell{
     func setupViews(){
         addSubview(profileShadowView)
         addSubview(profileImageView)
-        addSubview(cellSeperator)
+        addSubview(cellSeparator)
         addSubview(sloganLabel)
         
         
@@ -68,7 +69,7 @@ class CampaignOverviewHeaderCell: UICollectionViewCell{
         addConstraintsWithString("H:[v0(\(CampaignOverviewHeaderCell.profileImageDiameter))]")
         addConstraintsWithString("V:|-15-[v0(\(CampaignOverviewHeaderCell.profileImageDiameter))]")
         addConstraint(NSLayoutConstraint(item: profileImageView, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.centerX, multiplier: 1, constant: 0))
-        addConstraintsWithString("H:|-10-[v1]-10-|")
+        addConstraintsWithString("H:|[v1]|")
         addConstraintsWithString("V:[v1(1)]|")
         
         addConstraintsWithString("H:|-20-[v3]-20-|")
@@ -80,7 +81,7 @@ class CampaignOverviewHeaderCell: UICollectionViewCell{
     func addConstraintsWithString(_ str:String){
         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: str, options: NSLayoutFormatOptions(), metrics: nil, views: [
             "v0":profileImageView,
-            "v1":cellSeperator,
+            "v1":cellSeparator,
             "v2":profileShadowView,
             "v3":sloganLabel
         ]))

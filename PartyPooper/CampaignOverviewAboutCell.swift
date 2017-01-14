@@ -12,11 +12,19 @@ class CampaignOverviewAboutCell: UICollectionViewCell{
     
     override init(frame: CGRect){
         super.init(frame: frame)
+        backgroundColor = UIColor.white
         setupViews()
     }
     
     let button: UIButton = {
         let view: UIButton = UIButton()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    let topCellSeparator: UIView = {
+        let view: UIView = UIView()
+        view.backgroundColor = UIColor(white: 220/255, alpha: 1)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -28,7 +36,7 @@ class CampaignOverviewAboutCell: UICollectionViewCell{
         view.font = UIFont(name: "STHeitiTC-Light", size: 14)
         view.translatesAutoresizingMaskIntoConstraints = false
         view.sizeToFit()
-        view.textAlignment = NSTextAlignment.center
+        view.textAlignment = NSTextAlignment.left
         return view
     }()
     
@@ -40,9 +48,9 @@ class CampaignOverviewAboutCell: UICollectionViewCell{
         return view
     }()
     
-    let cellSeperator: UIView = {
+    let cellSeparator: UIView = {
         let view: UIView = UIView()
-        view.backgroundColor = UIColor.lightGray
+        view.backgroundColor = UIColor(white: 220/255, alpha: 1)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -62,19 +70,22 @@ class CampaignOverviewAboutCell: UICollectionViewCell{
         addSubview(button)
         addSubview(categoryLabel)
         addSubview(arrowIcon)
-        addSubview(cellSeperator)
         addSubview(contentLabel)
+        addSubview(cellSeparator)
+        addSubview(topCellSeparator)
         
         addConstraintsWithString("H:|[v0]|")
         addConstraintsWithString("V:|[v0]|")
         addConstraintsWithString("H:|-10-[v1(50)]")
-        addConstraintsWithString("V:|-10-[v1(15)][v4]-5-|")
+        addConstraintsWithString("V:|-10-[v1(15)][v4]-3-|")
         addConstraintsWithString("V:[v2(20)]")
         addConstraint(NSLayoutConstraint(item: arrowIcon, attribute: NSLayoutAttribute.centerY, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.centerY, multiplier: 1, constant: 0))
-        addConstraintsWithString("H:|-15-[v3]-15-|")
+        addConstraintsWithString("H:|[v3]|")
         addConstraintsWithString("V:[v3(1)]|")
-        addConstraintsWithString("H:|-22-[v4]-22-[v2(20)]-15-|")
-        
+        addConstraintsWithString("H:|-15-[v4]-15-[v2(20)]-15-|")
+        addConstraintsWithString("H:|[v5]|")
+        addConstraintsWithString("V:|[v5(1)]")
+
     }
     
     func addConstraintsWithString(_ str:String){
@@ -82,8 +93,9 @@ class CampaignOverviewAboutCell: UICollectionViewCell{
             ["v0":button,
              "v1":categoryLabel,
              "v2":arrowIcon,
-             "v3":cellSeperator,
-             "v4":contentLabel
+             "v3":cellSeparator,
+             "v4":contentLabel,
+             "v5":topCellSeparator
             ]))
     }
     

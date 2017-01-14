@@ -88,7 +88,7 @@ class MentionCell: UICollectionViewCell{
         view.numberOfLines = 1
         view.translatesAutoresizingMaskIntoConstraints = false
         view.textAlignment = NSTextAlignment.left
-        view.textColor = UIColor.red
+        view.textColor = UIColor(red: 200/255, green: 60/255, blue: 60/255, alpha: 1)
         view.font = UIFont(name: "HelveticaNeue", size: 9)
         return view
     }()
