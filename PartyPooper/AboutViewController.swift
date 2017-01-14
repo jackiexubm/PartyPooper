@@ -14,13 +14,7 @@ class AboutViewController: UICollectionViewController, UICollectionViewDelegateF
     override func viewDidLoad() {
         collectionView?.register(CampaignHeaderCell.self, forCellWithReuseIdentifier: "CampaignHeaderCell")
         collectionView?.register(IssuesCellsContainer.self, forCellWithReuseIdentifier: "IssuesCellsContainer")
-        
         collectionView?.backgroundColor = UIColor.white
-        collectionView?.register(IssueCell.self, forCellWithReuseIdentifier: "IssueCell")
-        
-        
-        
-        
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
