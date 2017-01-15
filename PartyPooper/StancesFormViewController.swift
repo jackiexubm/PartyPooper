@@ -13,5 +13,14 @@ class StancesFormViewController: UIViewController {
         view = IssuesChooserView()
     }
     
+    func continuePressed(){
+        let nextPageVC = UINavigationController(rootViewController: StancesChooserViewController())
+        self.present(nextPageVC, animated: false, completion: {
+            //completion code here
+            
+        })
+        
+    }
+    
 }
 

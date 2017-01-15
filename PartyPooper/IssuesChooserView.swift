@@ -41,6 +41,7 @@ class IssuesChooserView: UIView {
         view.setTitle("Continue", for: .normal)
         view.setTitleColor(UIColor.black, for: .normal)
         view.titleLabel?.font = UIFont(name: "HelveticaNeue", size: 22)
+        view.addTarget(self, action: #selector(StancesFormViewController.continuePressed), for: .touchUpInside)
         return view
     }()
     
@@ -157,10 +158,10 @@ class IssuesChooserView: UIView {
     let label0: UILabel = {
         let view: UILabel = UILabel()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.text = "Some issue"
+        view.text = "Climage change"
         view.textAlignment = NSTextAlignment.center
         view.textColor = UIColor.black
-        view.font = UIFont(name: "Arial-BoldMT", size: 19)
+        view.font = UIFont(name: "Arial-BoldMT", size: 17)
         return view
     }()
     
@@ -179,17 +180,17 @@ class IssuesChooserView: UIView {
         }else{
             button0.backgroundColor = UIColor.white
             checkbox0.setCheckState(M13Checkbox.CheckState.unchecked, animated: true)
-
+            
         }
     }
-
+    
     let label1: UILabel = {
         let view: UILabel = UILabel()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.text = "Some issue"
+        view.text = "Immigration"
         view.textAlignment = NSTextAlignment.center
         view.textColor = UIColor.black
-        view.font = UIFont(name: "Arial-BoldMT", size: 19)
+        view.font = UIFont(name: "Arial-BoldMT", size: 17)
         return view
     }()
     
@@ -215,10 +216,10 @@ class IssuesChooserView: UIView {
     let label2: UILabel = {
         let view: UILabel = UILabel()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.text = "Some issue"
+        view.text = "Health care"
         view.textAlignment = NSTextAlignment.center
         view.textColor = UIColor.black
-        view.font = UIFont(name: "Arial-BoldMT", size: 19)
+        view.font = UIFont(name: "Arial-BoldMT", size: 17)
         return view
     }()
     
@@ -244,10 +245,10 @@ class IssuesChooserView: UIView {
     let label3: UILabel = {
         let view: UILabel = UILabel()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.text = "Some issue"
+        view.text = "Taxes"
         view.textAlignment = NSTextAlignment.center
         view.textColor = UIColor.black
-        view.font = UIFont(name: "Arial-BoldMT", size: 19)
+        view.font = UIFont(name: "Arial-BoldMT", size: 17)
         return view
     }()
     
@@ -273,10 +274,10 @@ class IssuesChooserView: UIView {
     let label4: UILabel = {
         let view: UILabel = UILabel()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.text = "Some issue"
+        view.text = "Minimum wage"
         view.textAlignment = NSTextAlignment.center
         view.textColor = UIColor.black
-        view.font = UIFont(name: "Arial-BoldMT", size: 19)
+        view.font = UIFont(name: "Arial-BoldMT", size: 17)
         return view
     }()
     
@@ -302,10 +303,10 @@ class IssuesChooserView: UIView {
     let label5: UILabel = {
         let view: UILabel = UILabel()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.text = "Some issue"
+        view.text = "Terrorism"
         view.textAlignment = NSTextAlignment.center
         view.textColor = UIColor.black
-        view.font = UIFont(name: "Arial-BoldMT", size: 19)
+        view.font = UIFont(name: "Arial-BoldMT", size: 17)
         return view
     }()
     
@@ -331,10 +332,10 @@ class IssuesChooserView: UIView {
     let label6: UILabel = {
         let view: UILabel = UILabel()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.text = "Some issue"
+        view.text = "Government deficit"
         view.textAlignment = NSTextAlignment.center
         view.textColor = UIColor.black
-        view.font = UIFont(name: "Arial-BoldMT", size: 19)
+        view.font = UIFont(name: "Arial-BoldMT", size: 17)
         return view
     }()
     
@@ -360,10 +361,10 @@ class IssuesChooserView: UIView {
     let label7: UILabel = {
         let view: UILabel = UILabel()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.text = "Some issue"
+        view.text = "Education"
         view.textAlignment = NSTextAlignment.center
         view.textColor = UIColor.black
-        view.font = UIFont(name: "Arial-BoldMT", size: 19)
+        view.font = UIFont(name: "Arial-BoldMT", size: 17)
         return view
     }()
     
@@ -389,10 +390,10 @@ class IssuesChooserView: UIView {
     let label8: UILabel = {
         let view: UILabel = UILabel()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.text = "Some issue"
+        view.text = "National security"
         view.textAlignment = NSTextAlignment.center
         view.textColor = UIColor.black
-        view.font = UIFont(name: "Arial-BoldMT", size: 19)
+        view.font = UIFont(name: "Arial-BoldMT", size: 17)
         return view
     }()
     
@@ -418,10 +419,10 @@ class IssuesChooserView: UIView {
     let label9: UILabel = {
         let view: UILabel = UILabel()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.text = "Some issue"
+        view.text = "Gun policy"
         view.textAlignment = NSTextAlignment.center
         view.textColor = UIColor.black
-        view.font = UIFont(name: "Arial-BoldMT", size: 19)
+        view.font = UIFont(name: "Arial-BoldMT", size: 17)
         return view
     }()
     
@@ -445,10 +446,10 @@ class IssuesChooserView: UIView {
     }
     
     
-
     
     
-
+    
+    
     func setupViews(){
         addSubview(promptLabel)
         addSubview(optionsContainerView)
@@ -483,7 +484,7 @@ class IssuesChooserView: UIView {
         button8.addSubview(checkbox8)
         button9.addSubview(label9)
         button9.addSubview(checkbox9)
-
+        
         
         addConstraintsWithString("H:|[v0]|")
         addConstraintsWithString("H:|[v1]|")
@@ -539,10 +540,10 @@ class IssuesChooserView: UIView {
         addConstraintsWithString("H:|[l9]|")
         addConstraintsWithString("H:|-68-[c9(40)]")
         addConstraintsWithString("V:|-13-[l9(20)]-5-[c9(40)]")
-
-
-
-
+        
+        
+        
+        
     }
     
     func addConstraintsWithString(_ str:String){
@@ -586,5 +587,5 @@ class IssuesChooserView: UIView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
 }
