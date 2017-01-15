@@ -23,7 +23,8 @@ struct CandidateModel {
         
         
         let model2: CandidateModel = CandidateModel(profileView: #imageLiteral(resourceName: "jillstein"), nameView: "Jill Stein", partyName:"Green Party")
-
+        
+//        let model3: CandidateModel = CandidateModel(profileView: <#T##UIImage#>, nameView: <#T##String#>, partyName: <#T##String#>)
         
         ret.append(model1)
         ret.append(model2)

@@ -19,6 +19,9 @@
 		1954363E1E2AC840003A8B79 /* CampaignListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1954363D1E2AC840003A8B79 /* CampaignListController.swift */; };
 		195436411E2AC874003A8B79 /* CampaignListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195436401E2AC874003A8B79 /* CampaignListCell.swift */; };
 		195436441E2ADF06003A8B79 /* CandidateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195436431E2ADF06003A8B79 /* CandidateModel.swift */; };
+		195436471E2AF185003A8B79 /* MatchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195436461E2AF185003A8B79 /* MatchResultsController.swift */; };
+		195436491E2AF22C003A8B79 /* MatchCandidateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195436481E2AF22C003A8B79 /* MatchCandidateCell.swift */; };
+		1954364B1E2AF362003A8B79 /* MatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1954364A1E2AF362003A8B79 /* MatchModel.swift */; };
 		19AEF12E1E27EB3200AC19A4 /* IssuesCellsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AEF12D1E27EB3200AC19A4 /* IssuesCellsContainer.swift */; };
 		19AEF1301E27F83400AC19A4 /* IssueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AEF12F1E27F83400AC19A4 /* IssueModel.swift */; };
 		19AEF1321E28019400AC19A4 /* OpenedIssueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AEF1311E28019400AC19A4 /* OpenedIssueViewController.swift */; };
@@ -78,6 +81,9 @@
 		1954363D1E2AC840003A8B79 /* CampaignListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignListController.swift; sourceTree = "<group>"; };
 		195436401E2AC874003A8B79 /* CampaignListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignListCell.swift; sourceTree = "<group>"; };
 		195436431E2ADF06003A8B79 /* CandidateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidateModel.swift; sourceTree = "<group>"; };
+		195436461E2AF185003A8B79 /* MatchResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchResultsController.swift; sourceTree = "<group>"; };
+		195436481E2AF22C003A8B79 /* MatchCandidateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchCandidateCell.swift; sourceTree = "<group>"; };
+		1954364A1E2AF362003A8B79 /* MatchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchModel.swift; sourceTree = "<group>"; };
 		19AEF12D1E27EB3200AC19A4 /* IssuesCellsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuesCellsContainer.swift; sourceTree = "<group>"; };
 		19AEF12F1E27F83400AC19A4 /* IssueModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueModel.swift; sourceTree = "<group>"; };
 		19AEF1311E28019400AC19A4 /* OpenedIssueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenedIssueViewController.swift; sourceTree = "<group>"; };
@@ -182,7 +188,9 @@
 		1954363F1E2AC84F003A8B79 /* CampaignListController */ = {
 			isa = PBXGroup;
 			children = (
+				195436451E2AF15A003A8B79 /* MatchResultController */,
 				1954363D1E2AC840003A8B79 /* CampaignListController.swift */,
+				195436461E2AF185003A8B79 /* MatchResultsController.swift */,
 			);
 			name = CampaignListController;
 			sourceTree = "<group>";
@@ -191,8 +199,16 @@
 			isa = PBXGroup;
 			children = (
 				195436401E2AC874003A8B79 /* CampaignListCell.swift */,
+				195436481E2AF22C003A8B79 /* MatchCandidateCell.swift */,
 			);
 			name = CampaignListCell;
+			sourceTree = "<group>";
+		};
+		195436451E2AF15A003A8B79 /* MatchResultController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MatchResultController;
 			sourceTree = "<group>";
 		};
 		DD5E3F9E58C34B41064BE288 /* Frameworks */ = {
@@ -250,6 +266,7 @@
 				195436331E2A8405003A8B79 /* EventModel.swift */,
 				E934E9CD1E26D8FF009D3FBB /* MentionModel.swift */,
 				195436431E2ADF06003A8B79 /* CandidateModel.swift */,
+				1954364A1E2AF362003A8B79 /* MatchModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -425,6 +442,7 @@
 				TargetAttributes = {
 					E91904101E252FB000DA05C2 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8QQ2PG3344;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -641,6 +659,7 @@
 				19AEF1341E2801ED00AC19A4 /* OpenedIssueView.swift in Sources */,
 				19AEF1321E28019400AC19A4 /* OpenedIssueViewController.swift in Sources */,
 				E9F960011E29580900D33271 /* CampaignOverviewViewController.swift in Sources */,
+				1954364B1E2AF362003A8B79 /* MatchModel.swift in Sources */,
 				1913F0F11E26A86D00F705EA /* IssuesCollectionViewFlowLayout.swift in Sources */,
 				E9F960051E2958D700D33271 /* CampaignOverviewHeaderCell.swift in Sources */,
 				E9F95FF51E2951CB00D33271 /* CampaignHeaderCell.swift in Sources */,
@@ -652,12 +671,14 @@
 				E934E9CE1E26D8FF009D3FBB /* MentionModel.swift in Sources */,
 				195436411E2AC874003A8B79 /* CampaignListCell.swift in Sources */,
 				E9F95FEF1E27F75D00D33271 /* SubmitMentionView.swift in Sources */,
+				195436491E2AF22C003A8B79 /* MatchCandidateCell.swift in Sources */,
 				E90302791E25332E00B7BBF1 /* MentionsView.swift in Sources */,
 				E9F95FF71E29520300D33271 /* AppDelegate.swift in Sources */,
 				E903027D1E254A8700B7BBF1 /* MentionCell.swift in Sources */,
 				E9F95FED1E27F74700D33271 /* SubmitMentionViewController.swift in Sources */,
 				E903027B1E25334B00B7BBF1 /* MentionsViewController.swift in Sources */,
 				1954363E1E2AC840003A8B79 /* CampaignListController.swift in Sources */,
+				195436471E2AF185003A8B79 /* MatchResultsController.swift in Sources */,
 				E9F95FF31E29517C00D33271 /* AboutViewController.swift in Sources */,
 				195436341E2A8406003A8B79 /* EventModel.swift in Sources */,
 				E903027F1E256AD300B7BBF1 /* OpenedMentionView.swift in Sources */,
@@ -792,9 +813,10 @@
 			baseConfigurationReference = 145FA228CD1C9431956633C4 /* Pods-PartyPooper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8QQ2PG3344;
 				INFOPLIST_FILE = PartyPooper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Debug-Politics-Team.PartyPooper";
+				PRODUCT_BUNDLE_IDENTIFIER = byungzoon.PartyPooper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -805,9 +827,10 @@
 			baseConfigurationReference = 36698AC2FEF19965A678A27B /* Pods-PartyPooper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8QQ2PG3344;
 				INFOPLIST_FILE = PartyPooper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Debug-Politics-Team.PartyPooper";
+				PRODUCT_BUNDLE_IDENTIFIER = byungzoon.PartyPooper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
