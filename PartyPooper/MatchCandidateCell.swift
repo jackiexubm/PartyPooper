@@ -56,8 +56,15 @@ class MatchCandidateCell: UICollectionViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.init(name: "HelveticaNeue-Medium", size: 30)
 //        label.backgroundColor = UIColor.red
-
         return label
+    }()
+    
+    let buttonView: UIButton = {
+        let view = UIButton()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = UIColor.brown
+        return view
+        
     }()
     
     func setupViews(){
@@ -66,6 +73,8 @@ class MatchCandidateCell: UICollectionViewCell {
         addSubview(nameView)
         addSubview(partyView)
         addSubview(matchPercentageView)
+        
+        addSubview(buttonView)
         
         
         
@@ -83,7 +92,9 @@ class MatchCandidateCell: UICollectionViewCell {
         
         addConstraintWithString("V:|-5-[v4]-10-|")
         addConstraintWithString("H:[v4]-10-|")
-
+        
+        addConstraintWithString("V:|[v5]|")
+        addConstraintWithString("H:|[v5]|")
         addConstraint(NSLayoutConstraint(item: profileView, attribute: NSLayoutAttribute.centerY, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.centerY, multiplier: 1, constant: 0))
         addConstraint(NSLayoutConstraint(item: matchPercentageView, attribute: NSLayoutAttribute.centerY, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.centerY, multiplier: 1, constant: 0))
 
@@ -101,7 +112,8 @@ class MatchCandidateCell: UICollectionViewCell {
             "v1":profileView,
             "v2":nameView,
             "v3":partyView,
-            "v4":matchPercentageView
+            "v4":matchPercentageView,
+            "v5":buttonView
         ]
         
         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: str, options: NSLayoutFormatOptions(), metrics: nil, views: views))
