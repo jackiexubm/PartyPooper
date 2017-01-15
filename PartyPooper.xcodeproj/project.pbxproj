@@ -10,6 +10,18 @@
 		1913F0EF1E26A78800F705EA /* AboutPageIssueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1913F0EE1E26A78800F705EA /* AboutPageIssueViewController.swift */; };
 		1913F0F11E26A86D00F705EA /* IssuesCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1913F0F01E26A86D00F705EA /* IssuesCollectionViewFlowLayout.swift */; };
 		193F9E1C1E257B48000E4793 /* IssueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193F9E1B1E257B48000E4793 /* IssueCell.swift */; };
+		1954362A1E298253003A8B79 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195436291E298253003A8B79 /* EventsViewController.swift */; };
+		195436301E298568003A8B79 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1954362F1E298568003A8B79 /* EventCell.swift */; };
+		195436321E2A7E73003A8B79 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 195436311E2A7E73003A8B79 /* MapKit.framework */; };
+		195436341E2A8406003A8B79 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195436331E2A8405003A8B79 /* EventModel.swift */; };
+		195436361E2AACE8003A8B79 /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195436351E2AACE8003A8B79 /* DonateViewController.swift */; };
+		1954363C1E2ABB5B003A8B79 /* DonateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1954363B1E2ABB5B003A8B79 /* DonateView.swift */; };
+		1954363E1E2AC840003A8B79 /* CampaignListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1954363D1E2AC840003A8B79 /* CampaignListController.swift */; };
+		195436411E2AC874003A8B79 /* CampaignListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195436401E2AC874003A8B79 /* CampaignListCell.swift */; };
+		195436441E2ADF06003A8B79 /* CandidateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195436431E2ADF06003A8B79 /* CandidateModel.swift */; };
+		195436471E2AF185003A8B79 /* MatchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195436461E2AF185003A8B79 /* MatchResultsController.swift */; };
+		195436491E2AF22C003A8B79 /* MatchCandidateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195436481E2AF22C003A8B79 /* MatchCandidateCell.swift */; };
+		1954364B1E2AF362003A8B79 /* MatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1954364A1E2AF362003A8B79 /* MatchModel.swift */; };
 		19AEF12E1E27EB3200AC19A4 /* IssuesCellsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AEF12D1E27EB3200AC19A4 /* IssuesCellsContainer.swift */; };
 		19AEF1301E27F83400AC19A4 /* IssueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AEF12F1E27F83400AC19A4 /* IssueModel.swift */; };
 		19AEF1321E28019400AC19A4 /* OpenedIssueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AEF1311E28019400AC19A4 /* OpenedIssueViewController.swift */; };
@@ -80,6 +92,18 @@
 		1913F0EE1E26A78800F705EA /* AboutPageIssueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutPageIssueViewController.swift; sourceTree = "<group>"; };
 		1913F0F01E26A86D00F705EA /* IssuesCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuesCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		193F9E1B1E257B48000E4793 /* IssueCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueCell.swift; sourceTree = "<group>"; };
+		195436291E298253003A8B79 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		1954362F1E298568003A8B79 /* EventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		195436311E2A7E73003A8B79 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		195436331E2A8405003A8B79 /* EventModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
+		195436351E2AACE8003A8B79 /* DonateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonateViewController.swift; sourceTree = "<group>"; };
+		1954363B1E2ABB5B003A8B79 /* DonateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonateView.swift; sourceTree = "<group>"; };
+		1954363D1E2AC840003A8B79 /* CampaignListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignListController.swift; sourceTree = "<group>"; };
+		195436401E2AC874003A8B79 /* CampaignListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignListCell.swift; sourceTree = "<group>"; };
+		195436431E2ADF06003A8B79 /* CandidateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidateModel.swift; sourceTree = "<group>"; };
+		195436461E2AF185003A8B79 /* MatchResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchResultsController.swift; sourceTree = "<group>"; };
+		195436481E2AF22C003A8B79 /* MatchCandidateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchCandidateCell.swift; sourceTree = "<group>"; };
+		1954364A1E2AF362003A8B79 /* MatchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchModel.swift; sourceTree = "<group>"; };
 		19AEF12D1E27EB3200AC19A4 /* IssuesCellsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuesCellsContainer.swift; sourceTree = "<group>"; };
 		19AEF12F1E27F83400AC19A4 /* IssueModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueModel.swift; sourceTree = "<group>"; };
 		19AEF1311E28019400AC19A4 /* OpenedIssueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenedIssueViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				195436321E2A7E73003A8B79 /* MapKit.framework in Frameworks */,
 				F8BC6D862168F1AE0F4AD885 /* Pods_PartyPooper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,9 +201,60 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		1954362B1E2982D3003A8B79 /* EventsPageControllers */ = {
+			isa = PBXGroup;
+			children = (
+				195436291E298253003A8B79 /* EventsViewController.swift */,
+			);
+			name = EventsPageControllers;
+			sourceTree = "<group>";
+		};
+		1954362E1E298553003A8B79 /* EventsCells */ = {
+			isa = PBXGroup;
+			children = (
+				1954362F1E298568003A8B79 /* EventCell.swift */,
+			);
+			name = EventsCells;
+			sourceTree = "<group>";
+		};
+		195436371E2AACEF003A8B79 /* DonatePageController */ = {
+			isa = PBXGroup;
+			children = (
+				195436351E2AACE8003A8B79 /* DonateViewController.swift */,
+			);
+			name = DonatePageController;
+			sourceTree = "<group>";
+		};
+		1954363F1E2AC84F003A8B79 /* CampaignListController */ = {
+			isa = PBXGroup;
+			children = (
+				195436451E2AF15A003A8B79 /* MatchResultController */,
+			);
+			name = CampaignListController;
+			sourceTree = "<group>";
+		};
+		195436421E2AC87D003A8B79 /* CampaignListCell */ = {
+			isa = PBXGroup;
+			children = (
+				195436401E2AC874003A8B79 /* CampaignListCell.swift */,
+				195436481E2AF22C003A8B79 /* MatchCandidateCell.swift */,
+			);
+			name = CampaignListCell;
+			sourceTree = "<group>";
+		};
+		195436451E2AF15A003A8B79 /* MatchResultController */ = {
+			isa = PBXGroup;
+			children = (
+				1954363D1E2AC840003A8B79 /* CampaignListController.swift */,
+				195436461E2AF185003A8B79 /* MatchResultsController.swift */,
+			);
+			name = MatchResultController;
+			sourceTree = "<group>";
+		};
 		DD5E3F9E58C34B41064BE288 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				195436311E2A7E73003A8B79 /* MapKit.framework */,
 				C6CB1A8DC4E1E62200487F1E /* Pods_PartyPooper.framework */,
 				0234E9EF19882BA8440E08BF /* Pods_PartyPooperTests.framework */,
 				4263CDCA38EBB2BCF61C498B /* Pods_PartyPooperUITests.framework */,
@@ -189,6 +265,12 @@
 		E903026D1E25306300B7BBF1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
+=======
+				1954363F1E2AC84F003A8B79 /* CampaignListController */,
+				1954362B1E2982D3003A8B79 /* EventsPageControllers */,
+				E9F960071E29592700D33271 /* MentionPageControllers */,
+>>>>>>> d554de49f65f15d43e95ee94411ca781ddb3d49d
 				E9F960001E29580900D33271 /* CampaignOverviewViewController.swift */,
 				E9D1158F1E2B9BBC0079A7AC /* StancesChooserViewController.swift */,
 				E99313131E2AF41C0088D354 /* StancesFormViewController.swift */,
@@ -199,6 +281,7 @@
 				E9F9601F1E2AD61600D33271 /* HomeViewControllers */,
 				E9F960071E29592700D33271 /* MentionPageControllers */,
 				E9F960061E2958F600D33271 /* AboutPageControllers */,
+				195436371E2AACEF003A8B79 /* DonatePageController */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -206,9 +289,11 @@
 		E903026F1E25307A00B7BBF1 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				1954362E1E298553003A8B79 /* EventsCells */,
 				E9F960031E2958A600D33271 /* CampaignOverviewCells */,
 				E9F960021E29588900D33271 /* AboutViewCells */,
 				E903027C1E254A8700B7BBF1 /* MentionCell.swift */,
+				195436421E2AC87D003A8B79 /* CampaignListCell */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -220,6 +305,13 @@
 				E92EDC171E2AE71A0015769D /* MentionViewViews */,
 				E9F9601E1E2AD4A800D33271 /* HomeViewViews */,
 				19AEF1331E2801ED00AC19A4 /* OpenedIssueView.swift */,
+<<<<<<< HEAD
+=======
+				E90302781E25332E00B7BBF1 /* MentionsView.swift */,
+				E903027E1E256AD300B7BBF1 /* OpenedMentionView.swift */,
+				E9F95FEE1E27F75D00D33271 /* SubmitMentionView.swift */,
+				1954363B1E2ABB5B003A8B79 /* DonateView.swift */,
+>>>>>>> d554de49f65f15d43e95ee94411ca781ddb3d49d
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -228,7 +320,10 @@
 			isa = PBXGroup;
 			children = (
 				19AEF12F1E27F83400AC19A4 /* IssueModel.swift */,
+				195436331E2A8405003A8B79 /* EventModel.swift */,
 				E934E9CD1E26D8FF009D3FBB /* MentionModel.swift */,
+				195436431E2ADF06003A8B79 /* CandidateModel.swift */,
+				1954364A1E2AF362003A8B79 /* MatchModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -449,8 +544,17 @@
 				TargetAttributes = {
 					E91904101E252FB000DA05C2 = {
 						CreatedOnToolsVersion = 8.2.1;
+<<<<<<< HEAD
 						DevelopmentTeam = TWGGTGHRWF;
+=======
+						DevelopmentTeam = 8QQ2PG3344;
+>>>>>>> d554de49f65f15d43e95ee94411ca781ddb3d49d
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					E91904241E252FB100DA05C2 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -663,14 +767,24 @@
 				E9F9601D1E2AD48000D33271 /* AllView.swift in Sources */,
 				E9F960111E2A583200D33271 /* CampaignOverviewDonateCell.swift in Sources */,
 				19AEF1301E27F83400AC19A4 /* IssueModel.swift in Sources */,
+<<<<<<< HEAD
 				E9F960191E2ACC9E00D33271 /* RecommendedIntroViewController.swift in Sources */,
 				E9F9601B1E2AD46D00D33271 /* AllViewController.swift in Sources */,
+=======
+				195436301E298568003A8B79 /* EventCell.swift in Sources */,
+				195436361E2AACE8003A8B79 /* DonateViewController.swift in Sources */,
+				195436441E2ADF06003A8B79 /* CandidateModel.swift in Sources */,
+>>>>>>> d554de49f65f15d43e95ee94411ca781ddb3d49d
 				19AEF1341E2801ED00AC19A4 /* OpenedIssueView.swift in Sources */,
 				E9D1159D1E2BCAA80079A7AC /* StancesChooser3Controller.swift in Sources */,
 				E9F960151E2ABC2A00D33271 /* HomeView.swift in Sources */,
 				19AEF1321E28019400AC19A4 /* OpenedIssueViewController.swift in Sources */,
 				E9F960011E29580900D33271 /* CampaignOverviewViewController.swift in Sources */,
+<<<<<<< HEAD
 				E9F960091E297E1500D33271 /* CampaignOverviewAboutCell.swift in Sources */,
+=======
+				1954364B1E2AF362003A8B79 /* MatchModel.swift in Sources */,
+>>>>>>> d554de49f65f15d43e95ee94411ca781ddb3d49d
 				1913F0F11E26A86D00F705EA /* IssuesCollectionViewFlowLayout.swift in Sources */,
 				E9F960051E2958D700D33271 /* CampaignOverviewHeaderCell.swift in Sources */,
 				E9F95FF51E2951CB00D33271 /* CampaignHeaderCell.swift in Sources */,
@@ -678,20 +792,37 @@
 				19AEF12E1E27EB3200AC19A4 /* IssuesCellsContainer.swift in Sources */,
 				E9D115901E2B9BBC0079A7AC /* StancesChooserViewController.swift in Sources */,
 				193F9E1C1E257B48000E4793 /* IssueCell.swift in Sources */,
+<<<<<<< HEAD
 				E9F960171E2ACC8900D33271 /* RecommendedIntroView.swift in Sources */,
+=======
+				1954363C1E2ABB5B003A8B79 /* DonateView.swift in Sources */,
+				1954362A1E298253003A8B79 /* EventsViewController.swift in Sources */,
+>>>>>>> d554de49f65f15d43e95ee94411ca781ddb3d49d
 				E90302811E256B8300B7BBF1 /* OpenedMentionViewController.swift in Sources */,
 				E934E9CE1E26D8FF009D3FBB /* MentionModel.swift in Sources */,
+				195436411E2AC874003A8B79 /* CampaignListCell.swift in Sources */,
 				E9F95FEF1E27F75D00D33271 /* SubmitMentionView.swift in Sources */,
+<<<<<<< HEAD
+=======
+				195436491E2AF22C003A8B79 /* MatchCandidateCell.swift in Sources */,
+				E90302791E25332E00B7BBF1 /* MentionsView.swift in Sources */,
+>>>>>>> d554de49f65f15d43e95ee94411ca781ddb3d49d
 				E9F95FF71E29520300D33271 /* AppDelegate.swift in Sources */,
 				E9F9600D1E2A523000D33271 /* CampaignOverviewMentionsCell.swift in Sources */,
 				E9D115991E2BC5440079A7AC /* FormCompletedViewController.swift in Sources */,
 				E903027D1E254A8700B7BBF1 /* MentionCell.swift in Sources */,
 				E9F95FED1E27F74700D33271 /* SubmitMentionViewController.swift in Sources */,
 				E903027B1E25334B00B7BBF1 /* MentionsViewController.swift in Sources */,
+				1954363E1E2AC840003A8B79 /* CampaignListController.swift in Sources */,
+				195436471E2AF185003A8B79 /* MatchResultsController.swift in Sources */,
 				E9F95FF31E29517C00D33271 /* AboutViewController.swift in Sources */,
+<<<<<<< HEAD
 				E99313171E2AF6660088D354 /* IssuesChooserView.swift in Sources */,
 				E99313141E2AF41C0088D354 /* StancesFormViewController.swift in Sources */,
 				E9F9600F1E2A582600D33271 /* CampaignOverviewEventsCell.swift in Sources */,
+=======
+				195436341E2A8406003A8B79 /* EventModel.swift in Sources */,
+>>>>>>> d554de49f65f15d43e95ee94411ca781ddb3d49d
 				E903027F1E256AD300B7BBF1 /* OpenedMentionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -824,12 +955,16 @@
 			baseConfigurationReference = 145FA228CD1C9431956633C4 /* Pods-PartyPooper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+<<<<<<< HEAD
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = TWGGTGHRWF;
+=======
+				DEVELOPMENT_TEAM = 8QQ2PG3344;
+>>>>>>> d554de49f65f15d43e95ee94411ca781ddb3d49d
 				INFOPLIST_FILE = PartyPooper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Debug-Politics-Team.PartyPooper";
+				PRODUCT_BUNDLE_IDENTIFIER = byungzoon.PartyPooper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -840,12 +975,16 @@
 			baseConfigurationReference = 36698AC2FEF19965A678A27B /* Pods-PartyPooper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+<<<<<<< HEAD
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = TWGGTGHRWF;
+=======
+				DEVELOPMENT_TEAM = 8QQ2PG3344;
+>>>>>>> d554de49f65f15d43e95ee94411ca781ddb3d49d
 				INFOPLIST_FILE = PartyPooper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Debug-Politics-Team.PartyPooper";
+				PRODUCT_BUNDLE_IDENTIFIER = byungzoon.PartyPooper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

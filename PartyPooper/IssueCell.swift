@@ -20,7 +20,6 @@ class IssueCell: UICollectionViewCell {
     let containerView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = UIColor.green
         return view
         
     }()
@@ -34,11 +33,24 @@ class IssueCell: UICollectionViewCell {
     }()
     
     let textLabel: UILabel = {
-        let text = UILabel()
-        text.translatesAutoresizingMaskIntoConstraints = false
-        text.textAlignment = NSTextAlignment.center
-        return text
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.numberOfLines = 0 
+        label.textAlignment = NSTextAlignment.center
+        return label
     }()
+    
+    let borderView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.layer.borderWidth = 1
+        view.layer.cornerRadius = 5
+        view.layer.borderColor = UIColor.purple.cgColor
+        return view
+    
+    
+    }()
+    
     
     
     
@@ -46,9 +58,12 @@ class IssueCell: UICollectionViewCell {
         
         addSubview(containerView)
         addSubview(textLabel)
+        addSubview(borderView)
         addSubview(buttonView)
+
     
         addConstraintsWithString("H:|[v0]|")
+        
         addConstraintsWithString("V:|[v0]|")
         addConstraintsWithString("H:|[v1]|")
         addConstraintsWithString("V:|[v1]|")
@@ -56,12 +71,15 @@ class IssueCell: UICollectionViewCell {
         addConstraintsWithString("H:|[v2]|")
         addConstraintsWithString("V:|-30-[v2]-30-|")
 
+        addConstraintsWithString("H:|-6-[v3]-6-|")
+        addConstraintsWithString("V:|-6-[v3]-6-|")
+
     }
     
     
     
         func addConstraintsWithString(_ str:String){
-            addConstraints(NSLayoutConstraint.constraints(withVisualFormat: str, options: NSLayoutFormatOptions(), metrics: nil, views: ["v0": containerView, "v1":buttonView, "v2":textLabel]))
+            addConstraints(NSLayoutConstraint.constraints(withVisualFormat: str, options: NSLayoutFormatOptions(), metrics: nil, views: ["v0": containerView, "v1":buttonView, "v2":textLabel, "v3":borderView]))
         }
     
     
