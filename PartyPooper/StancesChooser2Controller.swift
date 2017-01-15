@@ -1,14 +1,13 @@
 //
-//  StancesChooserViewController.swift
+//  StancesFormViewController.swift
 //  PartyPooper
 //
-//  Created by Jackie Xu on 1/15/17.
+//  Created by Jackie Xu on 1/14/17.
 //  Copyright © 2017 Debug Politics Team. All rights reserved.
 //
 
 import UIKit
-
-class StancesChooserViewController: UIViewController{
+class StancesChooser2Controller: UIViewController {
     
     override func viewDidLoad() {
         view = StancesChooserView2()
@@ -18,8 +17,5 @@ class StancesChooserViewController: UIViewController{
         navigationController?.pushViewController(StancesChooser4Controller(), animated: true)
     }
     
-
-    
-    
-
 }
+

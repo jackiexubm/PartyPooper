@@ -68,6 +68,8 @@ class StancesChooserView3: UIView {
         view.layer.borderColor = UIColor(white: 220/255, alpha: 1).cgColor
         view.backgroundColor = UIColor.white
         view.addTarget(self, action: #selector(switch0), for: .touchUpInside)
+        view.addTarget(self, action: #selector(StancesChooser3Controller.moveToFinish), for: .touchUpInside)
+
         return view
     }()
     
@@ -98,6 +100,7 @@ class StancesChooserView3: UIView {
         view.layer.borderColor = UIColor(white: 220/255, alpha: 1).cgColor
         view.backgroundColor = UIColor.white
         view.addTarget(self, action: #selector(switch1), for: .touchUpInside)
+        view.addTarget(self, action: #selector(StancesChooser3Controller.moveToFinish), for: .touchUpInside)
         return view
     }()
     
@@ -128,6 +131,7 @@ class StancesChooserView3: UIView {
         view.layer.borderColor = UIColor(white: 220/255, alpha: 1).cgColor
         view.backgroundColor = UIColor.white
         view.addTarget(self, action: #selector(switch2), for: .touchUpInside)
+        view.addTarget(self, action: #selector(StancesChooser3Controller.moveToFinish), for: .touchUpInside)
         return view
     }()
     

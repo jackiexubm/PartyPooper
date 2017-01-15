@@ -68,6 +68,7 @@ class StancesChooserView2: UIView {
         view.layer.borderColor = UIColor(white: 220/255, alpha: 1).cgColor
         view.backgroundColor = UIColor.white
         view.addTarget(self, action: #selector(switch0), for: .touchUpInside)
+        view.addTarget(self, action: #selector(StancesChooser2Controller.moveToFour), for: .touchUpInside)
         return view
     }()
     
@@ -98,6 +99,7 @@ class StancesChooserView2: UIView {
         view.layer.borderColor = UIColor(white: 220/255, alpha: 1).cgColor
         view.backgroundColor = UIColor.white
         view.addTarget(self, action: #selector(switch1), for: .touchUpInside)
+        view.addTarget(self, action: #selector(StancesChooser2Controller.moveToFour), for: .touchUpInside)
         return view
     }()
     

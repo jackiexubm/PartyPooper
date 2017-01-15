@@ -68,6 +68,8 @@ class StancesChooserView4: UIView {
         view.layer.borderColor = UIColor(white: 220/255, alpha: 1).cgColor
         view.backgroundColor = UIColor.white
         view.addTarget(self, action: #selector(switch0), for: .touchUpInside)
+        view.addTarget(self, action: #selector(StancesChooser4Controller.moveToThree), for: .touchUpInside)
+
         return view
     }()
     
@@ -77,7 +79,7 @@ class StancesChooserView4: UIView {
         view.text = "Climage change"
         view.textAlignment = NSTextAlignment.center
         view.textColor = UIColor.black
-        view.font = UIFont(name: "Arial-BoldMT", size: 17)
+        view.font = UIFont(name: "Arial", size: 17)
         return view
     }()
     
@@ -98,16 +100,18 @@ class StancesChooserView4: UIView {
         view.layer.borderColor = UIColor(white: 220/255, alpha: 1).cgColor
         view.backgroundColor = UIColor.white
         view.addTarget(self, action: #selector(switch1), for: .touchUpInside)
+        view.addTarget(self, action: #selector(StancesChooser4Controller.moveToThree), for: .touchUpInside)
+
         return view
     }()
     
     let label1: UILabel = {
         let view: UILabel = UILabel()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.text = "Climage change"
+        view.text = "Climate change"
         view.textAlignment = NSTextAlignment.center
         view.textColor = UIColor.black
-        view.font = UIFont(name: "Arial-BoldMT", size: 17)
+        view.font = UIFont(name: "Arial", size: 17)
         return view
     }()
     
@@ -128,6 +132,8 @@ class StancesChooserView4: UIView {
         view.layer.borderColor = UIColor(white: 220/255, alpha: 1).cgColor
         view.backgroundColor = UIColor.white
         view.addTarget(self, action: #selector(switch2), for: .touchUpInside)
+        view.addTarget(self, action: #selector(StancesChooser4Controller.moveToThree), for: .touchUpInside)
+
         return view
     }()
     
@@ -135,6 +141,7 @@ class StancesChooserView4: UIView {
         let view: UILabel = UILabel()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.text = "Climage change"
+        view.font = UIFont(name: "Arial", size: 17)
         view.textAlignment = NSTextAlignment.center
         return view
     }()
@@ -156,6 +163,8 @@ class StancesChooserView4: UIView {
         view.layer.borderColor = UIColor(white: 220/255, alpha: 1).cgColor
         view.backgroundColor = UIColor.white
         view.addTarget(self, action: #selector(switch3), for: .touchUpInside)
+        view.addTarget(self, action: #selector(StancesChooser4Controller.moveToThree), for: .touchUpInside)
+
         return view
     }()
     
@@ -163,6 +172,7 @@ class StancesChooserView4: UIView {
         let view: UILabel = UILabel()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.text = "Climate change"
+        view.font = UIFont(name: "Arial", size: 17)
         view.textAlignment = NSTextAlignment.center
         return view
     }()

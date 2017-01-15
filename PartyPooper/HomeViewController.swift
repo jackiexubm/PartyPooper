@@ -62,9 +62,12 @@ class HomeViewController: UIViewController {
         }
     }
     
-    func openSurvey(){
-        print("open survey")
     
+    
+
+    
+    func openSurvey(){
+        navigationController?.pushViewController(StancesFormViewController(), animated: true)
     }
     
     

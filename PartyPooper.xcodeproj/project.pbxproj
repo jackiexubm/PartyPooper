@@ -30,6 +30,11 @@
 		E9D115901E2B9BBC0079A7AC /* StancesChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D1158F1E2B9BBC0079A7AC /* StancesChooserViewController.swift */; };
 		E9D115921E2BB91C0079A7AC /* StancesChooserView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D115911E2BB91C0079A7AC /* StancesChooserView4.swift */; };
 		E9D115941E2BBDC50079A7AC /* StancesChooserView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D115931E2BBDC50079A7AC /* StancesChooserView2.swift */; };
+		E9D115971E2BC42A0079A7AC /* FormCompletedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D115961E2BC42A0079A7AC /* FormCompletedView.swift */; };
+		E9D115991E2BC5440079A7AC /* FormCompletedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D115981E2BC5440079A7AC /* FormCompletedViewController.swift */; };
+		E9D1159B1E2BCA130079A7AC /* StancesChooser2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D1159A1E2BCA130079A7AC /* StancesChooser2Controller.swift */; };
+		E9D1159D1E2BCAA80079A7AC /* StancesChooser3Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D1159C1E2BCAA80079A7AC /* StancesChooser3Controller.swift */; };
+		E9D1159F1E2BCAB00079A7AC /* StancesChooser4Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D1159E1E2BCAB00079A7AC /* StancesChooser4Controller.swift */; };
 		E9F95FED1E27F74700D33271 /* SubmitMentionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F95FEC1E27F74700D33271 /* SubmitMentionViewController.swift */; };
 		E9F95FEF1E27F75D00D33271 /* SubmitMentionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F95FEE1E27F75D00D33271 /* SubmitMentionView.swift */; };
 		E9F95FF31E29517C00D33271 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F95FF21E29517C00D33271 /* AboutViewController.swift */; };
@@ -104,6 +109,11 @@
 		E9D1158F1E2B9BBC0079A7AC /* StancesChooserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StancesChooserViewController.swift; sourceTree = "<group>"; };
 		E9D115911E2BB91C0079A7AC /* StancesChooserView4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StancesChooserView4.swift; sourceTree = "<group>"; };
 		E9D115931E2BBDC50079A7AC /* StancesChooserView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StancesChooserView2.swift; sourceTree = "<group>"; };
+		E9D115961E2BC42A0079A7AC /* FormCompletedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormCompletedView.swift; sourceTree = "<group>"; };
+		E9D115981E2BC5440079A7AC /* FormCompletedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormCompletedViewController.swift; sourceTree = "<group>"; };
+		E9D1159A1E2BCA130079A7AC /* StancesChooser2Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StancesChooser2Controller.swift; sourceTree = "<group>"; };
+		E9D1159C1E2BCAA80079A7AC /* StancesChooser3Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StancesChooser3Controller.swift; sourceTree = "<group>"; };
+		E9D1159E1E2BCAB00079A7AC /* StancesChooser4Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StancesChooser4Controller.swift; sourceTree = "<group>"; };
 		E9F95FEC1E27F74700D33271 /* SubmitMentionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitMentionViewController.swift; sourceTree = "<group>"; };
 		E9F95FEE1E27F75D00D33271 /* SubmitMentionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitMentionView.swift; sourceTree = "<group>"; };
 		E9F95FF21E29517C00D33271 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
@@ -182,6 +192,10 @@
 				E9F960001E29580900D33271 /* CampaignOverviewViewController.swift */,
 				E9D1158F1E2B9BBC0079A7AC /* StancesChooserViewController.swift */,
 				E99313131E2AF41C0088D354 /* StancesFormViewController.swift */,
+				E9D1159A1E2BCA130079A7AC /* StancesChooser2Controller.swift */,
+				E9D1159E1E2BCAB00079A7AC /* StancesChooser4Controller.swift */,
+				E9D1159C1E2BCAA80079A7AC /* StancesChooser3Controller.swift */,
+				E9D115981E2BC5440079A7AC /* FormCompletedViewController.swift */,
 				E9F9601F1E2AD61600D33271 /* HomeViewControllers */,
 				E9F960071E29592700D33271 /* MentionPageControllers */,
 				E9F960061E2958F600D33271 /* AboutPageControllers */,
@@ -291,6 +305,7 @@
 				E9D1158D1E2B931C0079A7AC /* StancesChooserView3.swift */,
 				E9D115911E2BB91C0079A7AC /* StancesChooserView4.swift */,
 				E9D115931E2BBDC50079A7AC /* StancesChooserView2.swift */,
+				E9D115961E2BC42A0079A7AC /* FormCompletedView.swift */,
 			);
 			name = StancesFormViews;
 			sourceTree = "<group>";
@@ -641,6 +656,9 @@
 				E9F960131E2ABBCB00D33271 /* HomeViewController.swift in Sources */,
 				1913F0EF1E26A78800F705EA /* AboutPageIssueViewController.swift in Sources */,
 				E9F95FFF1E29565B00D33271 /* BTNavWithMyEdits.swift in Sources */,
+				E9D1159F1E2BCAB00079A7AC /* StancesChooser4Controller.swift in Sources */,
+				E9D115971E2BC42A0079A7AC /* FormCompletedView.swift in Sources */,
+				E9D1159B1E2BCA130079A7AC /* StancesChooser2Controller.swift in Sources */,
 				E9D1158E1E2B931C0079A7AC /* StancesChooserView3.swift in Sources */,
 				E9F9601D1E2AD48000D33271 /* AllView.swift in Sources */,
 				E9F960111E2A583200D33271 /* CampaignOverviewDonateCell.swift in Sources */,
@@ -648,6 +666,7 @@
 				E9F960191E2ACC9E00D33271 /* RecommendedIntroViewController.swift in Sources */,
 				E9F9601B1E2AD46D00D33271 /* AllViewController.swift in Sources */,
 				19AEF1341E2801ED00AC19A4 /* OpenedIssueView.swift in Sources */,
+				E9D1159D1E2BCAA80079A7AC /* StancesChooser3Controller.swift in Sources */,
 				E9F960151E2ABC2A00D33271 /* HomeView.swift in Sources */,
 				19AEF1321E28019400AC19A4 /* OpenedIssueViewController.swift in Sources */,
 				E9F960011E29580900D33271 /* CampaignOverviewViewController.swift in Sources */,
@@ -665,6 +684,7 @@
 				E9F95FEF1E27F75D00D33271 /* SubmitMentionView.swift in Sources */,
 				E9F95FF71E29520300D33271 /* AppDelegate.swift in Sources */,
 				E9F9600D1E2A523000D33271 /* CampaignOverviewMentionsCell.swift in Sources */,
+				E9D115991E2BC5440079A7AC /* FormCompletedViewController.swift in Sources */,
 				E903027D1E254A8700B7BBF1 /* MentionCell.swift in Sources */,
 				E9F95FED1E27F74700D33271 /* SubmitMentionViewController.swift in Sources */,
 				E903027B1E25334B00B7BBF1 /* MentionsViewController.swift in Sources */,
