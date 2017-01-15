@@ -85,6 +85,7 @@ class StancesChooserView: UIView {
         let view: M13Checkbox = M13Checkbox()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.stateChangeAnimation = M13Checkbox.Animation.bounce(M13Checkbox.AnimationStyle.fill)
+        view.animationDuration = 0.2
         view.isUserInteractionEnabled = false
         return view
     }()
@@ -114,6 +115,7 @@ class StancesChooserView: UIView {
         let view: M13Checkbox = M13Checkbox()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.stateChangeAnimation = M13Checkbox.Animation.bounce(M13Checkbox.AnimationStyle.fill)
+        view.animationDuration = 0.2
         view.isUserInteractionEnabled = false
         return view
     }()
@@ -141,6 +143,7 @@ class StancesChooserView: UIView {
         let view: M13Checkbox = M13Checkbox()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.stateChangeAnimation = M13Checkbox.Animation.bounce(M13Checkbox.AnimationStyle.fill)
+        view.animationDuration = 0.2
         view.isUserInteractionEnabled = false
         return view
     }()
@@ -149,36 +152,33 @@ class StancesChooserView: UIView {
         if button0.backgroundColor == UIColor.white{
             button0.backgroundColor = UIColor(white: 220/255, alpha: 1)
             checkbox0.setCheckState(M13Checkbox.CheckState.checked, animated: true)
-        }else{
-            button0.backgroundColor = UIColor.white
-            checkbox0.setCheckState(M13Checkbox.CheckState.unchecked, animated: true)
+            button1.backgroundColor = UIColor.white
+            checkbox1.setCheckState(M13Checkbox.CheckState.unchecked, animated: true)
+            button2.backgroundColor = UIColor.white
+            checkbox2.setCheckState(M13Checkbox.CheckState.unchecked, animated: true)
         }
-        switch1()
-        switch2()
     }
     
     func switch1(){
         if button1.backgroundColor == UIColor.white{
             button1.backgroundColor = UIColor(white: 220/255, alpha: 1)
             checkbox1.setCheckState(M13Checkbox.CheckState.checked, animated: true)
-        }else{
-            button1.backgroundColor = UIColor.white
-            checkbox1.setCheckState(M13Checkbox.CheckState.unchecked, animated: true)
+            button0.backgroundColor = UIColor.white
+            checkbox0.setCheckState(M13Checkbox.CheckState.unchecked, animated: true)
+            button2.backgroundColor = UIColor.white
+            checkbox2.setCheckState(M13Checkbox.CheckState.unchecked, animated: true)
         }
-        switch0()
-        switch2()
     }
     
     func switch2(){
         if button2.backgroundColor == UIColor.white{
             button2.backgroundColor = UIColor(white: 220/255, alpha: 1)
             checkbox2.setCheckState(M13Checkbox.CheckState.checked, animated: true)
-        }else{
-            button2.backgroundColor = UIColor.white
-            checkbox2.setCheckState(M13Checkbox.CheckState.unchecked, animated: true)
+            button0.backgroundColor = UIColor.white
+            checkbox0.setCheckState(M13Checkbox.CheckState.unchecked, animated: true)
+            button1.backgroundColor = UIColor.white
+            checkbox1.setCheckState(M13Checkbox.CheckState.unchecked, animated: true)
         }
-        switch0()
-        switch1()
     }
     
     func setupViews(){
