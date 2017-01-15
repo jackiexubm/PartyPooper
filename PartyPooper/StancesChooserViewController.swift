@@ -11,7 +11,7 @@ import UIKit
 class StancesChooserViewController: UIViewController{
     
     override func viewDidLoad() {
-        view = StancesChooserView()
+        view = StancesChooserView2()
         super.viewDidLoad()
     }
 
