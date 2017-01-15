@@ -26,9 +26,10 @@
 		E934E9CE1E26D8FF009D3FBB /* MentionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E934E9CD1E26D8FF009D3FBB /* MentionModel.swift */; };
 		E99313141E2AF41C0088D354 /* StancesFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99313131E2AF41C0088D354 /* StancesFormViewController.swift */; };
 		E99313171E2AF6660088D354 /* IssuesChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99313161E2AF6660088D354 /* IssuesChooserView.swift */; };
-		E9D1158E1E2B931C0079A7AC /* StancesChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D1158D1E2B931C0079A7AC /* StancesChooserView.swift */; };
+		E9D1158E1E2B931C0079A7AC /* StancesChooserView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D1158D1E2B931C0079A7AC /* StancesChooserView3.swift */; };
 		E9D115901E2B9BBC0079A7AC /* StancesChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D1158F1E2B9BBC0079A7AC /* StancesChooserViewController.swift */; };
-		E9D115921E2BB91C0079A7AC /* StancesChooserView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D115911E2BB91C0079A7AC /* StancesChooserView2.swift */; };
+		E9D115921E2BB91C0079A7AC /* StancesChooserView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D115911E2BB91C0079A7AC /* StancesChooserView4.swift */; };
+		E9D115941E2BBDC50079A7AC /* StancesChooserView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D115931E2BBDC50079A7AC /* StancesChooserView2.swift */; };
 		E9F95FED1E27F74700D33271 /* SubmitMentionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F95FEC1E27F74700D33271 /* SubmitMentionViewController.swift */; };
 		E9F95FEF1E27F75D00D33271 /* SubmitMentionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F95FEE1E27F75D00D33271 /* SubmitMentionView.swift */; };
 		E9F95FF31E29517C00D33271 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F95FF21E29517C00D33271 /* AboutViewController.swift */; };
@@ -99,9 +100,10 @@
 		E934E9CD1E26D8FF009D3FBB /* MentionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MentionModel.swift; sourceTree = "<group>"; };
 		E99313131E2AF41C0088D354 /* StancesFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StancesFormViewController.swift; sourceTree = "<group>"; };
 		E99313161E2AF6660088D354 /* IssuesChooserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuesChooserView.swift; sourceTree = "<group>"; };
-		E9D1158D1E2B931C0079A7AC /* StancesChooserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StancesChooserView.swift; sourceTree = "<group>"; };
+		E9D1158D1E2B931C0079A7AC /* StancesChooserView3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StancesChooserView3.swift; sourceTree = "<group>"; };
 		E9D1158F1E2B9BBC0079A7AC /* StancesChooserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StancesChooserViewController.swift; sourceTree = "<group>"; };
-		E9D115911E2BB91C0079A7AC /* StancesChooserView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StancesChooserView2.swift; sourceTree = "<group>"; };
+		E9D115911E2BB91C0079A7AC /* StancesChooserView4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StancesChooserView4.swift; sourceTree = "<group>"; };
+		E9D115931E2BBDC50079A7AC /* StancesChooserView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StancesChooserView2.swift; sourceTree = "<group>"; };
 		E9F95FEC1E27F74700D33271 /* SubmitMentionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitMentionViewController.swift; sourceTree = "<group>"; };
 		E9F95FEE1E27F75D00D33271 /* SubmitMentionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitMentionView.swift; sourceTree = "<group>"; };
 		E9F95FF21E29517C00D33271 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
@@ -286,8 +288,9 @@
 			isa = PBXGroup;
 			children = (
 				E99313161E2AF6660088D354 /* IssuesChooserView.swift */,
-				E9D1158D1E2B931C0079A7AC /* StancesChooserView.swift */,
-				E9D115911E2BB91C0079A7AC /* StancesChooserView2.swift */,
+				E9D1158D1E2B931C0079A7AC /* StancesChooserView3.swift */,
+				E9D115911E2BB91C0079A7AC /* StancesChooserView4.swift */,
+				E9D115931E2BBDC50079A7AC /* StancesChooserView2.swift */,
 			);
 			name = StancesFormViews;
 			sourceTree = "<group>";
@@ -634,11 +637,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9D115921E2BB91C0079A7AC /* StancesChooserView2.swift in Sources */,
+				E9D115921E2BB91C0079A7AC /* StancesChooserView4.swift in Sources */,
 				E9F960131E2ABBCB00D33271 /* HomeViewController.swift in Sources */,
 				1913F0EF1E26A78800F705EA /* AboutPageIssueViewController.swift in Sources */,
 				E9F95FFF1E29565B00D33271 /* BTNavWithMyEdits.swift in Sources */,
-				E9D1158E1E2B931C0079A7AC /* StancesChooserView.swift in Sources */,
+				E9D1158E1E2B931C0079A7AC /* StancesChooserView3.swift in Sources */,
 				E9F9601D1E2AD48000D33271 /* AllView.swift in Sources */,
 				E9F960111E2A583200D33271 /* CampaignOverviewDonateCell.swift in Sources */,
 				19AEF1301E27F83400AC19A4 /* IssueModel.swift in Sources */,
@@ -652,6 +655,7 @@
 				1913F0F11E26A86D00F705EA /* IssuesCollectionViewFlowLayout.swift in Sources */,
 				E9F960051E2958D700D33271 /* CampaignOverviewHeaderCell.swift in Sources */,
 				E9F95FF51E2951CB00D33271 /* CampaignHeaderCell.swift in Sources */,
+				E9D115941E2BBDC50079A7AC /* StancesChooserView2.swift in Sources */,
 				19AEF12E1E27EB3200AC19A4 /* IssuesCellsContainer.swift in Sources */,
 				E9D115901E2B9BBC0079A7AC /* StancesChooserViewController.swift in Sources */,
 				193F9E1C1E257B48000E4793 /* IssueCell.swift in Sources */,
