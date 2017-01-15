@@ -189,8 +189,6 @@
 			isa = PBXGroup;
 			children = (
 				195436451E2AF15A003A8B79 /* MatchResultController */,
-				1954363D1E2AC840003A8B79 /* CampaignListController.swift */,
-				195436461E2AF185003A8B79 /* MatchResultsController.swift */,
 			);
 			name = CampaignListController;
 			sourceTree = "<group>";
@@ -207,6 +205,8 @@
 		195436451E2AF15A003A8B79 /* MatchResultController */ = {
 			isa = PBXGroup;
 			children = (
+				1954363D1E2AC840003A8B79 /* CampaignListController.swift */,
+				195436461E2AF185003A8B79 /* MatchResultsController.swift */,
 			);
 			name = MatchResultController;
 			sourceTree = "<group>";

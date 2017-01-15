@@ -27,10 +27,12 @@ class DonateView: UIView {
     }()
     
     let imageView: UIImageView = {
-        let image = UIImageView()
-        image.translatesAutoresizingMaskIntoConstraints = false
-        image.backgroundColor = UIColor.blue
-        return image
+        let view = UIImageView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.image = #imageLiteral(resourceName: "new_donate")
+        view.contentMode = .scaleAspectFill
+        view.layer.masksToBounds = true
+        return view
     }()
     
     
@@ -46,7 +48,8 @@ class DonateView: UIView {
         addConstraintsWithString("H:|[v1]|")
         addConstraintsWithString("V:|-64-[v1]-|")
 
-
+        
+        
     }
     
     

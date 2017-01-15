@@ -24,6 +24,7 @@ class  OpenedIssueView: UIView {
         topic.font = UIFont(name: "HelveticaNeue-Light", size: 40)
         topic.backgroundColor = UIColor.white
         topic.translatesAutoresizingMaskIntoConstraints = false
+        topic.numberOfLines = 0 
         return topic
     }()
     

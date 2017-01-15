@@ -55,7 +55,6 @@ class MatchCandidateCell: UICollectionViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.init(name: "HelveticaNeue-Medium", size: 30)
-//        label.backgroundColor = UIColor.red
         return label
     }()
     
@@ -88,7 +87,7 @@ class MatchCandidateCell: UICollectionViewCell {
         addConstraintWithString("V:|-20-[v2(20)]")
         
         addConstraintWithString("V:[v2]-[v3]-15-|")
-        addConstraintWithString("H:[v1]-20-[v3]-|")
+        addConstraintWithString("H:[v1]-20-[v3]|")
         
         addConstraintWithString("V:|-5-[v4]-10-|")
         addConstraintWithString("H:[v4]-10-|")
