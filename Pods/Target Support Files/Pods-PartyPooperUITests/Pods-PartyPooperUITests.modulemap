@@ -1,6 +1,0 @@
-framework module Pods_PartyPooperUITests {
-  umbrella header "Pods-PartyPooperUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

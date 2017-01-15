@@ -9,7 +9,6 @@
 import UIKit
 
 class CampaignOverviewHeaderCell: UICollectionViewCell{
-    static let profileImageDiameter: CGFloat = 120
     
     override init(frame: CGRect){
         super.init(frame: frame)
@@ -17,73 +16,58 @@ class CampaignOverviewHeaderCell: UICollectionViewCell{
         setupViews()
     }
     
-    let profileImageView: UIImageView = {
+    let bannerView: UIImageView = {
+        let view: UIImageView = UIImageView()
+        view.backgroundColor = UIColor.blue
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    let profileView: UIImageView = {
         let view: UIImageView = UIImageView()
         view.backgroundColor = UIColor.red
         view.layer.borderWidth = 4
         view.layer.borderColor = UIColor.white.cgColor
-        view.layer.cornerRadius = profileImageDiameter / 2
+        view.layer.cornerRadius = 60
         view.layer.masksToBounds = true
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
-
-    let profileShadowView: UIView = {
-        let view: UIView = UIView()
-        view.backgroundColor = UIColor.lightGray
-        view.layer.cornerRadius = profileImageDiameter / 2 + 2
-
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
-
-    let cellSeparator: UIView = {
-        let view: UIView = UIView()
-        view.backgroundColor = UIColor(white: 220/255, alpha: 1)
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
+    
+    let candidateName: UILabel = {
+        let label: UILabel = UILabel()
+        label.text = "Bernie Sanders"
+        label.textAlignment = NSTextAlignment.center
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
     }()
     
-    let sloganLabel: UILabel = {
-        let view: UILabel = UILabel()
-        view.numberOfLines = 0
-        view.text = "\"A political revolution is coming\""
-        view.textColor = UIColor.gray
-        view.font = UIFont(name: "Arial-ItalicMT", size: 18)
-        view.textAlignment = NSTextAlignment.center
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
     
     func setupViews(){
-        addSubview(profileShadowView)
-        addSubview(profileImageView)
-        addSubview(cellSeparator)
-        addSubview(sloganLabel)
+        let heightOfBanner = 9 / 16 * UIScreen.main.bounds.width
         
         
-        addConstraintsWithString("H:[v2(\(CampaignOverviewHeaderCell.profileImageDiameter))]")
-        addConstraintsWithString("V:|-15-[v2(\(CampaignOverviewHeaderCell.profileImageDiameter))]")
-        addConstraint(NSLayoutConstraint(item: profileShadowView, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.centerX, multiplier: 1, constant: 1))
-
-        addConstraintsWithString("H:[v0(\(CampaignOverviewHeaderCell.profileImageDiameter))]")
-        addConstraintsWithString("V:|-15-[v0(\(CampaignOverviewHeaderCell.profileImageDiameter))]")
-        addConstraint(NSLayoutConstraint(item: profileImageView, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.centerX, multiplier: 1, constant: 0))
-        addConstraintsWithString("H:|[v1]|")
-        addConstraintsWithString("V:[v1(1)]|")
+        addSubview(bannerView)
+        addSubview(profileView)
+        addSubview(candidateName)
         
+        addConstraintsWithString("H:|[v0]|")
+        addConstraintsWithString("H:[v1(120)]")
+        
+        
+        
+        addConstraintsWithString("V:|[v0(\(heightOfBanner))]")
+        addConstraintsWithString("V:|-\(heightOfBanner - 60)-[v1(120)]-[v2(20)]-[v3(15)]")
+        addConstraint(NSLayoutConstraint(item: profileView, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.centerX, multiplier: 1, constant: 0))
+        addConstraintsWithString("H:|-20-[v2]-20-|")
         addConstraintsWithString("H:|-20-[v3]-20-|")
-        addConstraintsWithString("V:[v3(20)]-5-|")
     }
     
     
     
+    
     func addConstraintsWithString(_ str:String){
-        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: str, options: NSLayoutFormatOptions(), metrics: nil, views: [
-            "v0":profileImageView,
-            "v1":cellSeparator,
-            "v2":profileShadowView,
-            "v3":sloganLabel
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: str, options: NSLayoutFormatOptions(), metrics: nil, views: ["v0":bannerView, "v1":profileView, "v2":candidateName,
         ]))
     }
     

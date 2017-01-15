@@ -19,6 +19,7 @@ class MentionsViewController: UICollectionViewController, UICollectionViewDelega
         setupNavigationDropdownMenu()
         collectionView?.backgroundColor = UIColor(white: 237/255, alpha: 1)
         collectionView?.register(MentionCell.self, forCellWithReuseIdentifier: "MentionCell")
+        
     }
     
     lazy var submitBarButton: UIBarButtonItem = {

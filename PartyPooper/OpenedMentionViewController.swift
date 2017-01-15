@@ -12,6 +12,7 @@ class OpenedMentionViewController: UIViewController{
     
     override func viewDidLoad() {
         view = OpenedMentionView()
-        super.viewDidLoad()
+        
     }
+    
 }

@@ -28,6 +28,7 @@
 		19AEF1341E2801ED00AC19A4 /* OpenedIssueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AEF1331E2801ED00AC19A4 /* OpenedIssueView.swift */; };
 		42310AB529730421DD34345E /* Pods_PartyPooperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4263CDCA38EBB2BCF61C498B /* Pods_PartyPooperUITests.framework */; };
 		5D157E29F689EEBD10E7D21D /* Pods_PartyPooperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0234E9EF19882BA8440E08BF /* Pods_PartyPooperTests.framework */; };
+		E90302791E25332E00B7BBF1 /* MentionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90302781E25332E00B7BBF1 /* MentionsView.swift */; };
 		E903027B1E25334B00B7BBF1 /* MentionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E903027A1E25334B00B7BBF1 /* MentionsViewController.swift */; };
 		E903027D1E254A8700B7BBF1 /* MentionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E903027C1E254A8700B7BBF1 /* MentionCell.swift */; };
 		E903027F1E256AD300B7BBF1 /* OpenedMentionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E903027E1E256AD300B7BBF1 /* OpenedMentionView.swift */; };
@@ -36,17 +37,6 @@
 		E919042A1E252FB100DA05C2 /* PartyPooperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91904291E252FB100DA05C2 /* PartyPooperTests.swift */; };
 		E91904351E252FB100DA05C2 /* PartyPooperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91904341E252FB100DA05C2 /* PartyPooperUITests.swift */; };
 		E934E9CE1E26D8FF009D3FBB /* MentionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E934E9CD1E26D8FF009D3FBB /* MentionModel.swift */; };
-		E99313141E2AF41C0088D354 /* StancesFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99313131E2AF41C0088D354 /* StancesFormViewController.swift */; };
-		E99313171E2AF6660088D354 /* IssuesChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99313161E2AF6660088D354 /* IssuesChooserView.swift */; };
-		E9D1158E1E2B931C0079A7AC /* StancesChooserView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D1158D1E2B931C0079A7AC /* StancesChooserView3.swift */; };
-		E9D115901E2B9BBC0079A7AC /* StancesChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D1158F1E2B9BBC0079A7AC /* StancesChooserViewController.swift */; };
-		E9D115921E2BB91C0079A7AC /* StancesChooserView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D115911E2BB91C0079A7AC /* StancesChooserView4.swift */; };
-		E9D115941E2BBDC50079A7AC /* StancesChooserView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D115931E2BBDC50079A7AC /* StancesChooserView2.swift */; };
-		E9D115971E2BC42A0079A7AC /* FormCompletedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D115961E2BC42A0079A7AC /* FormCompletedView.swift */; };
-		E9D115991E2BC5440079A7AC /* FormCompletedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D115981E2BC5440079A7AC /* FormCompletedViewController.swift */; };
-		E9D1159B1E2BCA130079A7AC /* StancesChooser2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D1159A1E2BCA130079A7AC /* StancesChooser2Controller.swift */; };
-		E9D1159D1E2BCAA80079A7AC /* StancesChooser3Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D1159C1E2BCAA80079A7AC /* StancesChooser3Controller.swift */; };
-		E9D1159F1E2BCAB00079A7AC /* StancesChooser4Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D1159E1E2BCAB00079A7AC /* StancesChooser4Controller.swift */; };
 		E9F95FED1E27F74700D33271 /* SubmitMentionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F95FEC1E27F74700D33271 /* SubmitMentionViewController.swift */; };
 		E9F95FEF1E27F75D00D33271 /* SubmitMentionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F95FEE1E27F75D00D33271 /* SubmitMentionView.swift */; };
 		E9F95FF31E29517C00D33271 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F95FF21E29517C00D33271 /* AboutViewController.swift */; };
@@ -55,16 +45,6 @@
 		E9F95FFF1E29565B00D33271 /* BTNavWithMyEdits.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F95FFE1E29565B00D33271 /* BTNavWithMyEdits.swift */; };
 		E9F960011E29580900D33271 /* CampaignOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F960001E29580900D33271 /* CampaignOverviewViewController.swift */; };
 		E9F960051E2958D700D33271 /* CampaignOverviewHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F960041E2958D700D33271 /* CampaignOverviewHeaderCell.swift */; };
-		E9F960091E297E1500D33271 /* CampaignOverviewAboutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F960081E297E1500D33271 /* CampaignOverviewAboutCell.swift */; };
-		E9F9600D1E2A523000D33271 /* CampaignOverviewMentionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F9600C1E2A523000D33271 /* CampaignOverviewMentionsCell.swift */; };
-		E9F9600F1E2A582600D33271 /* CampaignOverviewEventsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F9600E1E2A582600D33271 /* CampaignOverviewEventsCell.swift */; };
-		E9F960111E2A583200D33271 /* CampaignOverviewDonateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F960101E2A583200D33271 /* CampaignOverviewDonateCell.swift */; };
-		E9F960131E2ABBCB00D33271 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F960121E2ABBCB00D33271 /* HomeViewController.swift */; };
-		E9F960151E2ABC2A00D33271 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F960141E2ABC2A00D33271 /* HomeView.swift */; };
-		E9F960171E2ACC8900D33271 /* RecommendedIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F960161E2ACC8900D33271 /* RecommendedIntroView.swift */; };
-		E9F960191E2ACC9E00D33271 /* RecommendedIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F960181E2ACC9E00D33271 /* RecommendedIntroViewController.swift */; };
-		E9F9601B1E2AD46D00D33271 /* AllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F9601A1E2AD46D00D33271 /* AllViewController.swift */; };
-		E9F9601D1E2AD48000D33271 /* AllView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F9601C1E2AD48000D33271 /* AllView.swift */; };
 		F8BC6D862168F1AE0F4AD885 /* Pods_PartyPooper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6CB1A8DC4E1E62200487F1E /* Pods_PartyPooper.framework */; };
 /* End PBXBuildFile section */
 
@@ -113,6 +93,7 @@
 		8057ACC6FD8C1C6DE25227F6 /* Pods-PartyPooperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartyPooperUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PartyPooperUITests/Pods-PartyPooperUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A89E9C3089DEC8F302ADCC84 /* Pods-PartyPooperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartyPooperTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PartyPooperTests/Pods-PartyPooperTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C6CB1A8DC4E1E62200487F1E /* Pods_PartyPooper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PartyPooper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E90302781E25332E00B7BBF1 /* MentionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MentionsView.swift; sourceTree = "<group>"; };
 		E903027A1E25334B00B7BBF1 /* MentionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MentionsViewController.swift; sourceTree = "<group>"; };
 		E903027C1E254A8700B7BBF1 /* MentionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MentionCell.swift; sourceTree = "<group>"; };
 		E903027E1E256AD300B7BBF1 /* OpenedMentionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenedMentionView.swift; sourceTree = "<group>"; };
@@ -127,17 +108,6 @@
 		E91904341E252FB100DA05C2 /* PartyPooperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyPooperUITests.swift; sourceTree = "<group>"; };
 		E91904361E252FB100DA05C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E934E9CD1E26D8FF009D3FBB /* MentionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MentionModel.swift; sourceTree = "<group>"; };
-		E99313131E2AF41C0088D354 /* StancesFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StancesFormViewController.swift; sourceTree = "<group>"; };
-		E99313161E2AF6660088D354 /* IssuesChooserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuesChooserView.swift; sourceTree = "<group>"; };
-		E9D1158D1E2B931C0079A7AC /* StancesChooserView3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StancesChooserView3.swift; sourceTree = "<group>"; };
-		E9D1158F1E2B9BBC0079A7AC /* StancesChooserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StancesChooserViewController.swift; sourceTree = "<group>"; };
-		E9D115911E2BB91C0079A7AC /* StancesChooserView4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StancesChooserView4.swift; sourceTree = "<group>"; };
-		E9D115931E2BBDC50079A7AC /* StancesChooserView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StancesChooserView2.swift; sourceTree = "<group>"; };
-		E9D115961E2BC42A0079A7AC /* FormCompletedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormCompletedView.swift; sourceTree = "<group>"; };
-		E9D115981E2BC5440079A7AC /* FormCompletedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormCompletedViewController.swift; sourceTree = "<group>"; };
-		E9D1159A1E2BCA130079A7AC /* StancesChooser2Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StancesChooser2Controller.swift; sourceTree = "<group>"; };
-		E9D1159C1E2BCAA80079A7AC /* StancesChooser3Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StancesChooser3Controller.swift; sourceTree = "<group>"; };
-		E9D1159E1E2BCAB00079A7AC /* StancesChooser4Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StancesChooser4Controller.swift; sourceTree = "<group>"; };
 		E9F95FEC1E27F74700D33271 /* SubmitMentionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitMentionViewController.swift; sourceTree = "<group>"; };
 		E9F95FEE1E27F75D00D33271 /* SubmitMentionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitMentionView.swift; sourceTree = "<group>"; };
 		E9F95FF21E29517C00D33271 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
@@ -146,16 +116,6 @@
 		E9F95FFE1E29565B00D33271 /* BTNavWithMyEdits.swift */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; name = BTNavWithMyEdits.swift; path = PartyPooper/BTNavWithMyEdits.swift; sourceTree = "<group>"; };
 		E9F960001E29580900D33271 /* CampaignOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignOverviewViewController.swift; sourceTree = "<group>"; };
 		E9F960041E2958D700D33271 /* CampaignOverviewHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignOverviewHeaderCell.swift; sourceTree = "<group>"; };
-		E9F960081E297E1500D33271 /* CampaignOverviewAboutCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignOverviewAboutCell.swift; sourceTree = "<group>"; };
-		E9F9600C1E2A523000D33271 /* CampaignOverviewMentionsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignOverviewMentionsCell.swift; sourceTree = "<group>"; };
-		E9F9600E1E2A582600D33271 /* CampaignOverviewEventsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignOverviewEventsCell.swift; sourceTree = "<group>"; };
-		E9F960101E2A583200D33271 /* CampaignOverviewDonateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignOverviewDonateCell.swift; sourceTree = "<group>"; };
-		E9F960121E2ABBCB00D33271 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		E9F960141E2ABC2A00D33271 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		E9F960161E2ACC8900D33271 /* RecommendedIntroView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendedIntroView.swift; sourceTree = "<group>"; };
-		E9F960181E2ACC9E00D33271 /* RecommendedIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendedIntroViewController.swift; sourceTree = "<group>"; };
-		E9F9601A1E2AD46D00D33271 /* AllViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllViewController.swift; sourceTree = "<group>"; };
-		E9F9601C1E2AD48000D33271 /* AllView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllView.swift; sourceTree = "<group>"; };
 		EC2C32E2B4A7F0D3C4D6727A /* Pods-PartyPooperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartyPooperUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PartyPooperUITests/Pods-PartyPooperUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -265,21 +225,10 @@
 		E903026D1E25306300B7BBF1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-=======
 				1954363F1E2AC84F003A8B79 /* CampaignListController */,
 				1954362B1E2982D3003A8B79 /* EventsPageControllers */,
 				E9F960071E29592700D33271 /* MentionPageControllers */,
->>>>>>> d554de49f65f15d43e95ee94411ca781ddb3d49d
 				E9F960001E29580900D33271 /* CampaignOverviewViewController.swift */,
-				E9D1158F1E2B9BBC0079A7AC /* StancesChooserViewController.swift */,
-				E99313131E2AF41C0088D354 /* StancesFormViewController.swift */,
-				E9D1159A1E2BCA130079A7AC /* StancesChooser2Controller.swift */,
-				E9D1159E1E2BCAB00079A7AC /* StancesChooser4Controller.swift */,
-				E9D1159C1E2BCAA80079A7AC /* StancesChooser3Controller.swift */,
-				E9D115981E2BC5440079A7AC /* FormCompletedViewController.swift */,
-				E9F9601F1E2AD61600D33271 /* HomeViewControllers */,
-				E9F960071E29592700D33271 /* MentionPageControllers */,
 				E9F960061E2958F600D33271 /* AboutPageControllers */,
 				195436371E2AACEF003A8B79 /* DonatePageController */,
 			);
@@ -301,17 +250,11 @@
 		E90302701E25308400B7BBF1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E99313151E2AF5510088D354 /* StancesFormViews */,
-				E92EDC171E2AE71A0015769D /* MentionViewViews */,
-				E9F9601E1E2AD4A800D33271 /* HomeViewViews */,
 				19AEF1331E2801ED00AC19A4 /* OpenedIssueView.swift */,
-<<<<<<< HEAD
-=======
 				E90302781E25332E00B7BBF1 /* MentionsView.swift */,
 				E903027E1E256AD300B7BBF1 /* OpenedMentionView.swift */,
 				E9F95FEE1E27F75D00D33271 /* SubmitMentionView.swift */,
 				1954363B1E2ABB5B003A8B79 /* DonateView.swift */,
->>>>>>> d554de49f65f15d43e95ee94411ca781ddb3d49d
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -384,33 +327,12 @@
 			path = PartyPooperUITests;
 			sourceTree = "<group>";
 		};
-		E92EDC171E2AE71A0015769D /* MentionViewViews */ = {
-			isa = PBXGroup;
-			children = (
-				E9F95FEE1E27F75D00D33271 /* SubmitMentionView.swift */,
-				E903027E1E256AD300B7BBF1 /* OpenedMentionView.swift */,
-			);
-			name = MentionViewViews;
-			sourceTree = "<group>";
-		};
-		E99313151E2AF5510088D354 /* StancesFormViews */ = {
-			isa = PBXGroup;
-			children = (
-				E99313161E2AF6660088D354 /* IssuesChooserView.swift */,
-				E9D1158D1E2B931C0079A7AC /* StancesChooserView3.swift */,
-				E9D115911E2BB91C0079A7AC /* StancesChooserView4.swift */,
-				E9D115931E2BBDC50079A7AC /* StancesChooserView2.swift */,
-				E9D115961E2BC42A0079A7AC /* FormCompletedView.swift */,
-			);
-			name = StancesFormViews;
-			sourceTree = "<group>";
-		};
 		E9F960021E29588900D33271 /* AboutViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				193F9E1B1E257B48000E4793 /* IssueCell.swift */,
 				E9F95FF41E2951CB00D33271 /* CampaignHeaderCell.swift */,
 				19AEF12D1E27EB3200AC19A4 /* IssuesCellsContainer.swift */,
-				193F9E1B1E257B48000E4793 /* IssueCell.swift */,
 			);
 			name = AboutViewCells;
 			sourceTree = "<group>";
@@ -419,10 +341,6 @@
 			isa = PBXGroup;
 			children = (
 				E9F960041E2958D700D33271 /* CampaignOverviewHeaderCell.swift */,
-				E9F960081E297E1500D33271 /* CampaignOverviewAboutCell.swift */,
-				E9F9600C1E2A523000D33271 /* CampaignOverviewMentionsCell.swift */,
-				E9F9600E1E2A582600D33271 /* CampaignOverviewEventsCell.swift */,
-				E9F960101E2A583200D33271 /* CampaignOverviewDonateCell.swift */,
 			);
 			name = CampaignOverviewCells;
 			sourceTree = "<group>";
@@ -445,26 +363,6 @@
 				E9F95FEC1E27F74700D33271 /* SubmitMentionViewController.swift */,
 			);
 			name = MentionPageControllers;
-			sourceTree = "<group>";
-		};
-		E9F9601E1E2AD4A800D33271 /* HomeViewViews */ = {
-			isa = PBXGroup;
-			children = (
-				E9F960141E2ABC2A00D33271 /* HomeView.swift */,
-				E9F9601C1E2AD48000D33271 /* AllView.swift */,
-				E9F960161E2ACC8900D33271 /* RecommendedIntroView.swift */,
-			);
-			name = HomeViewViews;
-			sourceTree = "<group>";
-		};
-		E9F9601F1E2AD61600D33271 /* HomeViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				E9F960121E2ABBCB00D33271 /* HomeViewController.swift */,
-				E9F9601A1E2AD46D00D33271 /* AllViewController.swift */,
-				E9F960181E2ACC9E00D33271 /* RecommendedIntroViewController.swift */,
-			);
-			name = HomeViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -544,11 +442,7 @@
 				TargetAttributes = {
 					E91904101E252FB000DA05C2 = {
 						CreatedOnToolsVersion = 8.2.1;
-<<<<<<< HEAD
-						DevelopmentTeam = TWGGTGHRWF;
-=======
 						DevelopmentTeam = 8QQ2PG3344;
->>>>>>> d554de49f65f15d43e95ee94411ca781ddb3d49d
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -756,73 +650,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9D115921E2BB91C0079A7AC /* StancesChooserView4.swift in Sources */,
-				E9F960131E2ABBCB00D33271 /* HomeViewController.swift in Sources */,
 				1913F0EF1E26A78800F705EA /* AboutPageIssueViewController.swift in Sources */,
 				E9F95FFF1E29565B00D33271 /* BTNavWithMyEdits.swift in Sources */,
-				E9D1159F1E2BCAB00079A7AC /* StancesChooser4Controller.swift in Sources */,
-				E9D115971E2BC42A0079A7AC /* FormCompletedView.swift in Sources */,
-				E9D1159B1E2BCA130079A7AC /* StancesChooser2Controller.swift in Sources */,
-				E9D1158E1E2B931C0079A7AC /* StancesChooserView3.swift in Sources */,
-				E9F9601D1E2AD48000D33271 /* AllView.swift in Sources */,
-				E9F960111E2A583200D33271 /* CampaignOverviewDonateCell.swift in Sources */,
 				19AEF1301E27F83400AC19A4 /* IssueModel.swift in Sources */,
-<<<<<<< HEAD
-				E9F960191E2ACC9E00D33271 /* RecommendedIntroViewController.swift in Sources */,
-				E9F9601B1E2AD46D00D33271 /* AllViewController.swift in Sources */,
-=======
 				195436301E298568003A8B79 /* EventCell.swift in Sources */,
 				195436361E2AACE8003A8B79 /* DonateViewController.swift in Sources */,
 				195436441E2ADF06003A8B79 /* CandidateModel.swift in Sources */,
->>>>>>> d554de49f65f15d43e95ee94411ca781ddb3d49d
 				19AEF1341E2801ED00AC19A4 /* OpenedIssueView.swift in Sources */,
-				E9D1159D1E2BCAA80079A7AC /* StancesChooser3Controller.swift in Sources */,
-				E9F960151E2ABC2A00D33271 /* HomeView.swift in Sources */,
 				19AEF1321E28019400AC19A4 /* OpenedIssueViewController.swift in Sources */,
 				E9F960011E29580900D33271 /* CampaignOverviewViewController.swift in Sources */,
-<<<<<<< HEAD
-				E9F960091E297E1500D33271 /* CampaignOverviewAboutCell.swift in Sources */,
-=======
 				1954364B1E2AF362003A8B79 /* MatchModel.swift in Sources */,
->>>>>>> d554de49f65f15d43e95ee94411ca781ddb3d49d
 				1913F0F11E26A86D00F705EA /* IssuesCollectionViewFlowLayout.swift in Sources */,
 				E9F960051E2958D700D33271 /* CampaignOverviewHeaderCell.swift in Sources */,
 				E9F95FF51E2951CB00D33271 /* CampaignHeaderCell.swift in Sources */,
-				E9D115941E2BBDC50079A7AC /* StancesChooserView2.swift in Sources */,
 				19AEF12E1E27EB3200AC19A4 /* IssuesCellsContainer.swift in Sources */,
-				E9D115901E2B9BBC0079A7AC /* StancesChooserViewController.swift in Sources */,
 				193F9E1C1E257B48000E4793 /* IssueCell.swift in Sources */,
-<<<<<<< HEAD
-				E9F960171E2ACC8900D33271 /* RecommendedIntroView.swift in Sources */,
-=======
 				1954363C1E2ABB5B003A8B79 /* DonateView.swift in Sources */,
 				1954362A1E298253003A8B79 /* EventsViewController.swift in Sources */,
->>>>>>> d554de49f65f15d43e95ee94411ca781ddb3d49d
 				E90302811E256B8300B7BBF1 /* OpenedMentionViewController.swift in Sources */,
 				E934E9CE1E26D8FF009D3FBB /* MentionModel.swift in Sources */,
 				195436411E2AC874003A8B79 /* CampaignListCell.swift in Sources */,
 				E9F95FEF1E27F75D00D33271 /* SubmitMentionView.swift in Sources */,
-<<<<<<< HEAD
-=======
 				195436491E2AF22C003A8B79 /* MatchCandidateCell.swift in Sources */,
 				E90302791E25332E00B7BBF1 /* MentionsView.swift in Sources */,
->>>>>>> d554de49f65f15d43e95ee94411ca781ddb3d49d
 				E9F95FF71E29520300D33271 /* AppDelegate.swift in Sources */,
-				E9F9600D1E2A523000D33271 /* CampaignOverviewMentionsCell.swift in Sources */,
-				E9D115991E2BC5440079A7AC /* FormCompletedViewController.swift in Sources */,
 				E903027D1E254A8700B7BBF1 /* MentionCell.swift in Sources */,
 				E9F95FED1E27F74700D33271 /* SubmitMentionViewController.swift in Sources */,
 				E903027B1E25334B00B7BBF1 /* MentionsViewController.swift in Sources */,
 				1954363E1E2AC840003A8B79 /* CampaignListController.swift in Sources */,
 				195436471E2AF185003A8B79 /* MatchResultsController.swift in Sources */,
 				E9F95FF31E29517C00D33271 /* AboutViewController.swift in Sources */,
-<<<<<<< HEAD
-				E99313171E2AF6660088D354 /* IssuesChooserView.swift in Sources */,
-				E99313141E2AF41C0088D354 /* StancesFormViewController.swift in Sources */,
-				E9F9600F1E2A582600D33271 /* CampaignOverviewEventsCell.swift in Sources */,
-=======
 				195436341E2A8406003A8B79 /* EventModel.swift in Sources */,
->>>>>>> d554de49f65f15d43e95ee94411ca781ddb3d49d
 				E903027F1E256AD300B7BBF1 /* OpenedMentionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -955,13 +813,7 @@
 			baseConfigurationReference = 145FA228CD1C9431956633C4 /* Pods-PartyPooper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-<<<<<<< HEAD
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = TWGGTGHRWF;
-=======
 				DEVELOPMENT_TEAM = 8QQ2PG3344;
->>>>>>> d554de49f65f15d43e95ee94411ca781ddb3d49d
 				INFOPLIST_FILE = PartyPooper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = byungzoon.PartyPooper;
@@ -975,13 +827,7 @@
 			baseConfigurationReference = 36698AC2FEF19965A678A27B /* Pods-PartyPooper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-<<<<<<< HEAD
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = TWGGTGHRWF;
-=======
 				DEVELOPMENT_TEAM = 8QQ2PG3344;
->>>>>>> d554de49f65f15d43e95ee94411ca781ddb3d49d
 				INFOPLIST_FILE = PartyPooper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = byungzoon.PartyPooper;

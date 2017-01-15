@@ -47,6 +47,7 @@ class MentionCell: UICollectionViewCell{
     
     let mentionPicture: UIImageView = {
         let view: UIImageView = UIImageView()
+        view.translatesAutoresizingMaskIntoConstraints = false
         view.contentMode = .scaleAspectFill
         view.layer.masksToBounds = true
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -87,7 +88,7 @@ class MentionCell: UICollectionViewCell{
         view.numberOfLines = 1
         view.translatesAutoresizingMaskIntoConstraints = false
         view.textAlignment = NSTextAlignment.left
-        view.textColor = UIColor(red: 200/255, green: 60/255, blue: 60/255, alpha: 1)
+        view.textColor = UIColor.red
         view.font = UIFont(name: "HelveticaNeue", size: 9)
         return view
     }()
@@ -176,6 +177,7 @@ class MentionCell: UICollectionViewCell{
         
         addSubview(topCellSeperator)
         addSubview(bottomCellSeperator)
+        addSubview(openMentionButton)
         addSubview(mentionPicture)
         addSubview(authorAndNewsOutletLabel)
         addSubview(mentionTitleLabel)
@@ -189,9 +191,8 @@ class MentionCell: UICollectionViewCell{
         scoresContainerView.addSubview(fairnessScoreLabel)
         scoresContainerView.addSubview(accuracyScoreLabel)
         scoresContainerView.addSubview(relevancyScoreLabel)
+        
         addSubview(scoresContainerView)
-        addSubview(openMentionButton)
-
         
         
         addConstraintWithString("H:|[v0]|")

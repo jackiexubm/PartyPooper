@@ -9,8 +9,6 @@
 import UIKit
 
 class CampaignHeaderCell: UICollectionViewCell{
-    static let profileImageDiameter: CGFloat = 150
-    
     
     override init(frame: CGRect){
         super.init(frame: frame)
@@ -30,7 +28,7 @@ class CampaignHeaderCell: UICollectionViewCell{
         view.image = #imageLiteral(resourceName: "bernie_profile")
         view.layer.borderWidth = 4
         view.layer.borderColor = UIColor.white.cgColor
-        view.layer.cornerRadius = profileImageDiameter / 2
+        view.layer.cornerRadius = 60
         view.layer.masksToBounds = true
         view.contentMode = .scaleAspectFill
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -85,16 +83,12 @@ class CampaignHeaderCell: UICollectionViewCell{
         addSubview(candidateQuote)
         
         addConstraintsWithString("H:|[v0]|")
-        addConstraintsWithString("H:[v1(\(CampaignHeaderCell.profileImageDiameter))]")
+        addConstraintsWithString("H:[v1(120)]")
         
         
         
         addConstraintsWithString("V:|[v0(\(heightOfBanner))]")
-<<<<<<< HEAD
-        addConstraintsWithString("V:|-\(heightOfBanner - CampaignHeaderCell.profileImageDiameter / 2)-[v1(\(CampaignHeaderCell.profileImageDiameter))]-[v2(20)]-[v3(15)]")
-=======
         addConstraintsWithString("V:|-\(heightOfBanner - 60)-[v1(120)]-[v2(30)]-[v3(15)]-[v4(40)]")
->>>>>>> d554de49f65f15d43e95ee94411ca781ddb3d49d
         addConstraint(NSLayoutConstraint(item: profileView, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.centerX, multiplier: 1, constant: 0))
         addConstraintsWithString("H:|-20-[v2]-20-|")
         addConstraintsWithString("H:|-20-[v3]-20-|")
@@ -106,17 +100,12 @@ class CampaignHeaderCell: UICollectionViewCell{
     
     
     func addConstraintsWithString(_ str:String){
-<<<<<<< HEAD
-        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: str, options: NSLayoutFormatOptions(), metrics: nil, views: ["v0":bannerView, "v1":profileView, "v2":candidateName, "v3": candidateDescription,
-        ]))
-=======
         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: str, options: NSLayoutFormatOptions(), metrics: nil, views: ["v0":bannerView, "v1":profileView, "v2":candidateName, "v3": candidateDescription, "v4": candidateQuote
                                                                                                                                      
                                                                                                                                      
                                                                                                                                      
                                                                                                                                      
                                                                                                                                      ]))
->>>>>>> d554de49f65f15d43e95ee94411ca781ddb3d49d
     }
     
     required init?(coder aDecoder: NSCoder) {

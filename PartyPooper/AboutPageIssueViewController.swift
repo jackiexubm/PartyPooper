@@ -31,5 +31,6 @@ class AboutPageIssueViewController: UICollectionViewController, UICollectionView
         cell.textLabel.text = (sampleIssueModels[indexPath.row].issueName)
         return cell
     }
+    
 
 }
