@@ -16,7 +16,6 @@
 		19AEF1341E2801ED00AC19A4 /* OpenedIssueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AEF1331E2801ED00AC19A4 /* OpenedIssueView.swift */; };
 		42310AB529730421DD34345E /* Pods_PartyPooperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4263CDCA38EBB2BCF61C498B /* Pods_PartyPooperUITests.framework */; };
 		5D157E29F689EEBD10E7D21D /* Pods_PartyPooperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0234E9EF19882BA8440E08BF /* Pods_PartyPooperTests.framework */; };
-		E90302791E25332E00B7BBF1 /* MentionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90302781E25332E00B7BBF1 /* MentionsView.swift */; };
 		E903027B1E25334B00B7BBF1 /* MentionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E903027A1E25334B00B7BBF1 /* MentionsViewController.swift */; };
 		E903027D1E254A8700B7BBF1 /* MentionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E903027C1E254A8700B7BBF1 /* MentionCell.swift */; };
 		E903027F1E256AD300B7BBF1 /* OpenedMentionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E903027E1E256AD300B7BBF1 /* OpenedMentionView.swift */; };
@@ -25,6 +24,8 @@
 		E919042A1E252FB100DA05C2 /* PartyPooperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91904291E252FB100DA05C2 /* PartyPooperTests.swift */; };
 		E91904351E252FB100DA05C2 /* PartyPooperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91904341E252FB100DA05C2 /* PartyPooperUITests.swift */; };
 		E934E9CE1E26D8FF009D3FBB /* MentionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E934E9CD1E26D8FF009D3FBB /* MentionModel.swift */; };
+		E99313141E2AF41C0088D354 /* StancesFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99313131E2AF41C0088D354 /* StancesFormViewController.swift */; };
+		E99313171E2AF6660088D354 /* IssuesChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99313161E2AF6660088D354 /* IssuesChooserView.swift */; };
 		E9F95FED1E27F74700D33271 /* SubmitMentionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F95FEC1E27F74700D33271 /* SubmitMentionViewController.swift */; };
 		E9F95FEF1E27F75D00D33271 /* SubmitMentionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F95FEE1E27F75D00D33271 /* SubmitMentionView.swift */; };
 		E9F95FF31E29517C00D33271 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F95FF21E29517C00D33271 /* AboutViewController.swift */; };
@@ -79,7 +80,6 @@
 		8057ACC6FD8C1C6DE25227F6 /* Pods-PartyPooperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartyPooperUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PartyPooperUITests/Pods-PartyPooperUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A89E9C3089DEC8F302ADCC84 /* Pods-PartyPooperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartyPooperTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PartyPooperTests/Pods-PartyPooperTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C6CB1A8DC4E1E62200487F1E /* Pods_PartyPooper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PartyPooper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E90302781E25332E00B7BBF1 /* MentionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MentionsView.swift; sourceTree = "<group>"; };
 		E903027A1E25334B00B7BBF1 /* MentionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MentionsViewController.swift; sourceTree = "<group>"; };
 		E903027C1E254A8700B7BBF1 /* MentionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MentionCell.swift; sourceTree = "<group>"; };
 		E903027E1E256AD300B7BBF1 /* OpenedMentionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenedMentionView.swift; sourceTree = "<group>"; };
@@ -94,6 +94,8 @@
 		E91904341E252FB100DA05C2 /* PartyPooperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyPooperUITests.swift; sourceTree = "<group>"; };
 		E91904361E252FB100DA05C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E934E9CD1E26D8FF009D3FBB /* MentionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MentionModel.swift; sourceTree = "<group>"; };
+		E99313131E2AF41C0088D354 /* StancesFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StancesFormViewController.swift; sourceTree = "<group>"; };
+		E99313161E2AF6660088D354 /* IssuesChooserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuesChooserView.swift; sourceTree = "<group>"; };
 		E9F95FEC1E27F74700D33271 /* SubmitMentionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitMentionViewController.swift; sourceTree = "<group>"; };
 		E9F95FEE1E27F75D00D33271 /* SubmitMentionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitMentionView.swift; sourceTree = "<group>"; };
 		E9F95FF21E29517C00D33271 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				E9F960001E29580900D33271 /* CampaignOverviewViewController.swift */,
+				E99313131E2AF41C0088D354 /* StancesFormViewController.swift */,
 				E9F9601F1E2AD61600D33271 /* HomeViewControllers */,
 				E9F960071E29592700D33271 /* MentionPageControllers */,
 				E9F960061E2958F600D33271 /* AboutPageControllers */,
@@ -190,11 +193,10 @@
 		E90302701E25308400B7BBF1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E99313151E2AF5510088D354 /* StancesFormViews */,
+				E92EDC171E2AE71A0015769D /* MentionViewViews */,
 				E9F9601E1E2AD4A800D33271 /* HomeViewViews */,
 				19AEF1331E2801ED00AC19A4 /* OpenedIssueView.swift */,
-				E90302781E25332E00B7BBF1 /* MentionsView.swift */,
-				E903027E1E256AD300B7BBF1 /* OpenedMentionView.swift */,
-				E9F95FEE1E27F75D00D33271 /* SubmitMentionView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -262,6 +264,23 @@
 				E91904361E252FB100DA05C2 /* Info.plist */,
 			);
 			path = PartyPooperUITests;
+			sourceTree = "<group>";
+		};
+		E92EDC171E2AE71A0015769D /* MentionViewViews */ = {
+			isa = PBXGroup;
+			children = (
+				E9F95FEE1E27F75D00D33271 /* SubmitMentionView.swift */,
+				E903027E1E256AD300B7BBF1 /* OpenedMentionView.swift */,
+			);
+			name = MentionViewViews;
+			sourceTree = "<group>";
+		};
+		E99313151E2AF5510088D354 /* StancesFormViews */ = {
+			isa = PBXGroup;
+			children = (
+				E99313161E2AF6660088D354 /* IssuesChooserView.swift */,
+			);
+			name = StancesFormViews;
 			sourceTree = "<group>";
 		};
 		E9F960021E29588900D33271 /* AboutViewCells */ = {
@@ -628,13 +647,14 @@
 				E90302811E256B8300B7BBF1 /* OpenedMentionViewController.swift in Sources */,
 				E934E9CE1E26D8FF009D3FBB /* MentionModel.swift in Sources */,
 				E9F95FEF1E27F75D00D33271 /* SubmitMentionView.swift in Sources */,
-				E90302791E25332E00B7BBF1 /* MentionsView.swift in Sources */,
 				E9F95FF71E29520300D33271 /* AppDelegate.swift in Sources */,
 				E9F9600D1E2A523000D33271 /* CampaignOverviewMentionsCell.swift in Sources */,
 				E903027D1E254A8700B7BBF1 /* MentionCell.swift in Sources */,
 				E9F95FED1E27F74700D33271 /* SubmitMentionViewController.swift in Sources */,
 				E903027B1E25334B00B7BBF1 /* MentionsViewController.swift in Sources */,
 				E9F95FF31E29517C00D33271 /* AboutViewController.swift in Sources */,
+				E99313171E2AF6660088D354 /* IssuesChooserView.swift in Sources */,
+				E99313141E2AF41C0088D354 /* StancesFormViewController.swift in Sources */,
 				E9F9600F1E2A582600D33271 /* CampaignOverviewEventsCell.swift in Sources */,
 				E903027F1E256AD300B7BBF1 /* OpenedMentionView.swift in Sources */,
 			);
