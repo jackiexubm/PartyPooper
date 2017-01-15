@@ -53,8 +53,10 @@ class MatchCandidateCell: UICollectionViewCell {
     
     let matchPercentageView: UILabel = {
         let label = UILabel()
-        label.backgroundColor = UIColor.red
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont.init(name: "HelveticaNeue-Medium", size: 30)
+//        label.backgroundColor = UIColor.red
+
         return label
     }()
     
@@ -79,11 +81,12 @@ class MatchCandidateCell: UICollectionViewCell {
         addConstraintWithString("V:[v2]-[v3]-15-|")
         addConstraintWithString("H:[v1]-20-[v3]-|")
         
-        addConstraintWithString("V:|-30-[v4]")
-        addConstraintWithString("H:[v4]-20-|")
+        addConstraintWithString("V:|-5-[v4]-10-|")
+        addConstraintWithString("H:[v4]-10-|")
 
         addConstraint(NSLayoutConstraint(item: profileView, attribute: NSLayoutAttribute.centerY, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.centerY, multiplier: 1, constant: 0))
-        
+        addConstraint(NSLayoutConstraint(item: matchPercentageView, attribute: NSLayoutAttribute.centerY, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.centerY, multiplier: 1, constant: 0))
+
         
         
         
