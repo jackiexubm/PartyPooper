@@ -36,6 +36,8 @@ class EventCell: UICollectionViewCell  {
     let dateOfEventLabel: UILabel = {
         let label = UILabel()
 //        label.backgroundColor = UIColor.red
+        label.font = UIFont(name: "HelveticaNeue-Medium", size: 15)
+
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -44,6 +46,8 @@ class EventCell: UICollectionViewCell  {
         let label = UILabel()
 //        label.backgroundColor = UIColor.brown
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont(name: "HelveticaNeue-Medium", size: 15)
+
         return label
     }()
     
@@ -53,6 +57,8 @@ class EventCell: UICollectionViewCell  {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.lineBreakMode = NSLineBreakMode.byWordWrapping
         label.numberOfLines = 0
+        label.font = UIFont(name: "HelveticaNeue-Bold", size: 18)
+
         return label
     }()
     
@@ -60,6 +66,8 @@ class EventCell: UICollectionViewCell  {
         let label = UILabel()
 //        label.backgroundColor = UIColor.green
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont(name: "HelveticaNeue-Medium", size: 12)
+
         return label
     }()
     
@@ -69,9 +77,21 @@ class EventCell: UICollectionViewCell  {
         text.translatesAutoresizingMaskIntoConstraints = false
         text.lineBreakMode = NSLineBreakMode.byWordWrapping
         text.numberOfLines = 0
+        text.font = UIFont(name: "HelveticaNeue-Medium", size: 15)
+
         return text
     }()
     
+    let borderView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.layer.borderWidth = 1
+        view.layer.cornerRadius = 5
+        view.layer.borderColor = UIColor.purple.cgColor
+        return view
+        
+        
+    }()
     
     
     
@@ -84,6 +104,7 @@ class EventCell: UICollectionViewCell  {
         addSubview(eventNameLabel)
         addSubview(eventTypeLabel)
         addSubview(eventDescription)
+        addSubview(borderView)
         
         
         
@@ -103,6 +124,9 @@ class EventCell: UICollectionViewCell  {
         addConstraintWithString("H:|-15-[v5(200)]")
         
         addConstraintWithString("H:|-15-[v6]-10-|")
+        addConstraintWithString("H:|-[v7]-|")
+        addConstraintWithString("V:|-[v7]-|")
+
         
 
     }
@@ -116,6 +140,7 @@ class EventCell: UICollectionViewCell  {
             "v4":eventNameLabel,
             "v5":eventTypeLabel,
             "v6":eventDescription,
+            "v7":borderView
         ]
         
         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: str, options: NSLayoutFormatOptions(), metrics: nil, views: views))

@@ -19,17 +19,21 @@ class DonateView: UIView {
     setupViews()
     }
     
-    let donateLabel: UIButton = {
-        let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.backgroundColor = UIColor.red
-        return button
+    let donateLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.backgroundColor = UIColor.init(white: 220/255, alpha: 1)
+        label.text = "Help Out the Campaign!"
+        label.textAlignment = NSTextAlignment.center
+        return label
     }()
+    
+    
     
     let imageView: UIImageView = {
         let view = UIImageView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.image = #imageLiteral(resourceName: "new_donate")
+        view.image = #imageLiteral(resourceName: "donateimage")
         view.contentMode = .scaleAspectFill
         view.layer.masksToBounds = true
         return view
@@ -42,12 +46,12 @@ class DonateView: UIView {
         imageView.addSubview(donateLabel)
         
         
-        addConstraintsWithString("H:|-100-[v0(20)]")
-        addConstraintsWithString("V:|-300-[v0(20)]")
+        addConstraintsWithString("H:|-50-[v0]-50-|")
+        addConstraintsWithString("V:|-500-[v0(50)]")
         
         addConstraintsWithString("H:|[v1]|")
-        addConstraintsWithString("V:|-64-[v1]-|")
-
+        addConstraintsWithString("V:|-[v1]-|")
+        
         
         
     }
@@ -57,7 +61,8 @@ class DonateView: UIView {
     func addConstraintsWithString(_ str:String){
         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: str, options: NSLayoutFormatOptions(), metrics: nil, views:
             ["v0":donateLabel,
-             "v1":imageView
+             "v1":imageView,
+            
             ]))
     }
     
